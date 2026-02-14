@@ -27,7 +27,9 @@ I value clean configuration, reliability, and measurable improvement.
 ## 📊 Most Used Languages
 
 <p align="center">
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=RusdiEneri&layout=compact&theme=github_dark&hide_border=true&count_private=true" />
+  <img src="https://img.shields.io/badge/Linux-Advanced-black?style=for-the-badge&logo=linux" />
+  <img src="https://img.shields.io/badge/Bash-Intermediate-black?style=for-the-badge&logo=gnu-bash" />
+  <img src="https://img.shields.io/badge/Python-Learning-black?style=for-the-badge&logo=python" />
 </p>
 
 ---
