@@ -2,51 +2,53 @@
 <h3 align="center">System Optimization • Networking • Automation</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=System+Enthusiast;Networking+Explorer;Performance+Optimizer;Always+Learning" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1500&color=FFFFFF&center=true&vCenter=true&width=450&lines=System+Engineer+Mindset;Network+Focused;Performance+Driven;Continuous+Improvement" />
 </p>
 
 ---
 
-## 🚀 About Me
+## ⚡ About
 
-- 🔧 Focused on system optimization & performance tuning  
-- 🌐 Interested in networking & DNS management  
-- 🐧 Exploring Linux environments  
-- ⚙️ Learning automation & backend fundamentals  
+Focused on building efficient, stable, and optimized systems.  
+Interested in low-level performance tuning, DNS filtering, networking fundamentals, and automation workflows.
+
+I value clean configuration, reliability, and measurable improvement.
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Stack & Environment
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=linux,git,github,bash,windows" />
+  <img src="https://skillicons.dev/icons?i=linux,git,github,bash,windows,vscode" />
 </p>
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=RusdiEneri&show_icons=true&theme=tokyonight&hide_border=true" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RusdiEneri&layout=compact&theme=tokyonight&hide_border=true" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=RusdiEneri&show_icons=true&theme=dark&hide_border=true&bg_color=000000&title_color=ffffff&text_color=cccccc&icon_color=ffffff" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RusdiEneri&layout=compact&theme=dark&hide_border=true&bg_color=000000&title_color=ffffff&text_color=cccccc" height="165"/>
 </p>
 
 ---
 
-## 🔥 Streak Stats
+## 🔥 Contribution Streak
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=RusdiEneri&theme=tokyonight&hide_border=true" />
+  <img src="https://streak-stats.demolab.com?user=RusdiEneri&theme=dark&hide_border=true&background=000000&ring=ffffff&fire=ffffff&currStreakLabel=ffffff" />
 </p>
 
 ---
 
-## 📫 Connect
+## 📌 Philosophy
 
-- GitHub: https://github.com/RusdiEneri
+> Optimize what matters.  
+> Measure results.  
+> Improve continuously.
 
 ---
 
 <p align="center">
-  <i>"Build. Optimize. Improve. Repeat."</i>
+  <sub>Built with consistency, not noise.</sub>
 </p>
