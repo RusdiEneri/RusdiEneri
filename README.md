@@ -2,21 +2,23 @@
 <h3 align="center">System Optimization • Networking • Automation</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1500&color=FFFFFF&center=true&vCenter=true&width=450&lines=System+Engineer+Mindset;Network+Focused;Performance+Driven;Continuous+Improvement" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1500&color=00FFAA&center=true&vCenter=true&width=500&lines=Building+Efficient+Systems;Networking+Explorer;Automation+Driven;Learning+Every+Day" />
 </p>
 
 ---
 
-## ⚡ About
+## ⚡ About Me
 
-Focused on building efficient, stable, and optimized systems.  
-Interested in low-level performance tuning, DNS filtering, networking fundamentals, and automation workflows.
+🚀 Passionate about optimizing systems and improving performance  
+🌐 Exploring networking, DNS filtering & infrastructure  
+🐧 Comfortable with Linux environments  
+⚙️ Focused on automation & practical solutions  
 
-I value clean configuration, reliability, and measurable improvement.
+I enjoy turning complex setups into clean and efficient configurations.
 
 ---
 
-## 🛠 Tech & Tools
+## 🛠 Tech Stack
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=linux,git,github,bash,windows,vscode,docker,nginx,python" />
@@ -24,45 +26,31 @@ I value clean configuration, reliability, and measurable improvement.
 
 ---
 
-## 📊 Most Used Languages
+## 📈 Activity
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Linux-Advanced-black?style=for-the-badge&logo=linux" />
-  <img src="https://img.shields.io/badge/Bash-Intermediate-black?style=for-the-badge&logo=gnu-bash" />
-  <img src="https://img.shields.io/badge/Python-Learning-black?style=for-the-badge&logo=python" />
+  <img src="https://streak-stats.demolab.com?user=RusdiEneri&theme=dark&hide_border=true&background=000000" />
 </p>
 
 ---
 
-## 📊 Contribution Graph
+## 🎯 Current Goals
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RusdiEneri&theme=github-dark&hide_border=true" />
-</p>
-
-
----
-
-## 🔥 Contribution Streak
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=RusdiEneri&theme=dark&hide_border=true&background=000000&ring=ffffff&fire=ffffff&currStreakLabel=ffffff" />
-</p>
-
-<p align="center">
-  <img src="https://ghchart.rshah.org/409ba5/RusdiEneri" />
-</p>
+- Improve backend fundamentals  
+- Build small but complete projects  
+- Strengthen networking & infrastructure knowledge  
+- Contribute consistently  
 
 ---
 
 ## 📌 Philosophy
 
-> Optimize what matters.  
-> Measure results.  
-> Improve continuously.
+> Build with purpose.  
+> Optimize intelligently.  
+> Stay consistent.
 
 ---
 
 <p align="center">
-  <sub>Built with consistency, not noise.</sub>
+  <sub>Minimal. Focused. Evolving.</sub>
 </p>
