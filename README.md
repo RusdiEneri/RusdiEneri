@@ -27,8 +27,8 @@ I value clean configuration, reliability, and measurable improvement.
 ## 📊 GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=RusdiEneri&show_icons=true&theme=dark&hide_border=true&bg_color=000000&title_color=ffffff&text_color=cccccc&icon_color=ffffff" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RusdiEneri&layout=compact&theme=dark&hide_border=true&bg_color=000000&title_color=ffffff&text_color=cccccc" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=RusdiEneri&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RusdiEneri&layout=compact&theme=github_dark&hide_border=true&count_private=true" height="165"/>
 </p>
 
 ---
