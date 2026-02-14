@@ -47,6 +47,10 @@ I value clean configuration, reliability, and measurable improvement.
   <img src="https://streak-stats.demolab.com?user=RusdiEneri&theme=dark&hide_border=true&background=000000&ring=ffffff&fire=ffffff&currStreakLabel=ffffff" />
 </p>
 
+<p align="center">
+  <img src="https://ghchart.rshah.org/409ba5/RusdiEneri" />
+</p>
+
 ---
 
 ## 📌 Philosophy
