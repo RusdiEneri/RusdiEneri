@@ -42,3 +42,32 @@ jobs:
           # stars & followers
           plugin_stars: yes
           plugin_followup: yes
+
+          plugin_achievements: yes
+          plugin_achievements_display: detailed
+          plugin_achievements_threshold: C
+
+          plugin_streak: yes
+          plugin_streak_days: 30
+
+          plugin_repositories: yes
+          plugin_repositories_featured: 6
+          plugin_repositories_order: starred
+
+          plugin_topics: yes
+          plugin_topics_limit: 15
+          plugin_topics_mode: mastered
+
+          plugin_lines: yes
+
+          plugin_skyline: yes
+          plugin_skyline_year: current-year
+
+          plugin_wakatime: yes
+          plugin_wakatime_days: 7
+
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+
+          template: terminal
