@@ -32,6 +32,7 @@ I build efficient systems and optimize low-resource environments.
 
 <img src="./metrics.languages.svg" width="100%" />
 
+<img src="./metrics.achievements.svg" width="100%" />
 
 
 ---
