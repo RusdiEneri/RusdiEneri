@@ -2,7 +2,7 @@ name: GitHub Metrics
 
 on:
   schedule:
-    - cron: "0 */6 * * *" # update tiap 6 jam (lebih ringan)
+    - cron: "0 */6 * * *"
   workflow_dispatch:
   push:
     branches: ["main"]
@@ -19,7 +19,7 @@ jobs:
           token: ${{ secrets.GH_PAT }}
 
           user: RusdiEneri
-          template: classic
+          template: terminal
           base: header, activity, community, repositories, metadata
 
           config_timezone: Asia/Jakarta
@@ -39,35 +39,36 @@ jobs:
           plugin_languages: yes
           plugin_languages_limit: 8
 
-          # stars & followers
+          # stars
           plugin_stars: yes
-          plugin_followup: yes
 
+          # achievements
           plugin_achievements: yes
           plugin_achievements_display: detailed
           plugin_achievements_threshold: C
 
+          # streak
           plugin_streak: yes
           plugin_streak_days: 30
 
+          # repo stats
           plugin_repositories: yes
           plugin_repositories_featured: 6
-          plugin_repositories_order: starred
+          plugin_repositories_order: pushed
 
+          # tech stack
           plugin_topics: yes
           plugin_topics_limit: 15
           plugin_topics_mode: mastered
 
+          # code volume
           plugin_lines: yes
 
+          # skyline visual
           plugin_skyline: yes
           plugin_skyline_year: current-year
 
-          plugin_wakatime: yes
-          plugin_wakatime_days: 7
-
+          # activity detail
           plugin_activity: yes
           plugin_activity_limit: 5
           plugin_activity_days: 14
-
-          template: terminal
