@@ -14,93 +14,64 @@ jobs:
       contents: write
 
     steps:
-      # =============================
-      # GENERAL + FULL ACTIVITY STATS
-      # =============================
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.GH_PAT }}
-          filename: metrics.general.svg
-          committer_message: "chore: update general metrics"
 
           user: RusdiEneri
-          template: terminal
+          template: classic
           base: header, activity, community, repositories, metadata
 
           config_timezone: Asia/Jakarta
-          config_display: large
-          config_padding: 0, 0
 
-          # contribution calendar
+          # contribution graph
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-          # detailed activity
-          plugin_activity: yes
-          plugin_activity_limit: 8
-          plugin_activity_days: 14
-
-          # commit habits
+          # coding habits
           plugin_habits: yes
           plugin_habits_days: 30
-
-          # contribution streak
-          plugin_streak: yes
-          plugin_streak_days: 30
 
           # repo traffic
           plugin_traffic: yes
 
-          # code volume
-          plugin_lines: yes
+          # language usage
+          plugin_languages: yes
+          plugin_languages_limit: 8
 
           # stars
           plugin_stars: yes
 
-      # =============================
-      # LANGUAGES
-      # =============================
-      - uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.GH_PAT }}
-          filename: metrics.languages.svg
-          committer_message: "chore: update languages metrics"
+          # achievements
+          plugin_achievements: yes
+          plugin_achievements_display: detailed
+          plugin_achievements_threshold: C
 
-          user: RusdiEneri
-          template: terminal
-          base: ""
+          # streak
+          plugin_streak: yes
+          plugin_streak_days: 30
 
-          config_timezone: Asia/Jakarta
-          config_display: large
-          config_padding: 0, 0
-
-          plugin_languages: yes
-          plugin_languages_limit: 8
-          plugin_languages_analysis_timeout: 15
-
-      # =============================
-      # REPOSITORY + TECH DETAIL
-      # =============================
-      - uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.GH_PAT }}
-          filename: metrics.repositories.svg
-          committer_message: "chore: update repository metrics"
-
-          user: RusdiEneri
-          template: terminal
-          base: ""
-
-          config_timezone: Asia/Jakarta
-          config_display: large
-          config_padding: 0, 0
-
-          # featured repositories
+          # repo stats
           plugin_repositories: yes
           plugin_repositories_featured: 6
           plugin_repositories_order: pushed
 
-          # tech topics used
+          # tech stack
           plugin_topics: yes
-          plugin_topics_limit: 12
+          plugin_topics_limit: 15
           plugin_topics_mode: mastered
+
+          # code volume
+          plugin_lines: yes
+
+          # skyline visual
+          plugin_skyline: yes
+          plugin_skyline_year: current-year
+
+          # activity detail
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+
+          plugin_wakatime: yes
+          plugin_wakatime_days: 7
