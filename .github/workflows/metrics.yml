@@ -14,71 +14,53 @@ jobs:
       contents: write
 
     steps:
+      # GENERAL STATS
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.GH_PAT }}
+          filename: metrics.general.svg
+          committer_message: "chore: update general metrics"
 
-          # output file (penting biar selalu overwrite)
-          filename: github-metrics.svg
-          committer_message: "chore: update github metrics"
-
-          # profile
           user: RusdiEneri
           template: terminal
-          base: header, activity, community, repositories, metadata
+          base: header, activity, community, repositories
 
-          # fix crop + display (IMPORTANT)
           config_timezone: Asia/Jakarta
           config_display: large
           config_padding: 0, 0
-          config_output: svg
-          config_animations: yes
 
-          # contribution graph
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+      # LANGUAGES
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GH_PAT }}
+          filename: metrics.languages.svg
+          committer_message: "chore: update languages metrics"
 
-          # coding habits
-          plugin_habits: yes
-          plugin_habits_days: 30
+          user: RusdiEneri
+          template: terminal
+          base: ""
 
-          # repo traffic
-          plugin_traffic: yes
+          config_timezone: Asia/Jakarta
+          config_display: large
+          config_padding: 0, 0
 
-          # language usage
           plugin_languages: yes
           plugin_languages_limit: 8
 
-          # stars
-          plugin_stars: yes
+      # ACHIEVEMENTS
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GH_PAT }}
+          filename: metrics.achievements.svg
+          committer_message: "chore: update achievements metrics"
 
-          # achievements
+          user: RusdiEneri
+          template: terminal
+          base: ""
+
+          config_timezone: Asia/Jakarta
+          config_display: large
+          config_padding: 0, 0
+
           plugin_achievements: yes
           plugin_achievements_display: detailed
-          plugin_achievements_threshold: C
-
-          # streak
-          plugin_streak: yes
-          plugin_streak_days: 30
-
-          # repo stats
-          plugin_repositories: yes
-          plugin_repositories_featured: 6
-          plugin_repositories_order: pushed
-
-          # tech stack
-          plugin_topics: yes
-          plugin_topics_limit: 15
-          plugin_topics_mode: mastered
-
-          # code volume
-          plugin_lines: yes
-
-          # skyline visual
-          plugin_skyline: yes
-          plugin_skyline_year: current-year
-
-          # activity detail
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
