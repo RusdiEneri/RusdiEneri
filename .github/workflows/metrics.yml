@@ -18,11 +18,21 @@ jobs:
         with:
           token: ${{ secrets.GH_PAT }}
 
+          # output file (penting biar selalu overwrite)
+          filename: github-metrics.svg
+          committer_message: "chore: update github metrics"
+
+          # profile
           user: RusdiEneri
           template: terminal
           base: header, activity, community, repositories, metadata
 
+          # fix crop + display (IMPORTANT)
           config_timezone: Asia/Jakarta
+          config_display: large
+          config_padding: 0, 0
+          config_output: svg
+          config_animations: yes
 
           # contribution graph
           plugin_isocalendar: yes
