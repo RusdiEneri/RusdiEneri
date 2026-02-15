@@ -9,42 +9,47 @@
 
 ## ⚡ About Me
 
-🚀 Passionate about optimizing systems and improving performance  
-🌐 Exploring networking, DNS filtering & infrastructure  
-🐧 Comfortable with Linux environments  
-⚙️ Focused on automation & practical solutions  
+- 🚀 System optimization & performance tuning  
+- 🌐 Networking, DNS filtering, infrastructure experiments  
+- 🐧 Linux server environments (Debian focused)  
+- ⚙️ Automation & practical solutions  
 
-I enjoy turning complex setups into clean and efficient configurations.
+I build efficient systems and optimize low-resource environments.
 
 ---
 
 ## 🛠 Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=linux,git,github,bash,windows,vscode,docker,nginx,python" />
+  <img src="https://skillicons.dev/icons?i=linux,git,github,bash,docker,nginx,nodejs" />
 </p>
 
 ---
 
-## 📈 Activity
+## 📊 GitHub Metrics
+
+<img src="./github-metrics.svg" width="100%" />
+
+---
+
+## 🔥 Contribution Activity
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=RusdiEneri&theme=dark&hide_border=true&background=000000" />
+  <img src="https://streak-stats.demolab.com?user=RusdiEneri&theme=dark&hide_border=true"/>
 </p>
-
----
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RusdiEneri&theme=github_dark" />
 </p>
 
+---
 
 ## 🎯 Current Goals
 
+- Build lightweight infrastructure systems  
 - Improve backend fundamentals  
-- Build small but complete projects  
-- Strengthen networking & infrastructure knowledge  
-- Contribute consistently  
+- Strengthen networking knowledge  
+- Create complete small projects  
 
 ---
 
@@ -57,5 +62,9 @@ I enjoy turning complex setups into clean and efficient configurations.
 ---
 
 <p align="center">
-  <sub>Minimal. Focused. Evolving.</sub>
+  <img src="https://komarev.com/ghpvc/?username=RusdiEneri"/>
+</p>
+
+<p align="center">
+  <sub>Minimal • Focused • Evolving</sub>
 </p>
