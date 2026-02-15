@@ -28,7 +28,12 @@ I build efficient systems and optimize low-resource environments.
 
 ## 📊 GitHub Metrics
 
-<img src="./github-metrics.svg" width="100%" />
+<img src="./metrics.general.svg" width="100%" />
+
+<img src="./metrics.languages.svg" width="100%" />
+
+<img src="./metrics.achievements.svg" width="100%" />
+
 
 ---
 
