@@ -34,6 +34,11 @@ I enjoy turning complex setups into clean and efficient configurations.
 
 ---
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" />
+</p>
+
+
 ## 🎯 Current Goals
 
 - Improve backend fundamentals  
