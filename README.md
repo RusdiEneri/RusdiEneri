@@ -25,12 +25,10 @@ I build efficient systems and optimize low-resource environments.
 </p>
 
 ---
-
+<!-- ini komentar 
 ## 📊 GitHub Metrics
 
-<img src="./github-metrics.svg" width="100%" />
-
----
+<img src="./github-metrics.svg" width="100%" />-->
 
 ## 🔥 Contribution Activity
 
@@ -58,6 +56,10 @@ I build efficient systems and optimize low-resource environments.
 > Build with purpose.  
 > Optimize intelligently.  
 > Stay consistent.
+
+---
+
+![Jokes Card](https://readme-jokes.vercel.app/api)
 
 ---
 
