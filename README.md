@@ -67,6 +67,12 @@ I build efficient systems and optimize low-resource environments.
   <img src="https://komarev.com/ghpvc/?username=RusdiEneri"/>
 </p>
 
+<div align="center">
+    <p>
+        <img align="center" alt="count" src="[https://count.getloli.com/@DikaArdnt?name=DikaArdnt&theme=booru-lewd](https://count.getloli.com/@RusdiEneri?name=RusdiEneri&theme=rule34)">
+    </p>
+</div>
+
 <p align="center">
   <sub>Minimal • Focused • Evolving</sub>
 </p>
