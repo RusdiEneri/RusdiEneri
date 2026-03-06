@@ -101,3 +101,9 @@ Philosophy:
 <p align="center">
 <sub>Minimal • Efficient • Evolving</sub>
 </p>
+
+---
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/RusdiEneri/RusdiEneri/output/snake.svg"/>
+</p>
