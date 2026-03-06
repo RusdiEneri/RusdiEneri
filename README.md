@@ -2,77 +2,52 @@
 <h3 align="center">System Optimization • Networking • Automation</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1500&color=00FFAA&center=true&vCenter=true&width=500&lines=Building+Efficient+Systems;Networking+Explorer;Automation+Driven;Learning+Every+Day" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1500&color=00FFAA&center=true&vCenter=true&width=520&lines=Building+Efficient+Systems;Networking+Explorer;Automation+Driven;Linux+Enthusiast;Always+Learning" />
 </p>
 
 ---
 
-## ⚡ About Me
+## 🧠 About Me
 
-- 🚀 System optimization & performance tuning  
-- 🌐 Networking, DNS filtering, infrastructure experiments  
-- 🐧 Linux server environments (Debian focused)  
-- ⚙️ Automation & practical solutions  
+```bash
+rusdi@lab:~$ whoami
+Name: Rusdi Eneri
+Role: System & Infrastructure Enthusiast
+Focus: Optimization • Networking • Automation
 
-I build efficient systems and optimize low-resource environments.
+Environment:
+  OS: Linux (Debian based)
+  Tools: Bash, Docker, Nginx, NodeJS
+  Interests:
+    - DNS Filtering
+    - Lightweight Infrastructure
+    - Network Experiments
+    - Automation Systems
 
----
+Philosophy:
+  - Efficiency over complexity
+  - Automation over repetition
+  - Practical solutions over theory
+⚙️ Tech Stack
+<p align="center"> <img src="https://skillicons.dev/icons?i=linux,git,github,bash,docker,nginx,nodejs&perline=7"/> </p>
+🔥 Contribution Activity
+<p align="center"> <img src="https://streak-stats.demolab.com?user=RusdiEneri&theme=dark&hide_border=true"/> </p> <p align="center"> <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RusdiEneri&theme=github_dark"/> </p>
+🚧 Current Focus
 
-## 🛠 Tech Stack
+Building lightweight infrastructure
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=linux,git,github,bash,docker,nginx,nodejs" />
-</p>
+Improving backend engineering fundamentals
 
----
-<!-- ini komentar 
-## 📊 GitHub Metrics
+Deepening networking knowledge
 
-<img src="./github-metrics.svg" width="100%" />-->
+Creating practical automation tools
 
-## 🔥 Contribution Activity
+📊 Profile Views
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=RusdiEneri"/> </p> <div align="center"> <img src="https://count.getloli.com/@RusdiEneri?name=RusdiEneri&theme=rule34"/> </div>
+📌 Philosophy
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=RusdiEneri&theme=dark&hide_border=true"/>
-</p>
+Build with purpose
+Optimize intelligently
+Stay consistent
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RusdiEneri&theme=github_dark" />
-</p>
-
----
-
-## 🎯 Current Goals
-
-- Build lightweight infrastructure systems  
-- Improve backend fundamentals  
-- Strengthen networking knowledge  
-- Create complete small projects  
-
----
-
-## 📌 Philosophy
-
-> Build with purpose.  
-> Optimize intelligently.  
-> Stay consistent.
-
----
-
-![Jokes Card](https://readme-jokes.vercel.app/api)
-
----
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=RusdiEneri"/>
-</p>
-
-<div align="center">
-    <p>
-        <img align="center" alt="count" src="[https://count.getloli.com/@DikaArdnt?name=DikaArdnt&theme=booru-lewd](https://count.getloli.com/@RusdiEneri?name=RusdiEneri&theme=rule34)">
-    </p>
-</div>
-
-<p align="center">
-  <sub>Minimal • Focused • Evolving</sub>
-</p>
+<p align="center"> <sub>Minimal • Efficient • Evolving</sub> </p> ```
