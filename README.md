@@ -85,10 +85,6 @@ Philosophy:
 ## 📊 Profile Views
 
 <p align="center">
-<img src="https://komarev.com/ghpvc/?username=RusdiEneri"/>
-</p>
-
-<p align="center">
 <img src="https://count.getloli.com/@RusdiEneri?name=RusdiEneri&theme=rule34"/>
 </p>
 
