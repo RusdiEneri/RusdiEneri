@@ -73,15 +73,6 @@ Philosophy:
 
 ---
 
-## 🚧 Current Focus
-
-* Building lightweight infrastructure
-* Improving backend fundamentals
-* Deepening networking knowledge
-* Creating practical automation tools
-
----
-
 ## 📊 Profile Views
 
 <p align="center">
