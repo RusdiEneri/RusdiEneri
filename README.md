@@ -52,12 +52,12 @@ Philosophy:
 <img src="https://skillicons.dev/icons?i=linux,bash,docker,nginx&perline=7"/>
 </p>
 
-### 💻 Backend & Runtime
+### 💻 Backend
 <p align="center">
-<img src="https://skillicons.dev/icons?i=nodejs&perline=7"/>
+<img src="https://skillicons.dev/icons?i=nodejs,js&perline=7"/>
 </p>
 
-### 🔧 Tools & Version Control
+### 🔧 Tools
 <p align="center">
 <img src="https://skillicons.dev/icons?i=git,github&perline=7"/>
 </p>
