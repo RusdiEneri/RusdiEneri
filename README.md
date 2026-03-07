@@ -90,8 +90,6 @@ Philosophy:
 <img src="https://count.getloli.com/@RusdiEneri?name=RusdiEneri&theme=rule34"/>
 </p>
 
----
-
 <p align="center">
 <img src="https://raw.githubusercontent.com/RusdiEneri/RusdiEneri/output/snake.svg"/>
 </p>
