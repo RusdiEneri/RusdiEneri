@@ -47,8 +47,19 @@ Philosophy:
 
 ## ⚙️ Tech Stack
 
+### 🖥 System & DevOps
 <p align="center">
-<img src="https://skillicons.dev/icons?i=linux,git,github,bash,docker,nginx,nodejs&perline=7"/>
+<img src="https://skillicons.dev/icons?i=linux,bash,docker,nginx&perline=7"/>
+</p>
+
+### 💻 Backend & Runtime
+<p align="center">
+<img src="https://skillicons.dev/icons?i=nodejs&perline=7"/>
+</p>
+
+### 🔧 Tools & Version Control
+<p align="center">
+<img src="https://skillicons.dev/icons?i=git,github&perline=7"/>
 </p>
 
 ---
