@@ -5,15 +5,20 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1500&color=00FFAA&center=true&vCenter=true&width=520&lines=Building+Efficient+Systems;Networking+Explorer;Automation+Driven;Linux+Enthusiast;Always+Learning"/>
 </p>
 
+<p align="center">
+<img src="https://img.shields.io/badge/Linux-Advanced-black?logo=linux"/>
+<img src="https://img.shields.io/badge/Docker-Container-blue?logo=docker"/>
+<img src="https://img.shields.io/badge/Networking-Learning-green"/>
+<img src="https://img.shields.io/badge/Automation-Bash-orange"/>
+</p>
+
 ---
 
 ## 🧠 About Me
 
 ```bash
 rusdi@lab:~$ whoami
-```
 
-```yaml
 Name: Rusdi Eneri
 Role: System & Infrastructure Enthusiast
 
@@ -49,25 +54,39 @@ Philosophy:
 
 ### 🖥 System & DevOps
 <p align="center">
-<img src="https://skillicons.dev/icons?i=linux,bash,docker,nginx&perline=7"/>
+<img src="https://skillicons.dev/icons?i=linux,bash,docker,nginx&perline=6"/>
 </p>
 
 ### 💻 Backend
 <p align="center">
-<img src="https://skillicons.dev/icons?i=nodejs,js&perline=7"/>
+<img src="https://skillicons.dev/icons?i=nodejs,js&perline=6"/>
 </p>
 
 ### 🔧 Tools
 <p align="center">
-<img src="https://skillicons.dev/icons?i=git,github&perline=7"/>
+<img src="https://skillicons.dev/icons?i=git,github&perline=6"/>
 </p>
 
 ---
 
-## 📊 GitHub Metrics
+## 🚀 Infrastructure Playground
+
+Some experiments and tools while exploring systems and networking.
+
+| Project | Description |
+|-------|-------------|
+| xshot | Automatic screenshot beautifier |
+| blacklist-hosts | DNS filtering hostlist |
+| mlab-speedtest | Web speedtest deployment |
+| github-readme-stats | Self-hosted GitHub stats API |
+
+---
+
+## 📊 GitHub Stats
 
 <p align="center">
-<img src="./github-metrics.svg" width="100%"/>
+<img src="https://github-readme-stats-six-psi-94.vercel.app/api?username=RusdiEneri&show_icons=true&theme=tokyonight&hide_border=true"/>
+<img src="https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiEneri&layout=compact&theme=tokyonight&hide_border=true"/>
 </p>
 
 ---
@@ -84,7 +103,7 @@ Philosophy:
 
 ---
 
-## 📊 Profile Views
+## 👀 Profile Views
 
 <p align="center">
 <img src="https://count.getloli.com/@RusdiEneri?name=RusdiEneri&theme=rule34"/>
