@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="https://count.getloli.com/@Rusdieneri?name=RusdiEneri&theme=booru-lewd" alt="count" width="50%" />
+</p>
+
+---
+
 <div align="center">
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1500&color=00FFAA&center=true&vCenter=true&width=580&lines=Backend+%26+Network+Engineering+Student;System+Optimization+%7C+Networking+%7C+Automation;Linux+Enthusiast+%7C+DNS+%26+Infra+Explorer;Learning+by+Building)](https://github.com/RusdiEneri)
@@ -160,12 +166,4 @@ Philosophy:
 [![GitHub](https://img.shields.io/badge/@RusdiEneri-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/RusdiEneri)
 [![Org](https://img.shields.io/badge/@X--SyntaxError-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/X-SyntaxError)
 
-</div>
-
----
-
-<div align="center">
-    <p>
-        <img align="center" alt="count" src="https://count.getloli.com/@Rusdieneri?name=RusdiEneri&theme=booru-lewd">
-    </p>
 </div>
