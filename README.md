@@ -70,9 +70,9 @@ Philosophy:
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=RusdiEneri&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github&card_width=495" alt="GitHub Stats" />
+<img src="https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api?username=RusdiEneri&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github&card_width=495" alt="GitHub Stats" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RusdiEneri&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=495" alt="Top Languages" />
+<img src="https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api/top-langs/?username=RusdiEneri&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=495" alt="Top Languages" />
 
 <br/>
 
@@ -100,11 +100,11 @@ Philosophy:
 
 <div align="center">
 
-[![blacklist-hosts](https://github-readme-stats.vercel.app/api/pin/?username=RusdiEneri&repo=blacklist-hosts&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/blacklist-hosts)
-[![mlab-speedtest](https://github-readme-stats.vercel.app/api/pin/?username=RusdiEneri&repo=mlab-speedtest&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/mlab-speedtest)
+[![blacklist-hosts](https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api/pin/?username=RusdiEneri&repo=blacklist-hosts&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/blacklist-hosts)
+[![mlab-speedtest](https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api/pin/?username=RusdiEneri&repo=mlab-speedtest&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/mlab-speedtest)
 
-[![toolz](https://github-readme-stats.vercel.app/api/pin/?username=RusdiEneri&repo=toolz&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/toolz)
-[![RusdiEneri](https://github-readme-stats.vercel.app/api/pin/?username=RusdiEneri&repo=RusdiEneri&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/RusdiEneri)
+[![toolz](https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api/pin/?username=RusdiEneri&repo=toolz&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/toolz)
+[![RusdiEneri](https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api/pin/?username=RusdiEneri&repo=RusdiEneri&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/RusdiEneri)
 
 </div>
 
