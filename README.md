@@ -169,7 +169,7 @@ Philosophy:
 ---
 
 <div align="center">
-
-![Auto Updated](https://img.shields.io/badge/Auto--Updated%20by-GitHub%20Actions-00FFAA?style=flat-square&logo=github-actions&logoColor=white)
-
+    <p>
+        <img align="center" alt="count" src="https://count.getloli.com/@Rusdieneri?name=RusdiEneri&theme=booru-lewd">
+    </p>
 </div>
