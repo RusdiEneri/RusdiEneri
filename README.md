@@ -202,7 +202,7 @@ Side Quest:
   <a href="https://linkedin.com/in/rusdieneri/">
     <img src="https://img.shields.io/badge/LinkedIn-Professional%20Profile-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="mailto:EMAIL@nuruddinrusydiilham@gmail.com">
+  <a href="mailto:nuruddinrusydiilham@gmail.com">
     <img src="https://img.shields.io/badge/Email-Hire%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
   <a href="https://wa.me/6281233649676">
