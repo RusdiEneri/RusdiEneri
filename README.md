@@ -1,13 +1,11 @@
 <div align="center">
 
-<!-- Typing SVG - auto cycles through taglines -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1500&color=00FFAA&center=true&vCenter=true&width=600&lines=Hi+%F0%9F%91%8B%2C+I'm+Rusdi+Eneri;System+%26+Infrastructure+Enthusiast;Building+Efficient+Systems;Networking+Explorer;Automation+Driven;Linux+Enthusiast;Always+Learning)](https://github.com/RusdiEneri)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1500&color=00FFAA&center=true&vCenter=true&width=600&lines=Hi+%F0%9F%91%8B%2C+I%27m+Rusdi+Eneri;System+%26+Infrastructure+Enthusiast;Building+Efficient+Systems;Networking+Explorer;Automation+Driven;Linux+Enthusiast;Always+Learning)](https://github.com/RusdiEneri)
 
-<!-- Visitor counter - real-time from komarev -->
+<br/>
+
 ![Profile Views](https://komarev.com/ghpvc/?username=RusdiEneri&style=flat-square&color=00FFAA&label=Profile+Views)
-<!-- Followers - live from shields.io GitHub API -->
 ![GitHub followers](https://img.shields.io/github/followers/RusdiEneri?style=flat-square&color=00FFAA&label=Followers&logo=github)
-<!-- Stars across all repos - live -->
 ![GitHub User's stars](https://img.shields.io/github/stars/RusdiEneri?style=flat-square&color=00FFAA&label=Total+Stars&logo=github)
 
 </div>
@@ -19,8 +17,10 @@
 ```
 rusdi@lab:~$ whoami
 
-Name     : Rusdi Eneri
+Name     : Nuruddin Rusydi Ilham
+Alias    : RusdiEneri
 Role     : System & Infrastructure Enthusiast
+Location : Surabaya, Indonesia
 
 Focus    :
   ├── System Optimization
@@ -31,10 +31,10 @@ Environment:
   OS     : Linux (Debian-based)
 
 Stack    :
-  ├── Bash
-  ├── Docker
-  ├── Nginx
-  └── Node.js
+  ├── Bash       — automation, scripting
+  ├── Docker     — containerization
+  ├── Nginx      — reverse proxy, web server
+  └── Node.js    — backend & tooling
 
 Interests:
   ├── DNS Filtering
@@ -52,29 +52,31 @@ Philosophy:
 
 ## ⚙️ Tech Stack
 
-### 🖥 System & DevOps
-[![Linux](https://skillicons.dev/icons?i=linux,bash,docker,nginx&perline=6)](https://skillicons.dev)
+<div align="center">
 
-### 💻 Backend
-[![Backend](https://skillicons.dev/icons?i=nodejs,js&perline=6)](https://skillicons.dev)
+**System & DevOps**
 
-### 🔧 Tools
-[![Tools](https://skillicons.dev/icons?i=git,github,vim&perline=6)](https://skillicons.dev)
+[![Stack](https://skillicons.dev/icons?i=linux,bash,docker,nginx&perline=8)](https://skillicons.dev)
+
+**Backend & Tools**
+
+[![Tools](https://skillicons.dev/icons?i=nodejs,js,git,github,vim&perline=8)](https://skillicons.dev)
+
+</div>
 
 ---
 
 ## 📊 GitHub Stats
 
-<!-- Stats card - pulls live from GitHub API via anuraghazra's service -->
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=RusdiEneri&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github)
+<img src="https://github-readme-stats.vercel.app/api?username=RusdiEneri&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github&card_width=495" alt="GitHub Stats" />
 
-<!-- Top Languages - live language breakdown from GitHub API -->
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=RusdiEneri&layout=compact&theme=tokyonight&hide_border=true&langs_count=8)
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RusdiEneri&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=495" alt="Top Languages" />
 
-<!-- GitHub Trophies - auto-fetched from GitHub stats -->
-[![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=RusdiEneri&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+<br/>
+
+[![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=RusdiEneri&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=6&margin-w=4)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
 
@@ -84,28 +86,25 @@ Philosophy:
 
 <div align="center">
 
-<!-- Streak stats - live daily from GitHub contributions API -->
-[![GitHub Streak](https://streak-stats.demolab.com?user=RusdiEneri&theme=dark&hide_border=true)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com?user=RusdiEneri&theme=dark&hide_border=true&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
 
-<!-- Contribution graph - auto-generated, updates on every push -->
-[![Rusdi's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=RusdiEneri&theme=tokyo-night&hide_border=true&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=RusdiEneri&theme=tokyo-night&hide_border=true&area=true&custom_title=Rusdi%27s%20Contribution%20Graph)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 </div>
 
 ---
 
-## 🚀 Infrastructure Playground
+## 🚀 Projects
 
-> Some experiments and tools while exploring systems and networking.
+> Experiments and tools built while exploring systems and networking.
 
-<!-- Pinned repo cards - live from GitHub API, shows stars/forks/languages automatically -->
 <div align="center">
 
-[![xshot](https://github-readme-stats.vercel.app/api/pin/?username=RusdiEneri&repo=xshot&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/xshot)
 [![blacklist-hosts](https://github-readme-stats.vercel.app/api/pin/?username=RusdiEneri&repo=blacklist-hosts&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/blacklist-hosts)
-
 [![mlab-speedtest](https://github-readme-stats.vercel.app/api/pin/?username=RusdiEneri&repo=mlab-speedtest&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/mlab-speedtest)
-[![github-readme-stats](https://github-readme-stats.vercel.app/api/pin/?username=RusdiEneri&repo=github-readme-stats&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/github-readme-stats)
+
+[![toolz](https://github-readme-stats.vercel.app/api/pin/?username=RusdiEneri&repo=toolz&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/toolz)
+[![RusdiEneri](https://github-readme-stats.vercel.app/api/pin/?username=RusdiEneri&repo=RusdiEneri&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/RusdiEneri)
 
 </div>
 
@@ -113,7 +112,6 @@ Philosophy:
 
 ## 🐍 Contribution Snake
 
-<!-- Snake animation - auto-generated by GitHub Actions workflow (output branch) -->
 <div align="center">
 
 ![Snake animation](https://raw.githubusercontent.com/RusdiEneri/RusdiEneri/output/snake.svg)
@@ -124,7 +122,6 @@ Philosophy:
 
 ## 📈 GitHub Metrics
 
-<!-- Full metrics SVG - auto-generated by lowlighter/metrics GitHub Action -->
 <div align="center">
 
 ![GitHub Metrics](./github-metrics.svg)
@@ -133,11 +130,10 @@ Philosophy:
 
 ---
 
-<!-- Last Updated badge - auto-refreshes from shields.io endpoint -->
 <div align="center">
 
-![Last Updated](https://img.shields.io/badge/Last%20Updated-Auto%20by%20GitHub%20Actions-00FFAA?style=flat-square&logo=github-actions)
+![Auto Updated](https://img.shields.io/badge/Auto--Updated%20by-GitHub%20Actions-00FFAA?style=flat-square&logo=github-actions&logoColor=white)
 
-*Stats auto-update via GitHub Actions & live API badges — no manual edits needed.*
+*Stats are live — powered by GitHub API badges & Actions workflows. No manual edits needed.*
 
 </div>
