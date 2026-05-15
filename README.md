@@ -149,11 +149,7 @@ Philosophy:
 
 ## 📈 GitHub Metrics
 
-<div align="center">
-
-![Metrics](./github-metrics.svg)
-
-</div>
+<img src="./github-metrics.svg" alt="GitHub Metrics" width="100%" />
 
 ---
 
