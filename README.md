@@ -211,7 +211,7 @@ Side Quest:
 </p>
 
 <p>
-  <a href="https://example.com">
+  <a href="https://rusdieneri.github.io/LearnCSS_4A_0055/">
     <img src="https://img.shields.io/badge/Portfolio-View%20Projects-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
   </a>
   <a href="https://t.me/elmanuk_69">
