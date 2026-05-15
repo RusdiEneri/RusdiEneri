@@ -70,9 +70,15 @@ Philosophy:
 
 <div align="center">
 
-<img src="https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api?username=RusdiEneri&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github&card_width=495" alt="GitHub Stats" />
+<!--
+  CATATAN: Kedua card ini butuh instance github-readme-stats milik sendiri supaya 100% stabil.
+  Lo udah punya fork-nya (RusdiEneri/github-readme-stats).
+  Deploy ke Vercel → set PAT_1 = GitHub token → ganti URL di bawah ke domain lo sendiri.
+  Selama masih pakai instance publik, bisa intermittent kena rate limit.
+-->
 
-<img src="https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api/top-langs/?username=RusdiEneri&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=495" alt="Top Languages" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=RusdiEneri&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RusdiEneri&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
 
 <br/>
 
@@ -98,15 +104,50 @@ Philosophy:
 
 > Experiments and tools built while exploring systems and networking.
 
-<div align="center">
+<!-- Project cards pakai shields.io (bersumber GitHub API, no rate limit issue) -->
 
-[![blacklist-hosts](https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api/pin/?username=RusdiEneri&repo=blacklist-hosts&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/blacklist-hosts)
-[![mlab-speedtest](https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api/pin/?username=RusdiEneri&repo=mlab-speedtest&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/mlab-speedtest)
-
-[![toolz](https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api/pin/?username=RusdiEneri&repo=toolz&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/toolz)
-[![RusdiEneri](https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api/pin/?username=RusdiEneri&repo=RusdiEneri&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/RusdiEneri)
-
-</div>
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <a href="https://github.com/RusdiEneri/blacklist-hosts">
+        <b>🚫 blacklist-hosts</b>
+      </a><br/>
+      <sub>DNS filtering hostlist — block specific domains</sub><br/><br/>
+      <img src="https://img.shields.io/github/stars/RusdiEneri/blacklist-hosts?style=flat-square&color=00FFAA&logo=github" />
+      <img src="https://img.shields.io/github/forks/RusdiEneri/blacklist-hosts?style=flat-square&color=gray&logo=github" />
+      <img src="https://img.shields.io/github/last-commit/RusdiEneri/blacklist-hosts?style=flat-square&color=blue" />
+    </td>
+    <td align="center" width="50%">
+      <a href="https://github.com/RusdiEneri/mlab-speedtest">
+        <b>⚡ mlab-speedtest</b>
+      </a><br/>
+      <sub>Web speedtest deployment — speed.measurementlab.net</sub><br/><br/>
+      <img src="https://img.shields.io/github/stars/RusdiEneri/mlab-speedtest?style=flat-square&color=00FFAA&logo=github" />
+      <img src="https://img.shields.io/github/forks/RusdiEneri/mlab-speedtest?style=flat-square&color=gray&logo=github" />
+      <img src="https://img.shields.io/github/last-commit/RusdiEneri/mlab-speedtest?style=flat-square&color=blue" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <a href="https://github.com/RusdiEneri/toolz">
+        <b>🧰 toolz</b>
+      </a><br/>
+      <sub>Website to test and verify ad-blockers &amp; DNS filters</sub><br/><br/>
+      <img src="https://img.shields.io/github/stars/RusdiEneri/toolz?style=flat-square&color=00FFAA&logo=github" />
+      <img src="https://img.shields.io/github/forks/RusdiEneri/toolz?style=flat-square&color=gray&logo=github" />
+      <img src="https://img.shields.io/github/last-commit/RusdiEneri/toolz?style=flat-square&color=blue" />
+    </td>
+    <td align="center" width="50%">
+      <a href="https://github.com/RusdiEneri/RusdiEneri">
+        <b>👤 Profile README</b>
+      </a><br/>
+      <sub>This profile — automated stats &amp; metrics via GitHub Actions</sub><br/><br/>
+      <img src="https://img.shields.io/github/stars/RusdiEneri/RusdiEneri?style=flat-square&color=00FFAA&logo=github" />
+      <img src="https://img.shields.io/github/commit-activity/m/RusdiEneri/RusdiEneri?style=flat-square&color=blue" />
+      <img src="https://img.shields.io/github/last-commit/RusdiEneri/RusdiEneri?style=flat-square&color=blue" />
+    </td>
+  </tr>
+</table>
 
 ---
 
