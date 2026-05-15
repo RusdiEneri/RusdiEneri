@@ -1,51 +1,51 @@
-<h1 align="center">Hi 👋, I'm Rusdi Eneri</h1>
-<h3 align="center">System Optimization • Networking • Automation</h3>
+<div align="center">
 
-<p align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1500&color=00FFAA&center=true&vCenter=true&width=520&lines=Building+Efficient+Systems;Networking+Explorer;Automation+Driven;Linux+Enthusiast;Always+Learning"/>
-</p>
+<!-- Typing SVG - auto cycles through taglines -->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1500&color=00FFAA&center=true&vCenter=true&width=600&lines=Hi+%F0%9F%91%8B%2C+I'm+Rusdi+Eneri;System+%26+Infrastructure+Enthusiast;Building+Efficient+Systems;Networking+Explorer;Automation+Driven;Linux+Enthusiast;Always+Learning)](https://github.com/RusdiEneri)
 
-<p align="center">
-<img src="https://img.shields.io/badge/Linux-Advanced-black?logo=linux"/>
-<img src="https://img.shields.io/badge/Docker-Container-blue?logo=docker"/>
-<img src="https://img.shields.io/badge/Networking-Learning-green"/>
-<img src="https://img.shields.io/badge/Automation-Bash-orange"/>
-</p>
+<!-- Visitor counter - real-time from komarev -->
+![Profile Views](https://komarev.com/ghpvc/?username=RusdiEneri&style=flat-square&color=00FFAA&label=Profile+Views)
+<!-- Followers - live from shields.io GitHub API -->
+![GitHub followers](https://img.shields.io/github/followers/RusdiEneri?style=flat-square&color=00FFAA&label=Followers&logo=github)
+<!-- Stars across all repos - live -->
+![GitHub User's stars](https://img.shields.io/github/stars/RusdiEneri?style=flat-square&color=00FFAA&label=Total+Stars&logo=github)
+
+</div>
 
 ---
 
 ## 🧠 About Me
 
-```bash
+```
 rusdi@lab:~$ whoami
 
-Name: Rusdi Eneri
-Role: System & Infrastructure Enthusiast
+Name     : Rusdi Eneri
+Role     : System & Infrastructure Enthusiast
 
-Focus:
-  - System Optimization
-  - Networking
-  - Automation
+Focus    :
+  ├── System Optimization
+  ├── Networking
+  └── Automation
 
 Environment:
-  OS: Linux (Debian based)
+  OS     : Linux (Debian-based)
 
-Stack:
-  - Bash
-  - Docker
-  - Nginx
-  - NodeJS
+Stack    :
+  ├── Bash
+  ├── Docker
+  ├── Nginx
+  └── Node.js
 
 Interests:
-  - DNS Filtering
-  - Infrastructure Experiments
-  - Lightweight Systems
-  - Automation Tools
+  ├── DNS Filtering
+  ├── Infrastructure Experiments
+  ├── Lightweight Systems
+  └── Automation Tools
 
 Philosophy:
-  - Efficiency over complexity
-  - Automation over repetition
-  - Practical solutions over theory
+  ├── Efficiency over complexity
+  ├── Automation over repetition
+  └── Practical solutions over theory
 ```
 
 ---
@@ -53,62 +53,91 @@ Philosophy:
 ## ⚙️ Tech Stack
 
 ### 🖥 System & DevOps
-<p align="center">
-<img src="https://skillicons.dev/icons?i=linux,bash,docker,nginx&perline=6"/>
-</p>
+[![Linux](https://skillicons.dev/icons?i=linux,bash,docker,nginx&perline=6)](https://skillicons.dev)
 
 ### 💻 Backend
-<p align="center">
-<img src="https://skillicons.dev/icons?i=nodejs,js&perline=6"/>
-</p>
+[![Backend](https://skillicons.dev/icons?i=nodejs,js&perline=6)](https://skillicons.dev)
 
 ### 🔧 Tools
-<p align="center">
-<img src="https://skillicons.dev/icons?i=git,github&perline=6"/>
-</p>
-
----
-
-## 🚀 Infrastructure Playground
-
-Some experiments and tools while exploring systems and networking.
-
-| Project | Description |
-|-------|-------------|
-| xshot | Automatic screenshot beautifier |
-| blacklist-hosts | DNS filtering hostlist |
-| mlab-speedtest | Web speedtest deployment |
-| github-readme-stats | Self-hosted GitHub stats API |
+[![Tools](https://skillicons.dev/icons?i=git,github,vim&perline=6)](https://skillicons.dev)
 
 ---
 
 ## 📊 GitHub Stats
 
-<p align="center">
-<img src="https://github-readme-stats-six-psi-94.vercel.app/api?username=RusdiEneri&show_icons=true&theme=tokyonight&hide_border=true"/>
-<img src="https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiEneri&layout=compact&theme=tokyonight&hide_border=true"/>
-</p>
+<!-- Stats card - pulls live from GitHub API via anuraghazra's service -->
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=RusdiEneri&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github)
+
+<!-- Top Languages - live language breakdown from GitHub API -->
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=RusdiEneri&layout=compact&theme=tokyonight&hide_border=true&langs_count=8)
+
+<!-- GitHub Trophies - auto-fetched from GitHub stats -->
+[![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=RusdiEneri&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+
+</div>
 
 ---
 
 ## 🔥 Contribution Activity
 
-<p align="center">
-<img src="https://streak-stats.demolab.com?user=RusdiEneri&theme=dark&hide_border=true"/>
-</p>
+<div align="center">
 
-<p align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RusdiEneri&theme=github_dark"/>
-</p>
+<!-- Streak stats - live daily from GitHub contributions API -->
+[![GitHub Streak](https://streak-stats.demolab.com?user=RusdiEneri&theme=dark&hide_border=true)](https://git.io/streak-stats)
+
+<!-- Contribution graph - auto-generated, updates on every push -->
+[![Rusdi's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=RusdiEneri&theme=tokyo-night&hide_border=true&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+</div>
 
 ---
 
-## 👀 Profile Views
+## 🚀 Infrastructure Playground
 
-<p align="center">
-<img src="https://count.getloli.com/@RusdiEneri?name=RusdiEneri&theme=rule34"/>
-</p>
+> Some experiments and tools while exploring systems and networking.
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/RusdiEneri/RusdiEneri/output/snake.svg"/>
-</p>
+<!-- Pinned repo cards - live from GitHub API, shows stars/forks/languages automatically -->
+<div align="center">
+
+[![xshot](https://github-readme-stats.vercel.app/api/pin/?username=RusdiEneri&repo=xshot&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/xshot)
+[![blacklist-hosts](https://github-readme-stats.vercel.app/api/pin/?username=RusdiEneri&repo=blacklist-hosts&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/blacklist-hosts)
+
+[![mlab-speedtest](https://github-readme-stats.vercel.app/api/pin/?username=RusdiEneri&repo=mlab-speedtest&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/mlab-speedtest)
+[![github-readme-stats](https://github-readme-stats.vercel.app/api/pin/?username=RusdiEneri&repo=github-readme-stats&theme=tokyonight&hide_border=true)](https://github.com/RusdiEneri/github-readme-stats)
+
+</div>
+
+---
+
+## 🐍 Contribution Snake
+
+<!-- Snake animation - auto-generated by GitHub Actions workflow (output branch) -->
+<div align="center">
+
+![Snake animation](https://raw.githubusercontent.com/RusdiEneri/RusdiEneri/output/snake.svg)
+
+</div>
+
+---
+
+## 📈 GitHub Metrics
+
+<!-- Full metrics SVG - auto-generated by lowlighter/metrics GitHub Action -->
+<div align="center">
+
+![GitHub Metrics](./github-metrics.svg)
+
+</div>
+
+---
+
+<!-- Last Updated badge - auto-refreshes from shields.io endpoint -->
+<div align="center">
+
+![Last Updated](https://img.shields.io/badge/Last%20Updated-Auto%20by%20GitHub%20Actions-00FFAA?style=flat-square&logo=github-actions)
+
+*Stats auto-update via GitHub Actions & live API badges — no manual edits needed.*
+
+</div>
