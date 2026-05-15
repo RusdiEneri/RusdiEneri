@@ -77,8 +77,8 @@ Philosophy:
   Selama masih pakai instance publik, bisa intermittent kena rate limit.
 -->
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=RusdiEneri&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RusdiEneri&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
+<img height="180em" src="https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api?username=RusdiEneri&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github" />
+<img height="180em" src="https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api/top-langs/?username=RusdiEneri&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
 
 <br/>
 
