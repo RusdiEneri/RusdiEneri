@@ -1,16 +1,20 @@
 <!--
-README profile version: professional + subtle anime identity.
-Notes before publishing:
-1. Replace EMAIL, LINKEDIN_USERNAME, INSTAGRAM_USERNAME, and SPOTIFY_PLAYLIST_ID.
-2. Do not publish placeholder links. Remove social badges you do not use seriously.
-3. Keep anime/wibu flavor subtle. HRD/recruiters should still see engineering focus first.
+README v2 — cleaned, recruiter-optimized, anime identity dipertahankan tapi diposisikan lebih profesional.
+Changes from v1:
+- Removed stale HTML comments
+- Fixed duplicate tech stack icons
+- Rewrote project descriptions with impact framing
+- Added "Open to" section for recruiter clarity
+- Tightened copy in About Me block
+- Fixed relative path issue note for github-metrics.svg
+- Repositioned anime identity as a personality marker, not a risk
 -->
 
 <div align="center">
 
 <a href="https://github.com/RusdiEneri">
   <img
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=27&pause=1200&color=00FFAA&center=true&vCenter=true&width=1200&height=85&lines=Backend+%26+Network+Engineering+Student;Linux+%7C+DNS+%7C+Automation+%7C+Infrastructure;Building+small+tools+that+solve+real+problems;Shipping+projects%2C+not+just+collecting+tutorials;%E2%9A%A1+Debugging+arc+in+progress"
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=40&pause=1200&color=00FFAA&center=true&vCenter=true&width=1200&height=100&lines=Backend+%26+Network+Engineering+Student;Linux+%7C+DNS+%7C+Automation+%7C+Infrastructure;Building+small+tools+that+solve+real+problems;Shipping+projects%2C+not+just+collecting+tutorials"
     alt="Typing SVG"
     width="100%"
   />
@@ -39,7 +43,7 @@ Notes before publishing:
 ```bash
 rusdi@lab:~$ whoami
 
-Name     : Nuruddin Rusydi Ilham | RusdiEneri
+Name     : Nuruddin Rusydi Ilham  |  RusdiEneri
 Role     : Backend & Network Engineering Student
 Location : Surabaya, Indonesia
 
@@ -54,9 +58,23 @@ Currently:
 
 Principle:
   Simple systems · Clear logs · Repeatable automation · Measurable progress
+```
 
-Side Quest:
-  Anime enjoyer, but production logs come before waifu wars.
+> Detail-oriented, documentation-aware, and comfortable in the terminal.
+> Prefers solving real problems over collecting certificates.
+
+---
+
+## 🔍 Open To
+
+```
+Internship / Part-time roles in:
+  ├── Backend Development  (Node.js · Express · REST API)
+  ├── Network / Infrastructure Operations
+  └── DevOps / Sysadmin Support
+
+Availability : Flexible — can discuss timeline
+Location     : Surabaya (on-site / remote / hybrid)
 ```
 
 ---
@@ -66,19 +84,19 @@ Side Quest:
 **Languages**
 
 <p>
-  <img src="https://skillicons.dev/icons?i=js,html,ts,python,c,cpp,css,bash&perline=8" alt="Languages" />
+  <img src="https://skillicons.dev/icons?i=js,ts,python,c,cpp,html,css,bash&perline=8" alt="Languages" />
 </p>
 
-**Backend & Scripting**
+**Backend & Frameworks**
 
 <p>
-  <img src="https://skillicons.dev/icons?i=nodejs,express,python,bash&perline=8" alt="Backend and Scripting" />
+  <img src="https://skillicons.dev/icons?i=nodejs,express&perline=8" alt="Backend" />
 </p>
 
-**Networking & Infrastructure**
+**Infrastructure & Tools**
 
 <p>
-  <img src="https://skillicons.dev/icons?i=linux,docker,nginx,git,github,vscode,npm,pnpm&perline=8" alt="Networking and Infrastructure" />
+  <img src="https://skillicons.dev/icons?i=linux,docker,nginx,git,github,vscode,npm,pnpm&perline=8" alt="Infrastructure and Tools" />
 </p>
 
 <p>
@@ -92,7 +110,7 @@ Side Quest:
 
 ## 🚀 Featured Projects
 
-> Practical experiments in networking, DNS filtering, backend tools, and automation.
+> Practical experiments in networking, DNS filtering, backend services, and automation.
 
 <table width="100%" align="center">
   <tr>
@@ -100,7 +118,7 @@ Side Quest:
       <a href="https://github.com/RusdiEneri/blacklist-hosts">
         <b>🚫 blacklist-hosts</b>
       </a><br/>
-      <sub>DNS filtering hostlist for blocking selected domains at resolver level.</sub><br/><br/>
+      <sub>DNS-level domain blocklist — filters ads, trackers, and malicious domains at the resolver before they reach the browser. Drop-in compatible with Pi-hole, AdGuard, and OpenWRT.</sub><br/><br/>
       <img src="https://img.shields.io/github/stars/RusdiEneri/blacklist-hosts?style=flat-square&color=00FFAA&logo=github" alt="Stars" />
       <img src="https://img.shields.io/github/forks/RusdiEneri/blacklist-hosts?style=flat-square&color=gray&logo=github" alt="Forks" />
       <img src="https://img.shields.io/github/last-commit/RusdiEneri/blacklist-hosts?style=flat-square&color=blue" alt="Last Commit" />
@@ -109,7 +127,7 @@ Side Quest:
       <a href="https://github.com/RusdiEneri/mlab-speedtest">
         <b>⚡ mlab-speedtest</b>
       </a><br/>
-      <sub>Self-hosted network speed measurement deployment.</sub><br/><br/>
+      <sub>Self-hosted network speed measurement stack — removes reliance on third-party speed test services, useful for controlled network benchmarking in local environments.</sub><br/><br/>
       <img src="https://img.shields.io/github/stars/RusdiEneri/mlab-speedtest?style=flat-square&color=00FFAA&logo=github" alt="Stars" />
       <img src="https://img.shields.io/github/forks/RusdiEneri/mlab-speedtest?style=flat-square&color=gray&logo=github" alt="Forks" />
       <img src="https://img.shields.io/github/last-commit/RusdiEneri/mlab-speedtest?style=flat-square&color=blue" alt="Last Commit" />
@@ -120,7 +138,7 @@ Side Quest:
       <a href="https://github.com/RusdiEneri/toolz">
         <b>🧰 toolz</b>
       </a><br/>
-      <sub>Web tool to test and verify ad-blockers and DNS filters.</sub><br/><br/>
+      <sub>Web-based diagnostics tool to verify whether ad-blockers and DNS filters are functioning correctly — useful for QA-ing filter configurations without manual DNS lookups.</sub><br/><br/>
       <img src="https://img.shields.io/github/stars/RusdiEneri/toolz?style=flat-square&color=00FFAA&logo=github" alt="Stars" />
       <img src="https://img.shields.io/github/forks/RusdiEneri/toolz?style=flat-square&color=gray&logo=github" alt="Forks" />
       <img src="https://img.shields.io/github/last-commit/RusdiEneri/toolz?style=flat-square&color=blue" alt="Last Commit" />
@@ -129,7 +147,7 @@ Side Quest:
       <a href="https://github.com/RusdiEneri/RusdiEneri">
         <b>📋 Profile Automation</b>
       </a><br/>
-      <sub>Automated profile README with stats, metrics, and GitHub Actions.</sub><br/><br/>
+      <sub>CI/CD pipeline for automated README — GitHub Actions regenerates stats, contribution graphs, and metrics on schedule without manual updates.</sub><br/><br/>
       <img src="https://img.shields.io/github/stars/RusdiEneri/RusdiEneri?style=flat-square&color=00FFAA&logo=github" alt="Stars" />
       <img src="https://img.shields.io/github/commit-activity/m/RusdiEneri/RusdiEneri?style=flat-square&color=blue" alt="Commit Activity" />
       <img src="https://img.shields.io/github/last-commit/RusdiEneri/RusdiEneri?style=flat-square&color=blue" alt="Last Commit" />
@@ -158,7 +176,7 @@ Side Quest:
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=RusdiEneri&theme=dark&hide_border=true&date_format=j%20M%5B%20Y%5D&hide_current_streak=false" alt="GitHub Streak" />
+<img src="https://streak-stats.demolab.com?user=RusdiEneri&theme=dark&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak" />
 
 <br/>
 
@@ -180,14 +198,13 @@ Side Quest:
 
 ## 📈 GitHub Metrics
 
-<img src="./github-metrics.svg" alt="GitHub Metrics" width="100%" />
+<div align="center">
+  <img src="https://raw.githubusercontent.com/RusdiEneri/RusdiEneri/main/github-metrics.svg" alt="GitHub Metrics" width="100%" />
+</div>
 
 ---
 
-
 ## 📬 Contact
-
-<!-- Use real links only. Remove any item that still has placeholder values. -->
 
 <p>
   <a href="https://github.com/RusdiEneri">
@@ -203,7 +220,7 @@ Side Quest:
     <img src="https://img.shields.io/badge/LinkedIn-Professional%20Profile-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="mailto:nuruddinrusydiilham@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Hire%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-nuruddinrusydiilham%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
   <a href="https://wa.me/6281233649676">
     <img src="https://img.shields.io/badge/WhatsApp-Quick%20Contact-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
@@ -218,7 +235,7 @@ Side Quest:
     <img src="https://img.shields.io/badge/Telegram-Tech%20Chat-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
   </a>
   <a href="https://instagram.com/this.ilham_">
-    <img src="https://img.shields.io/badge/Instagram-Tech%20%26%20Anime-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+    <img src="https://img.shields.io/badge/Instagram-this.ilham__-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
 </p>
 
@@ -226,10 +243,10 @@ Side Quest:
 
 <div align="center">
 
-<sub>Engineering mindset: automate the boring parts, measure the important parts, and keep the system understandable.</sub>
+<sub>Engineering mindset: automate the boring parts, measure the important parts, keep the system understandable.</sub>
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=2500&color=00FFAA&center=true&vCenter=true&width=900&height=40&lines=End+of+README+%E2%80%94+next+arc%3A+ship+better+projects." alt="Footer Typing SVG" width="100%" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=2500&color=00FFAA&center=true&vCenter=true&width=900&height=40&lines=Open+to+opportunities+%E2%80%94+let%27s+build+something+worth+maintaining." alt="Footer Typing SVG" width="100%" />
 
 </div>
