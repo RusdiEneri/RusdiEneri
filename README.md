@@ -1,15 +1,3 @@
-<!--
-README v2 — cleaned, recruiter-optimized, anime identity dipertahankan tapi diposisikan lebih profesional.
-Changes from v1:
-- Removed stale HTML comments
-- Fixed duplicate tech stack icons
-- Rewrote project descriptions with impact framing
-- Added "Open to" section for recruiter clarity
-- Tightened copy in About Me block
-- Fixed relative path issue note for github-metrics.svg
-- Repositioned anime identity as a personality marker, not a risk
--->
-
 <div align="center">
 
 <a href="https://github.com/RusdiEneri">
