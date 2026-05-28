@@ -172,7 +172,7 @@ Location     : Surabaya (on-site / remote / hybrid)
 
 ---
 
-## 🔥 Contribution Activity
+<!-- ## 🔥 Contribution Activity
 
 <div align="center">
 
@@ -203,6 +203,7 @@ Location     : Surabaya (on-site / remote / hybrid)
 </div>
 
 ---
+-->
 
 ## 📬 Contact
 
@@ -238,15 +239,3 @@ Location     : Surabaya (on-site / remote / hybrid)
     <img src="https://img.shields.io/badge/Instagram-this.ilham__-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
 </p>
-
----
-
-<div align="center">
-
-<sub>Engineering mindset: automate the boring parts, measure the important parts, keep the system understandable.</sub>
-
-<br/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=2500&color=00FFAA&center=true&vCenter=true&width=900&height=40&lines=Open+to+opportunities+%E2%80%94+let%27s+build+something+worth+maintaining." alt="Footer Typing SVG" width="100%" />
-
-</div>
