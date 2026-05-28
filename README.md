@@ -166,7 +166,9 @@ Location     : Surabaya (on-site / remote / hybrid)
 
 <br/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=RusdiEneri&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=6&margin-w=4" alt="GitHub Trophies" />
+<!--<img src="https://github-profile-trophy.vercel.app/?username=RusdiEneri&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=6&margin-w=4" alt="GitHub Trophies" />-->
+
+<img src="https://github-profile-trophy-eight-zeta.vercel.app/?username=RusdiEneri&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=6&margin-w=4" alt="GitHub Trophies" />
 
 </div>
 
