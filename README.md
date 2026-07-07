@@ -27,7 +27,7 @@ I am a **Backend & Network Engineering Student** passionate about Linux infrastr
   <tr>
     <td valign="top">
       <!-- Ganti USERNAME dengan username GitHub kamu -->
-      <img align="center" src="https://github-readme-stats.vercel.app/api?username=RusdiEneri&theme=radical&hide_border=true&include_all_commits=true&count_private=true" alt="Stats" />
+      <img align="center" src="https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api?username=RusdiEneri&theme=radical&hide_border=true&include_all_commits=true&count_private=true" alt="Stats" />
     </td>
     <td valign="top">
       <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=RusdiEneri&theme=radical&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="Streak" />
