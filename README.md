@@ -50,8 +50,9 @@ I am a **Backend & Network Engineering Student** passionate about Linux infrastr
 
 <!-- Bagian ini akan otomatis diisi oleh workflow snake.yml kamu -->
 <p align="center">
-  <img src="https://github.com/RusdiEneri/RusdiEneri/blob/main/snake.svg" alt="Snake Animation" />
+  <img src="https://raw.githubusercontent.com/RusdiEneri/RusdiEneri/output/snake.svg" alt="Snake Animation" />
 </p>
+
 
 ---
 
