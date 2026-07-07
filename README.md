@@ -1,104 +1,70 @@
-<div align="center">
+# Hi there, I'm Rusdi! 👋
 
-# Hi, I'm Rusdi 👋
+> *"Building small tools for real problems."*
 
-### Backend & Network Engineering Student
-
-**Linux · DNS · Automation · Infrastructure**
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00FFAA&center=true&vCenter=true&width=720&lines=Building+small+tools+for+real+problems;Backend+%26+Network+Engineering;Linux+%7C+DNS+%7C+Automation" alt="Typing SVG" />
-
-<br/>
-
-<img src="https://komarev.com/ghpvc/?username=RusdiEneri&style=for-the-badge&color=000000&label=Views" alt="Profile Views" />
-
-</div>
+I am a **Backend & Network Engineering Student** passionate about Linux infrastructure, DNS filtering, and automation. I love digging into packets with Wireshark and configuring firewalls with iptables.
 
 ---
 
-## About Me
+### 🛠️ Tech Stack & Tools
 
-```bash
-name      = "Nuruddin Rusydi Ilham"
-username  = "RusdiEneri"
-location  = "Surabaya, Indonesia"
-focus     = ["Backend", "Networking", "Linux", "Automation"]
-principle = "Simple systems. Clear logs. Repeatable automation."
-```
-
-I build practical tools around **DNS filtering, network diagnostics, backend services, and sysadmin automation**.
-
-Currently improving through real projects, not just tutorials.
-
----
-
-## Open To
-
-- Backend Development internship / part-time
-- Network or Infrastructure Operations
-- DevOps / Sysadmin Support
-- Remote, hybrid, or Surabaya-based opportunities
-
----
-
-## Tech Stack
-
-<p>
-  <img src="https://skillicons.dev/icons?i=js,ts,python,c,cpp,bash,nodejs,express,linux,docker,nginx,git,github,vscode&perline=7" alt="Tech Stack" />
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=js,ts,python,c,cpp,bash,nodejs,express,linux,docker,nginx,git,github,vscode&perline=10" />
 </p>
 
-<p>
-  <img src="https://img.shields.io/badge/DNS%20Filtering-00FFAA?style=for-the-badge&logo=cloudflare&logoColor=black" alt="DNS Filtering" />
-  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
-  <img src="https://img.shields.io/badge/iptables-Firewall-555555?style=for-the-badge&logo=linux&logoColor=white" alt="iptables" />
-  <img src="https://img.shields.io/badge/OpenWRT-00B2A9?style=for-the-badge&logo=openwrt&logoColor=white" alt="OpenWRT" />
+<p align="center">
+  <img src="https://img.shields.io/badge/DNS%20Filtering-00FFAA?style=for-the-badge&logo=cloudflare&logoColor=black" />
+  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" />
+  <img src="https://img.shields.io/badge/iptables-Firewall-555555?style=for-the-badge&logo=linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenWRT-00B2A9?style=for-the-badge&logo=openwrt&logoColor=white" />
 </p>
 
 ---
 
-## Featured Projects
+### ⚡ GitHub Stats & Activity
 
-| Project | Focus | Why it matters |
-|---|---|---|
-| [**blacklist-hosts**](https://github.com/RusdiEneri/blacklist-hosts) | DNS Filtering | Blocks ads, trackers, and malicious domains at resolver level. Compatible with Pi-hole, AdGuard, and OpenWRT. |
-| [**mlab-speedtest**](https://github.com/RusdiEneri/mlab-speedtest) | Network Benchmarking | Self-hosted speed measurement stack for controlled local testing without relying fully on third-party services. |
-| [**toolz**](https://github.com/RusdiEneri/toolz) | Diagnostics | Web-based checker for verifying whether ad-blockers and DNS filters are working correctly. |
-| [**Profile Automation**](https://github.com/RusdiEneri/RusdiEneri) | GitHub Actions | Automated README workflow for keeping profile visuals and metrics updated. |
-
----
-
-## GitHub Stats
-
-<div align="center">
-
-<img height="170" src="https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api?username=RusdiEneri&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github" alt="GitHub Stats" />
-<img height="170" src="https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api/top-langs/?username=RusdiEneri&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
-
-</div>
+<table>
+  <tr>
+    <td valign="top">
+      <!-- Ganti USERNAME dengan username GitHub kamu -->
+      <img align="center" src="https://github-readme-stats.vercel.app/api?username=RusdiEneri&theme=radical&hide_border=true&include_all_commits=true&count_private=true" alt="Stats" />
+    </td>
+    <td valign="top">
+      <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=RusdiEneri&theme=radical&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="Streak" />
+    </td>
+  </tr>
+</table>
 
 ---
 
-## Contact
+### 📊 Detailed Metrics
 
-<p>
-  <a href="https://github.com/RusdiEneri">
-    <img src="https://img.shields.io/badge/GitHub-RusdiEneri-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-  <a href="https://linkedin.com/in/rusdieneri/">
-    <img src="https://img.shields.io/badge/LinkedIn-rusdieneri-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:nuruddinrusydiilham@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://rusdieneri.github.io/LearnCSS_4A_0055/">
-    <img src="https://img.shields.io/badge/Portfolio-Projects-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-  </a>
+<!-- Bagian ini akan otomatis diisi oleh workflow metrics.yml kamu -->
+<p align="center">
+  <img src="https://github.com/RusdiEneri/RusdiEneri/blob/main/github-metrics.svg" alt="Metrics" width="100%" />
 </p>
 
 ---
 
-<div align="center">
+### 🐍 Contribution Snake
 
-**Less noise. More shipping.**
+<!-- Bagian ini akan otomatis diisi oleh workflow snake.yml kamu -->
+<p align="center">
+  <img src="https://github.com/RusdiEneri/RusdiEneri/blob/main/snake.svg" alt="Snake Animation" />
+</p>
 
-</div>
+---
+
+### 📬 Connect with Me
+
+<p align="center">
+  <a href="mailto:emailmu@domain.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://linkedin.com/in/username"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://twitter.com/username"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" /></a>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=RusdiEneri&style=flat-square&color=00FFAA" alt="Profile Views" />
+</p>
