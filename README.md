@@ -30,7 +30,7 @@ I am a **Backend & Network Engineering Student** passionate about Linux infrastr
       <img align="center" src="https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api?username=RusdiEneri&theme=radical&hide_border=true&include_all_commits=true&count_private=true" alt="Stats" />
     </td>
     <td valign="top">
-      <img align="center" src="https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/?user=RusdiEneri&theme=radical&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="Streak" />
+      <img align="center" src="https://streak-stats.demolab.com/?user=RusdiEneri&theme=tokyonight&hide_border=true" alt="Streak" />
     </td>
   </tr>
 </table>
