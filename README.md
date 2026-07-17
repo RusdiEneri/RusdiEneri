@@ -1,12 +1,25 @@
-# Hi there, I'm Rusdi! 👋
+<div align="center">
+  <!-- Header Waving Line (Tanpa Teks agar lebih elegan) -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FFAA,100:1679A7&height=120&section=header&animation=fadeIn" width="100%"/>
 
-> *"Building small tools for real problems."*
+  <!-- Animated Typing Header -->
+  <a href="https://github.com/RusdiEneri">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=00FFAA&center=true&vCenter=true&width=800&lines=Hi+there%2C+I%27m+Rusdi%21+%F0%9F%91%8B;Backend+%26+Network+Engineering+Student;Linux+Infrastructure+Enthusiast;DNS+Filtering+%26+Automation+Builder;Building+small+tools+for+real+problems." alt="Typing SVG" />
+  </a>
+</div>
 
-I am a **Backend & Network Engineering Student** passionate about Linux infrastructure, DNS filtering, and automation. I love digging into packets with Wireshark and configuring firewalls with iptables.
+<p align="center">
+  <em>"Building small tools for real problems."</em>
+</p>
 
----
+<p align="center">
+  I am a <strong>Backend & Network Engineering Student</strong> passionate about Linux infrastructure, DNS filtering, and automation. <br>
+  I love digging into packets with <strong>Wireshark</strong> and configuring firewalls with <strong>iptables</strong>.
+</p>
 
-### 🛠️ Tech Stack & Tools
+<br>
+
+## 🛠️ Tech Stack & Tools
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=js,ts,python,c,cpp,bash,nodejs,express,linux,docker,nginx,git,github,vscode&perline=10" />
@@ -19,53 +32,67 @@ I am a **Backend & Network Engineering Student** passionate about Linux infrastr
   <img src="https://img.shields.io/badge/OpenWRT-00B2A9?style=for-the-badge&logo=openwrt&logoColor=white" />
 </p>
 
----
+<br>
 
-### ⚡ GitHub Stats & Activity
+## ⚡ GitHub Stats & Activity
 
-<table>
+<table align="center">
   <tr>
-    <td valign="top">
-      <!-- Ganti USERNAME dengan username GitHub kamu -->
-      <img align="center" src="https://github-readme-stats-b3xplk1rl-killuabots-projects.vercel.app/api?username=RusdiEneri&theme=radical&hide_border=true&include_all_commits=true&count_private=true" alt="Stats" />
+    <td valign="top" width="50%">
+      <img src="https://github-readme-stats-six-psi-94.vercel.app/api?username=RusdiEneri&theme=radical&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github" alt="Stats" />
     </td>
-    <td valign="top">
-      <img align="center" src="https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=true" alt="Streak" />
+    <td valign="top" width="50%">
+      <img src="https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=true" alt="Streak" />
     </td>
   </tr>
 </table>
 
----
-
-### 📊 Detailed Metrics
-
-<!-- Bagian ini akan otomatis diisi oleh workflow metrics.yml kamu -->
 <p align="center">
-  <img src="https://github.com/RusdiEneri/RusdiEneri/blob/main/github-metrics.svg" alt="Metrics" width="100%" />
+  <img src="https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiEneri&theme=radical&hide_border=true&layout=compact&langs_count=8" alt="Top Languages" />
 </p>
 
----
-
-### 🐍 Contribution Snake
-
-<!-- Bagian ini akan otomatis diisi oleh workflow snake.yml kamu -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/RusdiEneri/RusdiEneri/output/snake.svg" alt="Snake Animation" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RusdiEneri&theme=react-dark&hide_border=true&area=true" alt="Activity Graph" width="95%" />
 </p>
 
+<br>
 
----
-
-### 📬 Connect with Me
-
-<p align="center">
-  <a href="mailto:emailmu@domain.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://linkedin.com/in/username"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="https://twitter.com/username"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" /></a>
-</p>
-
----
+## 🐍 Contribution Snake
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=RusdiEneri&style=flat-square&color=00FFAA" alt="Profile Views" />
+  <img src="https://raw.githubusercontent.com/RusdiEneri/RusdiEneri/output/snake.svg" alt="Snake Animation" width="95%" />
 </p>
+
+<br>
+
+## 🏆 GitHub Trophies
+
+<p align="center">
+  <img src="https://trophy.benkou.dev/?username=RusdiEneri&theme=radical&no-frame=true&row=1&column=7" alt="Trophies" />
+</p>
+
+<br>
+
+## 📬 Connect with Me
+
+<!-- ⚠️ PENTING: Ganti 'emailmu@domain.com' dan 'username' dengan link asli Anda -->
+<p align="center">
+  <a href="mailto:emailmu@domain.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://linkedin.com/in/username">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://twitter.com/username">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+  </a>
+</p>
+
+<br>
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=RusdiEneri&style=for-the-badge&color=00FFAA&label=PROFILE+VIEWS" alt="Profile Views" />
+</div>
+
+<!-- Footer Waving Line -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1679A7,100:00FFAA&height=100&section=footer" width="100%"/>
