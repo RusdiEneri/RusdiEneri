@@ -2,7 +2,7 @@ name: GitHub Metrics
 
 on:
   schedule:
-    - cron: "0 */6 * * *"     # tiap 6 jam (lebih aman dari rate-limit; ganti "0 * * * *" kalau mau tiap jam)
+    - cron: "0 */6 * * *"     # tiap 6 jam (lebih aman dari rate-limit)
   workflow_dispatch:
   push:
     branches: ["main"]
@@ -15,8 +15,12 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # Token scope: repo, read:user, read:org, read:packages (classic PAT)
+          # Token API (scope: repo, read:user, read:org, read:packages — classic PAT)
           token: ${{ secrets.METRICS_TOKEN }}
+
+          # ====== Identitas commit (author = kamu) ======
+          committer: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+          committer_token: ${{ secrets.GITHUB_TOKEN }}   # anti-loop; jangan ganti PAT
 
           # ====== Hardening ======
           retries: 3
