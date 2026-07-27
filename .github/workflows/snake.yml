@@ -33,7 +33,7 @@ jobs:
 
           # Identitas HARDCODE (jangan pakai github.actor — bisa jadi bot untuk schedule)
           git config user.name "RusdiEneri"
-          git config user.email "80238228+RusdiEneri@users.noreply.github.com"
+          git config user.email "nuruddinrusydiilham@gmail.com"
 
           git add dist/snake.svg
 
