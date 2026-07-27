@@ -13,12 +13,12 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    # Anti-loop: skip kalau commit pemicu adalah commit snake otomatis
+    # Anti-loop: skip kalau commit pemicu adalah commit otomatis
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}   # pakai GITHUB_TOKEN biar anti-loop
+          token: ${{ secrets.GITHUB_TOKEN }}   # GITHUB_TOKEN = anti-loop
 
       - name: Generate snake.svg
         uses: Platane/snk@v3
@@ -31,13 +31,12 @@ jobs:
         run: |
           set -euo pipefail
 
-          # Identitas author = kamu (email noreply verified)
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          # Identitas HARDCODE (jangan pakai github.actor — bisa jadi bot untuk schedule)
+          git config user.name "RusdiEneri"
+          git config user.email "80238228+RusdiEneri@users.noreply.github.com"
 
           git add dist/snake.svg
 
-          # Kalau nggak ada perubahan, jangan commit (biar run nggak error)
           if git diff --cached --quiet; then
             echo "snake.svg tidak berubah, skip commit"
             exit 0
