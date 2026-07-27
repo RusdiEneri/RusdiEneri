@@ -19,8 +19,13 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
 
           # ====== Identitas commit (author = kamu) ======
-          committer: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+          committer: "${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>"
           committer_token: ${{ secrets.GITHUB_TOKEN }}   # anti-loop; jangan ganti PAT
+
+          # ====== Output ======
+          filename: dist/github-metrics.svg              # masuk folder dist/
+          committer_branch: main
+          committer_message: "chore: update github-metrics [skip ci]"
 
           # ====== Hardening ======
           retries: 3
