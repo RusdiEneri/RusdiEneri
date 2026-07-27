@@ -17,6 +17,20 @@
   I love digging into packets with <strong>Wireshark</strong> and configuring firewalls with <strong>iptables</strong>.
 </p>
 
+<!-- QUOTE START -->
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
+  <br/>
+  <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
+  <br/><br/>
+  <i>❝ Membenci sesuatu yang kamu cintai adalah perasaan yang menyakitkan. ❞</i>
+  <br/>
+  <sub>— <b>Tetsuya Kuroko</b> · <i>Kuroko no Basket</i></sub>
+  <br/><br/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
+</div>
+<!-- QUOTE END -->
+
 <br>
 
 ## 🛠️ Tech Stack & Tools
@@ -103,16 +117,3 @@
 
 <!-- Footer Waving Line -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1679A7,100:00FFAA&height=100&section=footer" width="100%"/>
-<!-- QUOTE START -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
-  <br/>
-  <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
-  <br/><br/>
-  <i>❝ Saat seorang anak telah menyadari kerja keras (orang tua) mereka, (saat) itulah tanda selesainya tugas orang tua. ❞</i>
-  <br/>
-  <sub>— <b>Satsuki Matsumae</b> · <i>Hanasaku Iroha</i></sub>
-  <br/><br/>
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
-</div>
-<!-- QUOTE END -->
