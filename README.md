@@ -61,7 +61,7 @@
 ## 🐍 Contribution Snake
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/RusdiEneri/RusdiEneri/output/snake.svg" alt="Snake Animation" width="100%" />
+  <img src="./dist/snake.svg" alt="Snake Animation" width="100%" />
 </p>
 
 <br>
