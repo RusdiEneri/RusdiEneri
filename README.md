@@ -12,10 +12,11 @@
   <em>"Building small tools for real problems."</em>
 </p>
 
-<p align="center">
+<img align='right' src='https://github.com/user-attachments/assets/490d17b4-5b06-4bed-989b-521c0f97fe80' width='200"'>
+<!-- <p align="center">
   I am a <strong>Backend & Network Engineering Student</strong> passionate about Linux infrastructure, DNS filtering, and automation. <br>
   I love digging into packets with <strong>Wireshark</strong> and configuring firewalls with <strong>iptables</strong>.
-</p>
+</p> -->
 
 <!-- QUOTE START -->
 <div align="center">
