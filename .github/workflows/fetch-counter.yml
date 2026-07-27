@@ -25,13 +25,16 @@ jobs:
           set -euo pipefail
           mkdir -p dist
 
-          # GET ke counter = nambah 1 hit + download SVG terbaru
           curl -fsSL \
             --retry 3 \
             --retry-delay 5 \
+            --retry-all-errors \
             --connect-timeout 20 \
             --max-time 60 \
-            -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36" \
+            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" \
+            -H "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8" \
+            -H "Accept-Language: en-US,en;q=0.9" \
+            -H "Referer: https://github.com/" \
             -o dist/counter.svg \
             "https://count.getloli.com/@RusdiEneri?name=RusdiEneri&theme=booru-r6gdrawfriends"
 
