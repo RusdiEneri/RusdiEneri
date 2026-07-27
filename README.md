@@ -36,23 +36,24 @@
 
 ## ⚡ GitHub Stats & Activity
 
-<table align="center">
-  <tr>
-    <td valign="top" width="50%">
-      <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=RusdiEneri&show_icons=true&include_all_commits=true&count_private=true&theme=radical&hide_border=true" alt="Stats" />
-    </td>
-    <td valign="top" width="50%">
-      <img src="https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=true" alt="Streak" />
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img width="49%" src="https://github-readme-stats-sigma-five.vercel.app/api?username=RusdiEneri&show_icons=true&include_all_commits=true&count_private=true&theme=radical&hide_border=true" />
+  <img width="49%" src="https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=true" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img width="49%" src="https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiEneri&theme=radical&hide_border=true&layout=compact&langs_count=4" />
+  <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31mfyohm4whu5nih4jejt6i36pgi&redirect=true">
+    <img width="49%" src="https://spotify-github-profile.kittinanx.com/api/view?uid=31mfyohm4whu5nih4jejt6i36pgi&cover_image=true&theme=novatorem&show_offline=true&background_color=ffffff&interchange=true&profanity=true&hide_remaster=true" />
+  </a>
+</div>
+
+<br/>
 
 <p align="center">
-  <img src="https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiEneri&theme=radical&hide_border=true&layout=compact&langs_count=8" alt="Top Languages" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RusdiEneri&theme=react-dark&hide_border=true&area=true" alt="Activity Graph" width="95%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RusdiEneri&theme=react-dark&hide_border=true&area=true" alt="Activity Graph" width="100%" />
 </p>
 
 <br>
@@ -60,7 +61,7 @@
 ## 🐍 Contribution Snake
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/RusdiEneri/RusdiEneri/output/snake.svg" alt="Snake Animation" width="95%" />
+  <img src="https://raw.githubusercontent.com/RusdiEneri/RusdiEneri/output/snake.svg" alt="Snake Animation" width="100%" />
 </p>
 
 <br>
