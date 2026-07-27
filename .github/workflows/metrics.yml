@@ -2,7 +2,7 @@ name: GitHub Metrics
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 */6 * * *"     # tiap 6 jam (lebih aman dari rate-limit; ganti "0 * * * *" kalau mau tiap jam)
   workflow_dispatch:
   push:
     branches: ["main"]
@@ -15,10 +15,12 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # Token dengan scope:
-          # - public_access (wajib)
-          # - read:org, read:user, read:packages, repo (opsional)
+          # Token scope: repo, read:user, read:org, read:packages (classic PAT)
           token: ${{ secrets.METRICS_TOKEN }}
+
+          # ====== Hardening ======
+          retries: 3
+          plugins_errors_fatal: no   # hapus/ubah yes kalau udah stabil
 
           # ====== Konfigurasi dasar ======
           user: RusdiEneri
@@ -58,7 +60,7 @@ jobs:
           plugin_stars: yes
           plugin_stars_limit: 4
 
-          # ====== Tambahan biar lebih menarik ======
+          # ====== Tambahan ======
           plugin_achievements: yes
           plugin_achievements_display: compact
           plugin_achievements_threshold: C
