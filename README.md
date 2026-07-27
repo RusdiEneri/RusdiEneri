@@ -39,7 +39,7 @@
 <table align="center">
   <tr>
     <td valign="top" width="50%">
-      <img src="https://github-readme-stats-six-psi-94.vercel.app/api?username=RusdiEneri&theme=radical&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github" alt="Stats" />
+      <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=RusdiEneri&show_icons=true&include_all_commits=true&count_private=true&theme=radical&hide_border=true" alt="Stats" />
     </td>
     <td valign="top" width="50%">
       <img src="https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=true" alt="Streak" />
