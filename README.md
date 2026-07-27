@@ -24,9 +24,9 @@
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Kau harus mengatakan apa yang kau rasakan sejujurnya demi (kebaikan) dirimu sendiri. ❞</i>
+  <i>❝ Setiap orang pasti memiliki pandangan yang berbeda atas perbuatanmu. Ada yang menganggap tindakan yang telah kau lakukan itu benar, ada pula yang menganggapnya salah. Biarkan mereka bicara sesukanya, kau tidak perlu mempedulikannya. Karena yang kau lakukan bukanlah suatu hal yang benar ataupun hal yang salah. Kau hanya sedang menjalani masa mudamu. ❞</i>
   <br/>
-  <sub>— <b>Marin Kitagawa</b> · <i>Sono Bisque Doll wa Koi wo Suru</i></sub>
+  <sub>— <b>Koyomi Araragi</b> · <i>Hanamonogatari</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
