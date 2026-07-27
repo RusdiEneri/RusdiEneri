@@ -24,9 +24,9 @@
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Setiap orang pasti memiliki pandangan yang berbeda atas perbuatanmu. Ada yang menganggap tindakan yang telah kau lakukan itu benar, ada pula yang menganggapnya salah. Biarkan mereka bicara sesukanya, kau tidak perlu mempedulikannya. Karena yang kau lakukan bukanlah suatu hal yang benar ataupun hal yang salah. Kau hanya sedang menjalani masa mudamu. ❞</i>
+  <i>❝ Kau harus mengatakan apa yang kau rasakan sejujurnya demi (kebaikan) dirimu sendiri. ❞</i>
   <br/>
-  <sub>— <b>Koyomi Araragi</b> · <i>Hanamonogatari</i></sub>
+  <sub>— <b>Marin Kitagawa</b> · <i>Sono Bisque Doll wa Koi wo Suru</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
@@ -52,14 +52,16 @@
 ## ⚡ GitHub Stats & Activity
 
 <div align="center">
-  <img width="49%" src="https://github-readme-stats-sigma-five.vercel.app/api?username=RusdiEneri&show_icons=true&include_all_commits=true&count_private=true&theme=radical&hide_border=true" />
-  <img width="49%" src="https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=true" />
+  <img width="49%" src="https://github-readme-stats-sigma-five.vercel.app/api?username=RusdiEneri&show_icons=true&include_all_commits=true&count_private=true&theme=radical" />
+  <img width="49%" src="https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=false&fire=f472b6" />
+  <!-- <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=RusdiEneri&background=0d1117&ring=a78bfa&fire=f472b6&currStreakLabel=a78bfa&sideLabels=c9d1d9&currStreakNum=fff&sideNums=fff&dates=6e7681&border=30363d" /> -->
+
 </div>
 
 <br/>
 
 <div align="center">
-  <img width="49%" src="https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiEneri&theme=radical&hide_border=true&layout=compact&langs_count=8" />
+  <img width="49%" src="https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiEneri&theme=radical&hide_border=false&layout=compact&langs_count=8" />
   <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31mfyohm4whu5nih4jejt6i36pgi&redirect=true">
     <img width="49%" src="https://spotify-github-profile.kittinanx.com/api/view?uid=31mfyohm4whu5nih4jejt6i36pgi&cover_image=true&theme=spotify-embed&show_offline=true&background_color=000000&interchange=true&profanity=true&hide_remaster=true" />
   </a>
@@ -68,7 +70,7 @@
 <br/>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RusdiEneri&theme=react-dark&hide_border=true&area=true" alt="Activity Graph" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RusdiEneri&theme=radical&hide_border=true&area=true" alt="Activity Graph" width="100%" />
 </p>
 
 <br>
