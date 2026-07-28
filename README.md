@@ -52,16 +52,14 @@
 ## ⚡ GitHub Stats & Activity
 
 <div align="center">
-  <img width="49%" src="https://github-readme-stats-sigma-five.vercel.app/api?username=RusdiEneri&show_icons=true&include_all_commits=true&count_private=true&theme=radical" />
-  <img width="49%" src="https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=false&fire=f472b6" />
-  <!-- <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=RusdiEneri&background=0d1117&ring=a78bfa&fire=f472b6&currStreakLabel=a78bfa&sideLabels=c9d1d9&currStreakNum=fff&sideNums=fff&dates=6e7681&border=30363d" /> -->
-
+  <img width="46%" src="./dist/github-stats.svg" />
+  <img width="49%" src="./dist/streak-stats.svg" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img width="49%" src="https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiEneri&theme=radical&hide_border=false&layout=compact&langs_count=8" />
+  <img width="49%" src="./dist/top-langs.svg" />
   <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31mfyohm4whu5nih4jejt6i36pgi&redirect=true">
     <img width="49%" src="https://spotify-github-profile.kittinanx.com/api/view?uid=31mfyohm4whu5nih4jejt6i36pgi&cover_image=true&theme=spotify-embed&show_offline=true&background_color=000000&interchange=true&profanity=true&hide_remaster=true" />
   </a>
@@ -70,10 +68,10 @@
 <br/>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RusdiEneri&theme=radical&hide_border=true&area=true" alt="Activity Graph" width="100%" />
+  <img src="./dist/activity-graph.svg" alt="Activity Graph" width="100%" />
 </p>
 
-<br>
+<br/>
 
 ## 🐍 Contribution Snake
 
