@@ -84,10 +84,10 @@
 ## 🏆 GitHub Trophies
 
 <p align="center">
-  <img src="https://trophy.benkou.dev/?username=RusdiEneri&theme=radical&no-frame=true&row=1&column=7" alt="Trophies" />
+  <img src="./dist/github-trophies.svg" alt="Trophies" />
 </p>
 
-<br>
+<br/>
 
 ## 📬 Connect with Me
 
