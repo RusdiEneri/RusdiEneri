@@ -24,9 +24,9 @@
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Kau dan Dr. Magata adalah orang yang berbeda. Tak perlu berpikir hal yang sama. Lagi pula, bagaimanapun juga manusia tak mungkin bisa saling merasakan perasaan yang sama, tak peduli seberapa dekat mereka. Karena itu, mulai sekarang apa yang ingin kau lakukan, pikirkanlah seorang diri. ❞</i>
+  <i>❝ Jika kau berada satu langkah di depanku, maka aku akan mengambil dua langkah, sepuluh, bahkan seratus langkah di depanmu! Aku takkan membiarkan semua ini berakhir begitu saja. ❞</i>
   <br/>
-  <sub>— <b>Souhei Saikawa</b> · <i>Subete ga F ni Naru</i></sub>
+  <sub>— <b>Takumi Aldini</b> · <i>Shokugeki no Souma: Ni no Sara</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
