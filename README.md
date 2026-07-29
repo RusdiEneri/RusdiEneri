@@ -26,9 +26,9 @@
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Setiap orang punya hal yang tak ingin diketahui siapapun, hal yang lebih baik tidak diketahui, dan ada pula hal pada diri sendiri yang tidak ingin diingat. ❞</i>
+  <i>❝ Kamu harus lebih sopan terhap gurumu! ❞</i>
   <br/>
-  <sub>— <b>Himeko Inaba</b> · <i>Kokoro Connect</i></sub>
+  <sub>— <b>Beatrice</b> · <i>Re:Petit kara Hajimeru Isekai Seikatsu</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
