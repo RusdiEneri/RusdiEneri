@@ -26,9 +26,9 @@
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Kamus adalah kapal yang berlayar di lautan kata. Tanpa kata, kau tidak bisa mengekspresikan pemikiranmu dan tidak bisa mengerti orang lain secara mendalam. Orang berlayar dengan kapal yang kita sebut kamus dan mencari kata yang sempurna untuk menemukan cahaya kecil yang mengambang di atas air yang gelap. ❞</i>
+  <i>❝ Ingatan dari 10 tahun yang lalu... seorang laki-laki yang dulu menjadi ayahku berkata "Meskipun sejak awal, aku adalah kesalahan. Tapi jalan yang aku pilih bukanlah kesalahan". ❞</i>
   <br/>
-  <sub>— <b>Tomosuke Matsumoto</b> · <i>Fune wo Amu</i></sub>
+  <sub>— <b>Shirou Emiya</b> · <i>Fate/stay night: Unlimited Blade Works 2nd Season</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
