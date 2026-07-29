@@ -1,0 +1,45 @@
+name: Fetch GitHub Profile Card
+
+on:
+  # Jalankan setiap 6 jam
+  schedule:
+    - cron: "0 */6 * * *"
+  # Bisa juga dijalankan manual dari tab Actions
+  workflow_dispatch:
+  # Jalankan saat push ke branch main
+  push:
+    branches:
+      - main
+
+jobs:
+  fetch-card:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create dist folder
+        run: mkdir -p dist
+
+      - name: Download productive-time card
+        run: |
+          curl -s -o dist/productive-time.svg \
+            "https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=RusdiEneri&theme=github_dark&utcOffset=7"
+
+      - name: Verify file downloaded
+        run: |
+          if [ ! -s dist/productive-time.svg ]; then
+            echo "Error: File is empty or download failed!"
+            exit 1
+          fi
+          echo "File size: $(wc -c < dist/productive-time.svg) bytes"
+
+      - name: Commit and push to dist/
+        run: |
+          git config user.name "RusdiEneri"
+          git config user.email "nuruddinrusydiilham@gmail.com"
+          git add dist/
+          # Hanya commit kalau ada perubahan
+          git diff --staged --quiet || git commit -m "chore: update productive-time card [skip ci]"
+          git push
