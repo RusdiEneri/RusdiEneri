@@ -2,11 +2,11 @@ name: Update streak stats
 
 on:
   schedule:
-    - cron: "0 * * * *" # Run every day at 03:00
+    - cron: "0 * * * *" # Berjalan setiap jam
   push:
     paths:
-      - ".github/workflows/streak-stats.yml" # Run any time this file is modified
-  workflow_dispatch: # Run manually from the Actions tab
+      - ".github/workflows/streak-stats.yml" # Berjalan setiap kali file ini diubah
+  workflow_dispatch: # Berjalan secara manual dari tab Actions
 
 jobs:
   build:
@@ -30,4 +30,5 @@ jobs:
           git config user.email "nuruddinrusydiilham@gmail.com"
           git add dist/streak-stats.svg
           git commit -m "Update streak stats" || exit 0
+          git pull --rebase origin main
           git push
