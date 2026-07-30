@@ -54,15 +54,15 @@
 ## ⚡ GitHub Stats & Activity
 
 <div align="center">
-  <img width="46%" src="https://github-readme-stats-six-psi-94.vercel.app/api?username=RusdiEneri&show_icons=true&include_all_commits=true&count_private=true&theme=radical&hide_border=false" />
+  <img width="46%" src="https://github-readme-stats-six-psi-94.vercel.app/api?username=RusdiEneri&show_icons=true&include_all_commits=true&count_private=true&theme=radical&hide_border=true" />
   <img width="49%" src="./dist/streak-stats.svg" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img width="49%" src="https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiEneri&theme=radical&hide_border=false&layout=compact&langs_count=8" />
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=RusdiEneri&theme=radical&utcOffset=7&hide_border=false" />
+  <img width="49%" src="https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiEneri&theme=radical&hide_border=true&layout=compact&langs_count=8" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=RusdiEneri&theme=radical&utcOffset=7&hide_border=true" />
 </div>
 
 <br/>
