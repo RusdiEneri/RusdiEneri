@@ -84,7 +84,7 @@
 ## 🏆 GitHub Trophies
 
 <p align="center">
-  <img src="./dist/github-trophies.svg" alt="Trophies" />
+  <img src="https://trophy.benkou.dev/?username=RusdiEneri&theme=radical&no-frame=true&row=1&column=7" alt="Trophies" />
 </p>
 
 <br/>
