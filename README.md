@@ -26,9 +26,9 @@
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Jika kau punya hak untuk hidup, kami juga punya. Meskipun aku yakin, setiap manusia memiliki pemikirannya sendiri mengenai "hak". Pokoknya, kami akan melakukan apapun untuk hidup. ❞</i>
+  <i>❝ Aku tak peduli siapa orang yang dulu kau sukai. Karena saat ini akulah yang berjalan bersamamu. ❞</i>
   <br/>
-  <sub>— <b>Migi</b> · <i>Kiseijuu: Sei no Kakuritsu</i></sub>
+  <sub>— <b>Touta Konoe</b> · <i>UQ Holder!: Mahou Sensei Negima! 2</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
