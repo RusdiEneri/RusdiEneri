@@ -2,11 +2,11 @@ name: Update streak stats
 
 on:
   schedule:
-    - cron: "*/5 * * * *" # Berjalan setiap jam
+    - cron: "*/5 * * * *"        # setiap 5 menit (bukan setiap jam)
   push:
     paths:
-      - ".github/workflows/streak-stats.yml" # Berjalan setiap kali file ini diubah
-  workflow_dispatch: # Berjalan secara manual dari tab Actions
+      - ".github/workflows/streak-stats.yml"
+  workflow_dispatch:
 
 jobs:
   build:
@@ -14,8 +14,13 @@ jobs:
     permissions:
       contents: write
 
+    # ✅ Anti-loop: skip kalau commit pemicu mengandung [skip ci]
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate streak stats
         uses: DenverCoder1/github-readme-streak-stats@main
@@ -24,11 +29,20 @@ jobs:
           path: dist/streak-stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit streak stats
+      - name: Commit & push
         run: |
+          set -euo pipefail
+
           git config user.name "RusdiEneri"
           git config user.email "nuruddinrusydiilham@gmail.com"
+
+          # ✅ Timestamp → file selalu berbeda tiap run
+          echo "<!-- generated: $(date -u +%Y-%m-%dT%H:%M:%SZ) -->" >> dist/streak-stats.svg
+
           git add dist/streak-stats.svg
-          git commit -m "Update streak stats" || exit 0
+
+          # ✅ [skip ci] → mencegah loop dari trigger push:
+          git commit -m "chore: update streak stats [skip ci]"
+
           git pull --rebase origin main
-          git push
+          git push origin HEAD:main
