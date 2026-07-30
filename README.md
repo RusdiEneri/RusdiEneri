@@ -11,9 +11,9 @@
 <p align="center">
   <em>"Building small tools for real problems."</em>
 </p>
-<a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31mfyohm4whu5nih4jejt6i36pgi&redirect=true">
+<!-- <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31mfyohm4whu5nih4jejt6i36pgi&redirect=true">
     <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31mfyohm4whu5nih4jejt6i36pgi&cover_image=true&theme=spotify-embed&show_offline=true&background_color=000000&interchange=true&profanity=true&hide_remaster=true" />
-  </a>
+  </a> -->
 <img align='right' src='https://github.com/user-attachments/assets/490d17b4-5b06-4bed-989b-521c0f97fe80' width='200"'>
 <!-- <p align="center">
   I am a <strong>Backend & Network Engineering Student</strong> passionate about Linux infrastructure, DNS filtering, and automation. <br>
@@ -61,7 +61,7 @@
 <br/>
 
 <div align="center">
-  <img width="49%" src="./dist/top-langs.svg" />
+  <img width="49%" src="https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiEneri&theme=radical&hide_border=false&layout=compact&langs_count=8" />
   <img width="49%" src="./dist/productive-time.svg" />
 </div>
 
