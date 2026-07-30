@@ -2,7 +2,7 @@ name: Generate GitHub Trophies
 
 on:
   schedule:
-    - cron: '0 */12 * * *'   # Setiap 12 jam (trophies jarang berubah)
+    - cron: '0 * * * *'   # Setiap 12 jam (trophies jarang berubah)
   workflow_dispatch:          # Trigger manual
 
 permissions:
