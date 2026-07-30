@@ -54,7 +54,7 @@
 ## ⚡ GitHub Stats & Activity
 
 <div align="center">
-  <img width="49%" href="https://github-readme-stats-six-psi-94.vercel.app/api?username=RusdiEneri&show_icons=true&include_all_commits=true&count_private=true&theme=radical&hide_border=false" />
+  <img width="46%" src="https://github-readme-stats-six-psi-94.vercel.app/api?username=RusdiEneri&show_icons=true&include_all_commits=true&count_private=true&theme=radical&hide_border=false" />
   <img width="49%" src="./dist/streak-stats.svg" />
 </div>
 
