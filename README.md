@@ -62,7 +62,7 @@
 
 <div align="center">
   <img width="49%" src="https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiEneri&theme=radical&hide_border=false&layout=compact&langs_count=8" />
-  <img width="49%" src="./dist/productive-time.svg" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=RusdiEneri&theme=radical&utcOffset=7&hide_border=false" />
 </div>
 
 <br/>
