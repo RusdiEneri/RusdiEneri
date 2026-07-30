@@ -20,15 +20,15 @@
   I love digging into packets with <strong>Wireshark</strong> and configuring firewalls with <strong>iptables</strong>.
 </p> -->
 
-<br>
+<br> 
 
 ## 🛠️ Tech Stack & Tools
 
-<p align="center">
+<p align="left">
   <img src="https://skillicons.dev/icons?i=js,ts,python,c,cpp,bash,nodejs,express,linux,docker,nginx,git,github,vscode,css,php,laravel,figma,java,react&theme=light&perline=10" />
 </p>
 
-<p align="center">
+<p align="left">
   <img src="https://img.shields.io/badge/DNS%20Filtering-00FFAA?style=for-the-badge&logo=cloudflare&logoColor=black" />
   <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" />
   <img src="https://img.shields.io/badge/iptables-Firewall-555555?style=for-the-badge&logo=linux&logoColor=white" />
@@ -39,14 +39,14 @@
 
 ## ⚡ GitHub Stats & Activity
 
-<div align="center">
-  <img width="46%" src="https://github-readme-stats-six-psi-94.vercel.app/api?username=RusdiEneri&show_icons=true&include_all_commits=true&count_private=true&theme=radical&hide_border=true" />
+<div align="left">
+  <img width="49%" src="https://github-readme-stats-six-psi-94.vercel.app/api?username=RusdiEneri&show_icons=true&include_all_commits=true&count_private=true&theme=radical&hide_border=true" />
   <img width="49%" src="./dist/streak-stats.svg" />
 </div>
 
 <br/>
 
-<div align="center">
+<div align="left">
   <img width="49%" src="https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiEneri&theme=radical&hide_border=true&layout=compact&langs_count=8" />
   <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=RusdiEneri&theme=radical&utcOffset=7&hide_border=true" />
 </div>
