@@ -92,10 +92,6 @@
 
 <br>
 
-<!-- <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=RusdiEneri&style=for-the-badge&color=00FFAA&label=PROFILE+VIEWS" alt="Profile Views" />
-</div> -->
-
 <div align="center">
     <p>
         <img align="center" alt="count" src="https://count.getloli.com/@RusdiEneri?name=RusdiEneri&theme=booru-r6gdrawfriends">
