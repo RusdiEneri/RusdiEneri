@@ -33,21 +33,21 @@
                 <!-- Total Contributions big number -->
                 <g transform='translate(82.5, 48)'>
                     <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='#FE428E' stroke='none' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='700' font-size='28px' font-style='normal' style='opacity: 0; animation: fadein 0.5s linear forwards 0.6s'>
-                        1.135
+                        1,139
                     </text>
                 </g>
 
                 <!-- Total Contributions label -->
                 <g transform='translate(82.5, 84)'>
                     <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='#FE428E' stroke='none' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='14px' font-style='normal' style='opacity: 0; animation: fadein 0.5s linear forwards 0.7s'>
-                        Total Kontribusi
+                        Total Contributions
                     </text>
                 </g>
 
                 <!-- Total Contributions range -->
                 <g transform='translate(82.5, 114)'>
                     <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='#A9FEF7' stroke='none' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='12px' font-style='normal' style='opacity: 0; animation: fadein 0.5s linear forwards 0.8s'>
-                        8 Mar 2021 - Sekarang
+                        Mar 8, 2021 - Present
                     </text>
                 </g>
             </g>
@@ -55,14 +55,14 @@
                 <!-- Current Streak label -->
                 <g transform='translate(247.5, 108)'>
                     <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='#F8D847' stroke='none' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='700' font-size='14px' font-style='normal' style='opacity: 0; animation: fadein 0.5s linear forwards 0.9s'>
-                        Aksi Saat Ini
+                        Current Streak
                     </text>
                 </g>
 
                 <!-- Current Streak range -->
                 <g transform='translate(247.5, 145)'>
                     <text x='0' y='21' stroke-width='0' text-anchor='middle' fill='#A9FEF7' stroke='none' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='12px' font-style='normal' style='opacity: 0; animation: fadein 0.5s linear forwards 0.9s'>
-                        9 Jul - 2 Agu
+                        Jul 9 - Aug 2
                     </text>
                 </g>
 
@@ -95,18 +95,18 @@
                 <!-- Longest Streak label -->
                 <g transform='translate(412.5, 84)'>
                     <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='#FE428E' stroke='none' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='14px' font-style='normal' style='opacity: 0; animation: fadein 0.5s linear forwards 1.3s'>
-                        Aksi Terpanjang
+                        Longest Streak
                     </text>
                 </g>
 
                 <!-- Longest Streak range -->
                 <g transform='translate(412.5, 114)'>
                     <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='#A9FEF7' stroke='none' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='12px' font-style='normal' style='opacity: 0; animation: fadein 0.5s linear forwards 1.4s'>
-                        9 Jul - 2 Agu
+                        Jul 9 - Aug 2
                     </text>
                 </g>
             </g>
             
         </g>
     </svg>
-<!-- generated: 2026-08-01T23:41:44Z -->
+<!-- generated: 2026-08-01T23:46:04Z -->
