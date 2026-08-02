@@ -37,19 +37,31 @@
 
 <br>
 
-## ⚡ GitHub Stats & Activity
+
 <!-- https://github-readme-stats-six-psi-94.vercel.app/api?username=RusdiEneri&show_icons=true&include_all_commits=true&count_private=true&theme=radical&hide_border=true
 https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiEneri&theme=radical&hide_border=true&layout=compact&langs_count=8-->
-<div align="left">
-  <img width="49%" src="https://ghstats.dev/api/card?username=RusdiEneri&theme=radical" />
-  <img width="49%" src="https://ghstats.dev/api/langs?username=RusdiEneri&layout=donut_vertical&theme=radical" />
-</div>
+## ⚡ GitHub Stats & Activity
+
+<table>
+  <tr>
+    <td rowspan="2" width="50%">
+      <img src="https://ghstats.dev/api/card?username=RusdiEneri&theme=radical" />
+    </td>
+    <td width="50%">
+      <img src="https://ghstats.dev/api/langs?username=RusdiEneri&layout=donut_vertical&theme=radical" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="./dist/streak-stats.svg" />
+    </td>
+  </tr>
+</table>
 
 <br/>
 
-<div align="left">
-  <img width="100%" src="./dist/streak-stats.svg" />
-</div>
+
+
 
 <br/>
 
