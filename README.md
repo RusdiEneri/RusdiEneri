@@ -48,7 +48,7 @@ https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiE
       <img src="https://ghstats.dev/api/card?username=RusdiEneri&theme=radical" />
     </td>
     <td width="50%">
-      <img src="https://ghstats.dev/api/langs?username=RusdiEneri&layout=donut_vertical&theme=radical" />
+      <img src="https://ghstats.dev/api/langs?username=RusdiEneri&border_radius=40.5&layout=donut&theme=radical" />
     </td>
   </tr>
   <tr>
