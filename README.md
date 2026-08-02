@@ -45,10 +45,10 @@ https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiE
 <table>
   <tr>
     <td rowspan="2" width="50%">
-      <img src="https://ghstats.dev/api/card?username=RusdiEneri&theme=radical" />
+      <img src="https://ghstats.dev/api/card?username=RusdiEneri&theme=radical&hide_border=true&hide_title=true" />
     </td>
     <td width="50%">
-      <img src="https://ghstats.dev/api/langs?username=RusdiEneri&border_radius=40.5&layout=donut&theme=radical" />
+      <img src="https://ghstats.dev/api/langs?username=RusdiEneri&theme=radical&hide_border=true&hide_title=true&layout=grid" />
     </td>
   </tr>
   <tr>
