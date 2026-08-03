@@ -66,7 +66,7 @@ https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiE
 <br/>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RusdiEneri&theme=radical&hide_border=true&area=true" alt="Activity Graph" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RusdiEneri&theme=radical&hide_border=true&area=true&hide_title=true" alt="Activity Graph" width="100%" />
 </p>
 
 <br/>
