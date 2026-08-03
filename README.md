@@ -45,31 +45,31 @@ https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiE
 <table>
   <tr>
     <td rowspan="2" width="50%">
-      <img src="https://ghstats.dev/api/card?username=RusdiEneri&theme=radical&hide_border=true&hide_title=true" />
+      <img src="./dist/streak-stats.svg" />
     </td>
     <td width="50%">
       <img src="https://ghstats.dev/api/langs?username=RusdiEneri&theme=radical&hide_border=true&hide_title=true&layout=grid" />
     </td>
   </tr>
-  <tr>
+  <!-- <tr>
     <td>
       <img src="./dist/streak-stats.svg" />
     </td>
-  </tr>
+  </tr> -->
 </table>
 
 <br/>
 
 
-
-
-<br/>
-
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RusdiEneri&theme=radical&hide_border=true&area=true&hide_title=true" alt="Activity Graph" width="100%" />
+<img src="https://ghstats.dev/api/card?username=RusdiEneri&theme=radical&hide_border=true&hide_title=true" width="100%" />
 </p>
 
 <br/>
+
+<!-- <p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RusdiEneri&theme=radical&hide_border=true&area=true&hide_title=true" alt="Activity Graph" width="100%" />
+</p> -->
 
 ## 🐍 Contribution Snake
 
