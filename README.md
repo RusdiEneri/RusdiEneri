@@ -61,9 +61,9 @@ https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiE
 <br/>
 
 
-<p align="center">
+<!-- <p align="center">
 <img src="https://ghstats.dev/api/card?username=RusdiEneri&theme=radical&hide_border=true&hide_title=true" width="100%" />
-</p>
+</p> -->
 
 <br/>
 
