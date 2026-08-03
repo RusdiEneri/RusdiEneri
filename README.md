@@ -100,6 +100,9 @@ https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiE
   <a href="https://twitter.com/this.ilham">
     <img src="https://img.shields.io/badge/Instagram-1DA1F2?style=for-the-badge&logo=instagram&logoColor=white" />
   </a>
+  <a href="https://rusdieneri.github.io/PORTFOLIO/">
+    <img src="https://img.shields.io/badge/Github-F0B90B?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
 </p>
 
 <br>
