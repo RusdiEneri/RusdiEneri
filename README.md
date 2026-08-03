@@ -79,11 +79,11 @@ https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiE
 
 <br>
 
-## 🏆 GitHub Trophies
+<!-- ## 🏆 GitHub Trophies -->
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://trophy.benkou.dev/?username=RusdiEneri&theme=radical&no-frame=true&row=1&column=7" alt="Trophies" />
-</p>
+</p> -->
 
 <br/>
 
@@ -107,11 +107,11 @@ https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiE
 
 <br>
 
-<div align="center">
+<!-- <div align="center">
     <p>
         <img align="center" alt="count" src="https://count.getloli.com/@RusdiEneri?name=RusdiEneri&theme=booru-r6gdrawfriends">
     </p>
-</div>
+</div> -->
 
 <!-- Footer Waving Line -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1679A7,100:00FFAA&height=100&section=footer" width="100%"/>
