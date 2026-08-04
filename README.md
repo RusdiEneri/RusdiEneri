@@ -8,9 +8,9 @@
   </a>
 </div>
 
-<p align="center">
+<!-- <p align="center">
   <em>"Building small tools for real problems."</em>
-</p>
+</p> -->
 <!-- <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31mfyohm4whu5nih4jejt6i36pgi&redirect=true">
     <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31mfyohm4whu5nih4jejt6i36pgi&cover_image=true&theme=spotify-embed&show_offline=true&background_color=000000&interchange=true&profanity=true&hide_remaster=true" />
   </a> -->
