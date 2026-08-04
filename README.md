@@ -119,9 +119,9 @@ https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiE
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Mustahil menyelamatkan semua orang. Menyelamatkan banyak orang harus dibayar dengan menghancurkan sebagian kecil orang lainnya. </i>
+  <i>❝ (Profesi polisi) hanya menjamin penghasilan saja. Sebaliknya, fisik dan mental tidak terjamin. </i>
   <br/>
-  <sub>— <b>Archer</b> · <i>Fate/stay night: Unlimited Blade Works 2nd Season</i></sub>
+  <sub>— <b>Mai Kawai</b> · <i>Hakozume: Kouban Joshi no Gyakushuu</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
