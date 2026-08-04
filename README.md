@@ -113,8 +113,6 @@ https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiE
     </p>
 </div> -->
 
-<!-- Footer Waving Line -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1679A7,100:00FFAA&height=100&section=footer" width="100%"/>
 <!-- QUOTE START -->
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
@@ -128,3 +126,6 @@ https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiE
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
 <!-- QUOTE END -->
+
+<!-- Footer Waving Line -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1679A7,100:00FFAA&height=100&section=footer" width="100%"/>
