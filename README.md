@@ -115,3 +115,19 @@ https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiE
 
 <!-- Footer Waving Line -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1679A7,100:00FFAA&height=100&section=footer" width="100%"/>
+<!-- QUOTE START -->
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
+  <br/>
+  <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
+  <br/><br/>
+  <i>❝ Aku sedikit takut. Bukan karena kematian, tapi aku takut berpisah denganmu.
+Aku tak pernah merasa seperti ini sebelumnya, tapi menurutku inilah yang terbaik untukku.
+Semua ini demi masa depan umat manusia, dan juga demi masa depanmu.
+Untuk itu aku bisa mempertaruhkan nyawaku berapa kali pun. </i>
+  <br/>
+  <sub>— <b>Ruler</b> · <i>Fate/Apocrypha</i></sub>
+  <br/><br/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
+</div>
+<!-- QUOTE END -->
