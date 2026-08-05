@@ -119,9 +119,10 @@ https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiE
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Apakah seorang anak butuh alasan untuk melindungi peninggalan yang dibanggakan orang tuanya? </i>
+  <i>❝ Pembunuhan yang dilakukan dengan menyusup, akan lebih fleksibel jika targetnya sedang gelisah.
+Karena aku berhadapan dengan makhluk tak dikenal, maka cara terbaik adalah bunuh dia segera sebelum dia curiga. </i>
   <br/>
-  <sub>— <b>Tae Shimura</b> · <i>Gintama</i></sub>
+  <sub>— <b>Irina Jelavić</b> · <i>Ansatsu Kyoushitsu</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
