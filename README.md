@@ -119,9 +119,9 @@ https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiE
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Kalaupun kau punya impian dan tahu cara menggapainya, itu saja tidaklah cukup. </i>
+  <i>❝ Meraih kebenaran yang ada di depan mata lebih baik daripada meraih ideologi yang tak dapat diraih. </i>
   <br/>
-  <sub>— <b>Shinnosuke Aikawa</b> · <i>Gin no Saji</i></sub>
+  <sub>— <b>Brad</b> · <i>Tales of Zestiria the Cross Season 2</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
