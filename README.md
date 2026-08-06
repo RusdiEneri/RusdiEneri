@@ -14,15 +14,16 @@
 <!-- <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31mfyohm4whu5nih4jejt6i36pgi&redirect=true">
     <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31mfyohm4whu5nih4jejt6i36pgi&cover_image=true&theme=spotify-embed&show_offline=true&background_color=000000&interchange=true&profanity=true&hide_remaster=true" />
   </a> -->
-<img align='right' src='https://github.com/user-attachments/assets/490d17b4-5b06-4bed-989b-521c0f97fe80' width='200"'>
+
+<!-- PERBAIKAN: Syntax width diubah agar tidak error -->
+<img align="right" src="https://github.com/user-attachments/assets/490d17b4-5b06-4bed-989b-521c0f97fe80" width="200">
+
 <!-- <p align="center">
   I am a <strong>Backend & Network Engineering Student</strong> passionate about Linux infrastructure, DNS filtering, and automation. <br>
   I love digging into packets with <strong>Wireshark</strong> and configuring firewalls with <strong>iptables</strong>.
 </p> -->
 
 <br> 
-
-
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=js,ts,python,c,cpp,bash,nodejs,express,linux,docker,nginx,git,github,vscode,css,php,laravel,figma,java,react&theme=light&perline=10" />
@@ -37,29 +38,21 @@
 
 <br>
 
-
-<!-- https://github-readme-stats-six-psi-94.vercel.app/api?username=RusdiEneri&show_icons=true&include_all_commits=true&count_private=true&theme=radical&hide_border=true
-https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiEneri&theme=radical&hide_border=true&layout=compact&langs_count=8-->
 ## ⚡ GitHub Stats & Activity
 
+<!-- PERBAIKAN: Hapus rowspan="2" agar tabel tidak bertumpuk aneh -->
 <table>
   <tr>
-    <td rowspan="2" width="50%">
+    <td width="50%">
       <img src="./dist/streak-stats.svg" />
     </td>
     <td width="50%">
       <img src="https://ghstats.dev/api/langs?username=RusdiEneri&theme=radical&hide_border=true&hide_title=true&layout=grid" />
     </td>
   </tr>
-  <!-- <tr>
-    <td>
-      <img src="./dist/streak-stats.svg" />
-    </td>
-  </tr> -->
 </table>
 
 <br/>
-
 
 <!-- <p align="center">
 <img src="https://ghstats.dev/api/card?username=RusdiEneri&theme=radical&hide_border=true&hide_title=true" width="100%" />
@@ -89,7 +82,7 @@ https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiE
 
 ## 📬 Connect with Me
 
-<!-- ⚠️ PENTING: Ganti 'emailmu@domain.com' dan 'username' dengan link asli Anda -->
+<!-- ⚠️ PENTING: Sesuaikan username dan URL dengan media sosial asli Anda -->
 <p align="center">
   <a href="mailto:rusdieneri@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
@@ -97,8 +90,9 @@ https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiE
   <a href="https://linkedin.com/in/rusdieneri">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
-  <a href="https://twitter.com/this.ilham">
-    <img src="https://img.shields.io/badge/Instagram-1DA1F2?style=for-the-badge&logo=instagram&logoColor=white" />
+  <!-- PERBAIKAN: URL diubah ke Instagram dan warna disesuaikan ke Pink/Purple Instagram -->
+  <a href="https://instagram.com/this.ilham">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
   </a>
   <a href="https://rusdieneri.github.io/PORTFOLIO/">
     <img src="https://img.shields.io/badge/Github-F0B90B?style=for-the-badge&logo=github&logoColor=white" />
@@ -119,7 +113,8 @@ https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiE
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Berhutang kepada seseorang bukanlah hal yang memalukan, tapi justru memalukan jika tidak bisa melunasinya. </i>
+  <!-- PERBAIKAN: Penambahan tanda kutip penutup ❞ -->
+  <i>❝ Berhutang kepada seseorang bukanlah hal yang memalukan, tapi justru memalukan jika tidak bisa melunasinya.❞</i>
   <br/>
   <sub>— <b>Yuuji Kazami</b> · <i>Grisaia no Kajitsu</i></sub>
   <br/><br/>
