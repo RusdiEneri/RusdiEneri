@@ -119,10 +119,9 @@ https://github-readme-stats-six-psi-94.vercel.app/api/top-langs/?username=RusdiE
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Apa kau percaya dengan takdir?
-Apa kau mendengarnya? suara dari langkah takdir kita yang semakin mendekat. </i>
+  <i>❝ Jika dengan bertarung bisa melindungi senyuman seseorang, maka itu saja sudah cukup memberi alasan untukku melakukannya. </i>
   <br/>
-  <sub>— <b>Souichi Jounouchi</b> · <i>Kimi ni Todoke</i></sub>
+  <sub>— <b>Hayato Kisaragi</b> · <i>Hundred</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
