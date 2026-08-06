@@ -113,10 +113,9 @@
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <!-- PERBAIKAN: Penambahan tanda kutip penutup ❞ -->
-  <i>❝ Berhutang kepada seseorang bukanlah hal yang memalukan, tapi justru memalukan jika tidak bisa melunasinya.❞</i>
+  <i>❝ Bagi seorang pria, ada kalanya memukul seseorang itu rasanya lebih sakit daripada terkena pukulan. </i>
   <br/>
-  <sub>— <b>Yuuji Kazami</b> · <i>Grisaia no Kajitsu</i></sub>
+  <sub>— <b>Tooru Asagiri</b> · <i>Haruchika: Haruta to Chika wa Seishun Suru</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
