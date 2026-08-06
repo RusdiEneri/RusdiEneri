@@ -65,7 +65,7 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=RusdiEneri&theme=radical&hide_border=true&area=true&hide_title=true" alt="Activity Graph" width="100%" />
 </p> -->
 
-## 🐍 Contribution Snake
+## 🐍 Activity Graph
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=RusdiEneri&theme=radical&hide_border=true&area=true&hide_title=false" alt="Snake Animation" width="100%" />
