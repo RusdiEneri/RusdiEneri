@@ -115,9 +115,9 @@ https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=true
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Jika kau ingin melihat kelanjutan dari impianmu, maka teruslah berjalan maju. Walau pun itu berarti kau harus menghancurkan impian orang lain. </i>
+  <i>❝ Sudah sejak lama aku selalu melihatmu. Ini bukan lelucon, aku serius. Tak ada hal lain yang kupikirkan selain dirimu. </i>
   <br/>
-  <sub>— <b>Isao Kondou</b> · <i>Gintama°</i></sub>
+  <sub>— <b>Keima Katsuragi</b> · <i>Kami nomi zo Shiru Sekai</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
