@@ -41,11 +41,12 @@
 ## ⚡ GitHub Stats & Activity
 
 <!-- PERBAIKAN: Hapus rowspan="2" agar tabel tidak bertumpuk aneh -->
-<!--./dist/streak-stats.svg -->
+<!--
+https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=true-->
 <table>
   <tr>
     <td width="50%">
-      <img src="https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=true" />
+      <img src="./dist/streak-stats.svg " />
     </td>
     <td width="50%">
       <img src="https://ghstats.dev/api/langs?username=RusdiEneri&theme=radical&hide_border=true&hide_title=true&layout=grid" />
