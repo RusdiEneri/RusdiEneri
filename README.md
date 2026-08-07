@@ -114,9 +114,9 @@
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Jangan (muram dengan) memandang ke bawah. Saat matamu muram, jiwamu akan semakin gelap. Artinya, masa depan akan tertutup untukmu dan kau pun akan kehilangan alasan untuk hidup. Saat kau melakukan apa yang kau anggap benar, kenapa kau malah menundukkan kepalamu seperti itu? Tegakkan kepalamu, tatap ke depan dan raihlah (sesuatu yang kau perjuangkan) dengan tanganmu. </i>
+  <i>❝ Bekerja keras adalah bakat terbaik. </i>
   <br/>
-  <sub>— <b>Crusch Karsten</b> · <i>Re:Zero kara Hajimeru Isekai Seikatsu</i></sub>
+  <sub>— <b>Hiroshi Kido</b> · <i>Barakamon</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
