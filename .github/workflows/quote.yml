@@ -2,14 +2,12 @@ name: Update Anime Quote
 
 on:
   schedule:
-    - cron: "0 */1 * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
   push:
     paths:
       - ".github/workflows/quote.yml"
-concurrency:
-  group: update-quote
-  cancel-in-progress: true
+
 
 permissions:
   contents: write
