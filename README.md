@@ -115,20 +115,10 @@ https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=true
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Aku benci cewek yang baik.
-Hanya saling menyapa bisa membuatku penasaran, hanya saling mengirim pesan membuatku gelisah.
-Jika mereka menelponku, aku akan selalu melihat daftar panggilanku dengan senyum bodoh.
-Tapi aku tahu. Mereka hanya bersikap baik.
-Jika mereka baik padaku, berarti mereka juga baik pada yang lain. Aku hampir lupa akan hal itu.
-Jika kenyataan itu kejam, maka kebohongan itu baik.
-Jadi, kebaikan adalah kebohongan.
-Aku selalu memegang harapan ini. Dan aku selalu salah paham (akan hal ini).
-Hingga tanpa kusadari aku telah berhenti berharap.
-Penyendiri berpengalaman tidak akan terjebak dalam perangkap yang sama.
-Sebagai veteran dalam pertempuran kehidupan, akulah yang terkuat dalam hal kekalahan.
-Jadi sampai kapanpun, aku benci cewek yang baik. </i>
+  <i>❝ Aku tidak peduli tentang menjadi generasi keajaiban, tapi aku tak bisa mengabaikan sebuah tantangan.
+Aku belum cukup dewasa untuk membiarkannya. </i>
   <br/>
-  <sub>— <b>Hachiman Hikigaya</b> · <i>Yahari Ore no Seishun Love Comedy wa Machigatteiru</i></sub>
+  <sub>— <b>Ryouta Kise</b> · <i>Kuroko no Basket</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
