@@ -114,9 +114,9 @@
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Kematian adalah puncak dari kehidupan, untuk mendapatkan kematian terbaik, kau harus menghargai kehidupan. </i>
+  <i>❝ Daripada menghabiskan waktu mengurusi masalah yang sudah terlanjur dipermasalahkan, lebih baik menyingkirkannya. </i>
   <br/>
-  <sub>— <b>Rory Mercury</b> · <i>Gate: Jieitai Kanochi nite, Kaku Tatakaeri</i></sub>
+  <sub>— <b>Hachiman Hikigaya</b> · <i>Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
