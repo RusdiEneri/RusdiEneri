@@ -114,10 +114,9 @@
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Tentu saja, (saat menyerang) serangan pertama itu paling penting. Tapi serangan berikutnya juga sama pentingnya.
-(karena) saat melawan musuh yang kuat, ada kemungkinan kalau serangan pertamamu akan dihindari. Jadi akurasi serangan kedua dan ketigamu bisa membuat perbedaan antara menang dan kalah. </i>
+  <i>❝ Jangan seenaknya mengejek sesuatu yang disukai seseorang. </i>
   <br/>
-  <sub>— <b>Tadaomi Karasuma</b> · <i>Ansatsu Kyoushitsu</i></sub>
+  <sub>— <b>Marin Kitagawa</b> · <i>Sono Bisque Doll wa Koi wo Suru</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
