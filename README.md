@@ -114,9 +114,10 @@
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Daripada menghabiskan waktu mengurusi masalah yang sudah terlanjur dipermasalahkan, lebih baik menyingkirkannya. </i>
+  <i>❝ Tentu saja, (saat menyerang) serangan pertama itu paling penting. Tapi serangan berikutnya juga sama pentingnya.
+(karena) saat melawan musuh yang kuat, ada kemungkinan kalau serangan pertamamu akan dihindari. Jadi akurasi serangan kedua dan ketigamu bisa membuat perbedaan antara menang dan kalah. </i>
   <br/>
-  <sub>— <b>Hachiman Hikigaya</b> · <i>Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan</i></sub>
+  <sub>— <b>Tadaomi Karasuma</b> · <i>Ansatsu Kyoushitsu</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
