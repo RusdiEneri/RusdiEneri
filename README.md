@@ -115,9 +115,10 @@ https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=true
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Jika kau berpikir bahwa hanya pendapatmu yang paling benar, maka kau akan membuat dirimu dan orang sekitarmu tidak senang. </i>
+  <i>❝ Aku berlari lebih cepat dari siapa pun karena kamu melihat dan mendukungku.
+Alasan kenapa aku berlari dengan cepat, alasan aku ingin menjadi cantik, dan alasan aku ingin jatuh cinta adalah karenamu! </i>
   <br/>
-  <sub>— <b>Chihiro  Sengoku</b> · <i>Sakurasou no Pet na Kanojo</i></sub>
+  <sub>— <b>Kouko Kaga</b> · <i>Golden Time</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
