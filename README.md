@@ -115,9 +115,9 @@ https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=true
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Otak manusia takkan melihat sesuatu yang tak ingin dilihatnya. </i>
+  <i>❝ Untuk meredakan ketakutan dan kekhawatiran masyarakat, para pahlawan harus kuat dan tangguh agar dapat mengalahkan kejahatan dengan cepat, terampil dan tampan. </i>
   <br/>
-  <sub>— <b>Rio Futaba</b> · <i>Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai</i></sub>
+  <sub>— <b>Amai Kamen Amai Mask</b> · <i>One Punch Man</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
