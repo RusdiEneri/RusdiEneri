@@ -35,7 +35,7 @@ Backend & Network Engineering Student based in **Tuban, Indonesia**, focused on 
 ### 💻 Development Stack
 <p align="left">
   <!-- Menambahkan Streamlit, Tailwind, MySQL sesuai repo. Menghapus TS/C/C++ agar lebih fokus & jujur -->
-  <img src="https://skillicons.dev/icons?i=php,laravel,python,js,nodejs,express,html,tailwind,bash,mysql,git,docker&theme=dark&perline=12" />
+  <img src="https://skillicons.dev/icons?i=php,laravel,python,js,nodejs,express,html,css,react,tailwind,bash,mysql,git,docker&theme=dark&perline=7" />
 </p>
 
 ---
