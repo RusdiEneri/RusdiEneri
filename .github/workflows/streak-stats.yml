@@ -2,7 +2,7 @@ name: Update streak stats
 
 on:
   schedule:
-    - cron: "*/5 * * * *"        # setiap 5 menit (bukan setiap jam)
+    - cron: "*/5 * * * *"        # setiap 5 menit
   push:
     paths:
       - ".github/workflows/streak-stats.yml"
@@ -21,6 +21,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - name: Generate streak stats
         uses: DenverCoder1/github-readme-streak-stats@main
@@ -41,8 +42,15 @@ jobs:
 
           git add dist/streak-stats.svg
 
-          # ✅ [skip ci] → mencegah loop dari trigger push:
+          # ✅ Cek apakah benar-benar ada perubahan sebelum commit
+          if git diff --cached --quiet; then
+            echo "No changes to commit, skipping."
+            exit 0
+          fi
+
+          # ✅ [skip ci] → mencegah loop dari trigger push
           git commit -m "chore: update streak stats [skip ci]"
 
+          # ✅ Pull rebase untuk menghindari race condition
           git pull --rebase origin main
           git push origin HEAD:main
