@@ -1,0 +1,93 @@
+name: Generate Awesome Stats (Local Build)
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  push:
+    paths:
+      - ".github/workflows/awesome-stats-local.yml"
+  workflow_dispatch:
+
+jobs:
+  build-local:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+
+    steps:
+      - name: 1. Checkout Profile Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 2. Clone Awesome GitHub Stats Source Code
+        run: git clone https://github.com/brunobritodev/awesome-github-stats.git /tmp/awesome-stats-src
+
+      - name: 3. Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          # Repo aslinya menggunakan .NET. Jika error, ubah ke '8.0.x' atau '9.0.x'
+          dotnet-version: '9.0.x' 
+
+      - name: 4. Inject GitHub Token to appsettings.json
+        run: |
+          cd /tmp/awesome-stats-src/src/AwesomeGithubStats.Api
+          # Menyuntikkan PAT agar tidak kena rate-limit GraphQL GitHub
+          jq --arg token "${{ secrets.STATS_PAT || secrets.GITHUB_TOKEN }}" '.PATS = [$token]' appsettings.json > tmp.json && mv tmp.json appsettings.json
+
+      - name: 5. Build and Run API Locally (Background)
+        run: |
+          cd /tmp/awesome-stats-src/src/AwesomeGithubStats.Api
+          
+          # Jalankan web server API .NET di background
+          dotnet run --urls "http://localhost:5000" > /tmp/api.log 2>&1 &
+          echo $! > /tmp/api.pid
+          
+          # Tunggu sampai API benar-benar siap menerima request (maksimal 30 detik)
+          echo "Waiting for local API to spin up..."
+          for i in {1..15}; do
+            if curl -s --max-time 2 http://localhost:5000/api/user/RusdiEneri > /dev/null 2>&1; then
+              echo "API is ready on localhost:5000!"
+              break
+            fi
+            sleep 2
+          done
+
+      - name: 6. Generate SVG via Local API
+        run: |
+          mkdir -p $GITHUB_WORKSPACE/dist
+          
+          # Panggil API yang sedang berjalan di localhost (100% Offline dari web aslinya)
+          curl -s -o $GITHUB_WORKSPACE/dist/awesome-stats.svg "http://localhost:5000/api/user/RusdiEneri?cardType=level&theme=radical&preferLogin=true"
+          
+          # Matikan API untuk menghemat resource runner
+          kill $(cat /tmp/api.pid) 2>/dev/null || true
+          
+          if [ ! -s $GITHUB_WORKSPACE/dist/awesome-stats.svg ]; then
+            echo "Error: Failed to generate SVG. Here is the API log:"
+            cat /tmp/api.log
+            exit 1
+          fi
+          
+          # Tambahkan timestamp agar selalu terdeteksi sebagai "perubahan" oleh git
+          echo "<!-- generated: $(date -u +%Y-%m-%dT%H:%M:%SZ) -->" >> $GITHUB_WORKSPACE/dist/awesome-stats.svg
+
+      - name: 7. Commit & Push
+        run: |
+          set -euo pipefail
+          git config user.name "RusdiEneri"
+          git config user.email "nuruddinrusydiilham@gmail.com"
+          
+          cd $GITHUB_WORKSPACE
+          git add dist/awesome-stats.svg
+          
+          if git diff --cached --quiet; then
+            echo "No changes to commit, skipping."
+            exit 0
+          fi
+
+          git commit -m "chore: update awesome stats (local build) [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
