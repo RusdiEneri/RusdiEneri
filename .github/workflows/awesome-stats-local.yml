@@ -28,14 +28,15 @@ jobs:
       - name: 3. Setup .NET SDK
         uses: actions/setup-dotnet@v4
         with:
-          # Repo aslinya menggunakan .NET. Jika error, ubah ke '8.0.x' atau '9.0.x'
-          dotnet-version: '9.0.x' 
+          # Repo aslinya menggunakan .NET 10 (net10.0)
+          dotnet-version: '10.0.x' 
 
       - name: 4. Inject GitHub Token to appsettings.json
         run: |
           cd /tmp/awesome-stats-src/src/AwesomeGithubStats.Api
-          # Menyuntikkan PAT agar tidak kena rate-limit GraphQL GitHub
-          jq --arg token "${{ secrets.STATS_PAT || secrets.GITHUB_TOKEN }}" '.PATS = [$token]' appsettings.json > tmp.json && mv tmp.json appsettings.json
+          # Menggunakan sed untuk replace "your_pat_here" dengan token asli.
+          # Ini bypass error jq karena file aslinya mengandung komentar (//).
+          sed -i "s|\"your_pat_here\"|\"${{ secrets.STATS_PAT }}\"|g" appsettings.json
 
       - name: 5. Build and Run API Locally (Background)
         run: |
