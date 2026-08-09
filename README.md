@@ -55,12 +55,13 @@ Backend & Network Engineering Student based in **Tuban, Indonesia**, focused on 
 
 <table>
   <tr>
-    <td width="50%">
+    <td width="49%">
       <!-- https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=true-->
       <img src="./dist/streak-stats.svg" width="100%" />
     </td>
-    <td width="50%">
-      <img src="https://awesome-github-stats.azurewebsites.net/user-stats/RusdiEneri?cardType=level&theme=radical&fontFamily=Poppins&preferLogin=true" width="100%" />
+    <!-- https://awesome-github-stats.azurewebsites.net/user-stats/RusdiEneri?cardType=level&theme=radical&fontFamily=Poppins&preferLogin=true-->
+    <td width="44%">
+      <img src="./dist/awesome-stats.svg" width="100%" />
     </td>
   </tr>
 </table>
