@@ -115,9 +115,9 @@ https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=true
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Aku tidak akan melakukan jika memang tidak harus melakukannya, dan jika harus melakukannya maka akan aku selesaikan dengan cepat. </i>
+  <i>❝ Dengarlah, Rin. Kalau terus begini, kau akan selalu sendirian. Gunakanlah kekuatanmu untuk orang lain, untuk tujuan yang lebih mulia. Aku ingin kau menjadi laki-laki yang keren dengan banyak teman, dan disukai oleh para gadis! </i>
   <br/>
-  <sub>— <b>Houtarou Oreki</b> · <i>Hyouka</i></sub>
+  <sub>— <b>Shirou Fujimoto</b> · <i>Ao no Exorcist</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
