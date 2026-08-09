@@ -115,9 +115,9 @@ https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=true
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Wanita yang baik menjaga rumah dengan tenang. </i>
+  <i>❝ Kita para penguasa itu seperti hewan ternak yang hanya memakan jabatan. </i>
   <br/>
-  <sub>— <b>Anna Kyouyama</b> · <i>Shaman King</i></sub>
+  <sub>— <b>Marrine Kreische</b> · <i>Grancrest Senki</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
