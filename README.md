@@ -115,9 +115,9 @@ https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=true
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Jika kau menghindari pembicaraan yang tak penting, maka kau akan terhindar dari masalah yang tak penting. </i>
+  <i>❝ Membereskan orang jahat seperti mereka itu perlu dilakukan demi kebaikan mereka sendiri dan masyarakat. </i>
   <br/>
-  <sub>— <b>Nozomu Itoshiki</b> · <i>Sayonara Zetsubou Sensei</i></sub>
+  <sub>— <b>Ekubo</b> · <i>Mob Psycho 100 II</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
