@@ -2,7 +2,7 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FFAA,100:1679A7&height=120&section=header&animation=fadeIn" width="100%"/>
 
   <a href="https://github.com/RusdiEneri">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=35&duration=3000&pause=1000&color=00FFAA&center=true&vCenter=true&width=800&lines=Hi%2C+I%27m+Nuruddin+Rusydi+Ilham+%F0%9F%91%8B;Backend+%26+Network+Engineering;Linux+Infrastructure+%26+Automation;DNS+Filtering+%26+Security+Builder." alt="Typing SVG" />
+    <img src="./dist/typing.svg" alt="Typing SVG" />
   </a>
 </div>
 
