@@ -1,0 +1,92 @@
+name: Generate Typing SVG from Source
+
+on:
+  schedule:
+    # Berjalan setiap 5 menit
+    - cron: '*/5 * * * *'
+  workflow_dispatch: # Tombol untuk menjalankan manual dari tab Actions
+  push:
+    paths:
+      - ".github/workflows/typing.yml"
+
+jobs:
+  build-svg:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Izin agar bot bisa commit file ke repo
+
+    steps:
+      - name: Checkout Repository (Repo Kamu)
+        uses: actions/checkout@v4
+
+      - name: Download Typing SVG Engine (Repo Asli DenverCoder1)
+        # Kita clone source code PHP-nya ke folder lokal "typing-engine"
+        run: git clone --depth 1 https://github.com/DenverCoder1/readme-typing-svg.git typing-engine
+
+      - name: Setup PHP Environment
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          tools: composer:v2
+
+      - name: Install Engine Dependencies
+        run: |
+          cd typing-engine
+          composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader
+
+      - name: Generate SVG Offline
+        run: |
+          cat <<'EOF' > generate.php
+          <?php
+          declare(strict_types=1);
+          // Load autoloader dari engine PHP yang sudah di-clone
+          require __DIR__ . '/typing-engine/vendor/autoload.php';
+
+          // ⚙️ PARAMETER KHUSUS NURUDDIN RUSYDI ILHAM
+          $params = [
+              'font'      => 'Fira Code',
+              'weight'    => '600',
+              'size'      => '35',
+              'duration'  => '3000',
+              'pause'     => '1000',
+              'color'     => '00FFAA',
+              'center'    => 'true',
+              'vCenter'   => 'true',
+              'width'     => '800',
+              'lines'     => 'Hi, I\'m Nuruddin Rusydi Ilham 👋;Backend & Network Engineering;Linux Infrastructure & Automation;DNS Filtering & Security Builder.'
+          ];
+
+          // Panggil class Controller dari repo aslinya
+          $controller = new RendererController($params);
+          
+          // Simpan hasil render ke folder dist
+          if (!is_dir('dist')) { mkdir('dist', 0777, true); }
+          file_put_contents('dist/typing.svg', $controller->render());
+          
+          echo "✅ SVG berhasil digenerate 100% dari source code!";
+          EOF
+          
+          # Jalankan script PHP di atas
+          php generate.php
+
+      - name: Add Timestamp to force commit
+        run: |
+          # Tambahkan timestamp agar selalu terdeteksi sebagai "perubahan" oleh git
+          echo "<!-- generated: $(date -u +%Y-%m-%dT%H:%M:%SZ) -->" >> $GITHUB_WORKSPACE/dist/typing.svg
+
+      - name: Commit & Push
+        run: |
+          set -euo pipefail
+          git config user.name "RusdiEneri"
+          git config user.email "nuruddinrusydiilham@gmail.com"
+          
+          cd $GITHUB_WORKSPACE
+          git add dist/typing.svg
+          
+          # Karena ada timestamp di baris akhir, diff TIDAK akan pernah kosong (quiet)
+          # Jadi commit akan selalu dieksekusi setiap 5 menit
+          git commit -m "chore: update typing svg (forced update) [skip ci]"
+          
+          # Pull rebase untuk menghindari konflik jika ada perubahan manual di repo
+          git pull --rebase origin main
+          git push origin HEAD:main
