@@ -62,9 +62,3 @@ jobs:
           git add log.txt
           git diff --cached --quiet || git commit -m "chore: update quote log ($(TZ='Asia/Jakarta' date '+%Y-%m-%d %H:%M WIB'))"
           git push
-
-      - name: Mirror ke GitLab
-        run: |
-          # Tambahkan || true agar tidak error jika remote 'gitlab' sudah ada dari run sebelumnya
-          git remote add gitlab https://oauth2:${{ secrets.GITLAB_TOKEN }}@gitlab.com/RusdiEneri/RusdiEneri.git || true
-          git push -f gitlab HEAD:main
