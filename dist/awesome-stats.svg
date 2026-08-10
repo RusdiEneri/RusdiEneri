@@ -56,7 +56,7 @@
 
       }
       to {
-        stroke-dasharray: 149.09,2000;
+        stroke-dasharray: 149.13,2000;
       }
     }
 
@@ -151,7 +151,7 @@
                     </svg>
 
                     <text class="stat bold" x="25" y="12.5">Total Stars:</text>
-                    <text class="stat" x="160" y="12.5" data-testid="stars">40</text>
+                    <text class="stat" x="160" y="12.5" data-testid="stars">41</text>
                 </g>
             </g>
             <g transform="translate(0, 27)">
@@ -201,4 +201,4 @@
         </svg>
 
     </g>
-</svg><!-- generated: 2026-08-10T11:19:12Z -->
+</svg><!-- generated: 2026-08-10T12:05:08Z -->
