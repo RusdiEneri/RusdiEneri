@@ -8,20 +8,20 @@
 
 <br>
 
-## 📌 About Me
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Objects/Pushpin.png" alt="Pushpin" width="25" height="25" /> About Me
 
 Backend & Network Engineering Student based in **Tuban, Indonesia**, focused on **Web Development** and **Network Infrastructure**. Always eager to learn and adapt, with experience in packet analysis, firewall configuration, DNS filtering, and building micro-tools to solve infrastructure bottlenecks.
 
-* 🔭 **Currently exploring**: Network Security, Linux System Administration, & API Development.
-* 🛠️ **Familiar with**: Packet Analysis (`Wireshark`), Firewalls (`iptables`), `OpenWRT`, & DNS Blocklisting.
-* 🎯 **Focus**: Crafting practical backend systems and useful network tools.
-* 📍 **Based in**: Tuban, Indonesia.
+* <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Objects/Telescope.png" alt="Telescope" width="25" height="25" /> **Currently exploring**: Network Security, Linux System Administration, & API Development.
+* <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png" alt="Hammer and Wrench" width="25" height="25" /> **Familiar with**: Packet Analysis (`Wireshark`), Firewalls (`iptables`), `OpenWRT`, & DNS Blocklisting.
+* <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Activities/Bullseye.png" alt="Bullseye" width="25" height="25" /> **Focus**: Crafting practical backend systems and useful network tools.
+* <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Objects/Round%20Pushpin.png" alt="Round Pushpin" width="25" height="25" /> **Based in**: Tuban, Indonesia.
 
 ---
 
-## ⚙️ Tools & Environment
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Objects/Gear.png" alt="Gear" width="25" height="25" /> Tools & Environment
 
-### 🌐 Infrastructure & Networking
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Travel%20and%20places/Globe%20with%20Meridians.png" alt="Globe with Meridians" width="25" height="25" /> Infrastructure & Networking
 <p align="left">
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
@@ -32,7 +32,7 @@ Backend & Network Engineering Student based in **Tuban, Indonesia**, focused on 
   <img src="https://img.shields.io/badge/DNS%20Blocklisting-FF5733?style=for-the-badge&logo=adguard&logoColor=white" />
 </p>
 
-### 💻 Development Stack
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Objects/Laptop.png" alt="Laptop" width="25" height="25" /> Development Stack
 <p align="left">
   <!-- Menambahkan Streamlit, Tailwind, MySQL sesuai repo. Menghapus TS/C/C++ agar lebih fokus & jujur -->
   <img src="https://skillicons.dev/icons?i=php,laravel,python,js,nodejs,express,html,css,react,tailwind,bash,mysql,git,docker&theme=dark&perline=50" />
@@ -40,7 +40,7 @@ Backend & Network Engineering Student based in **Tuban, Indonesia**, focused on 
 
 ---
 
-## 🚀 Featured Projects
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="25" height="25" /> Featured Projects
 
 | Project | Description | Tech Stack | Link |
 | :--- | :--- | :--- | :---: |
@@ -51,7 +51,7 @@ Backend & Network Engineering Student based in **Tuban, Indonesia**, focused on 
 
 ---
 
-## ⚡ GitHub Stats
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" alt="High Voltage" width="25" height="25" /> GitHub Stats
 
 <table>
   <tr>
@@ -66,14 +66,14 @@ Backend & Network Engineering Student based in **Tuban, Indonesia**, focused on 
   </tr>
 </table>
 
-### 🐍 Contribution Activity
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Animals/Snake.png" alt="Snake" width="25" height="25" /> Contribution Activity
 <p align="center">
   <img src="./dist/snake.svg" alt="Snake Animation" width="100%" />
 </p>
 
 ---
 
-## 📬 Connect with Me
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Objects/Open%20Mailbox%20with%20Raised%20Flag.png" alt="Open Mailbox with Raised Flag" width="25" height="25" /> Connect with Me
 
 <p align="center">
   <a href="mailto:rusdieneri@gmail.com">
