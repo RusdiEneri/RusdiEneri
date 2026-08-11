@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FFAA,100:1679A7&height=120&section=header&animation=fadeIn" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Rusdi%20Eneri&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Web%20Dev%20%7C%20Network%20%7C%20Still%20Learning&descAlignY=55&descSize=16" width="100%"/>
 
   <a href="https://github.com/RusdiEneri">
     <img src="./dist/typing.svg" alt="Typing SVG" />
@@ -93,4 +93,4 @@ Backend & Network Engineering Student based in **Tuban, Indonesia**, focused on 
   </a>
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1679A7,100:00FFAA&height=100&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" width="100%"/>
