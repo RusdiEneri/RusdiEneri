@@ -56,7 +56,7 @@
 
       }
       to {
-        stroke-dasharray: 151.44,2000;
+        stroke-dasharray: 151.49,2000;
       }
     }
 
@@ -201,4 +201,4 @@
         </svg>
 
     </g>
-</svg><!-- generated: 2026-08-12T05:04:03Z -->
+</svg><!-- generated: 2026-08-12T06:24:26Z -->
