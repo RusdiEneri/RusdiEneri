@@ -12,8 +12,6 @@ on:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-    environment:
-      name: production
     permissions:
       contents: write
 
@@ -22,22 +20,15 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.STATS_PAT }}
-          fetch-depth: 0
-
-      - name: Set git identity
-        run: |
-          git config --global user.name "RusdiEneri"
-          git config --global user.email "nuruddinrusydiilham@gmail.com"
+          # fetch-depth: 0 dihapus agar hanya mengunduh commit terakhir (Super Cepat!)
 
       - name: Get timestamp
         id: ts
-        run: |
-          echo "timestamp=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> "$GITHUB_OUTPUT"
+        run: echo "timestamp=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> "$GITHUB_OUTPUT"
 
       - name: Save current HEAD
         id: before
-        run: |
-          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Generate metrics
         uses: lowlighter/metrics@latest
@@ -56,10 +47,11 @@ jobs:
           GIT_COMMITTER_NAME: "RusdiEneri"
           GIT_COMMITTER_EMAIL: "nuruddinrusydiilham@gmail.com"
         run: |
-          git fetch origin main
-          git checkout main
-          git reset --hard origin/main
+          git config user.name "$GIT_AUTHOR_NAME"
+          git config user.email "$GIT_AUTHOR_EMAIL"
 
+          # Sinkronkan commit yang baru ditarik oleh lowlighter/metrics secara efisien
+          git pull origin main --rebase || true
           REMOTE_SHA=$(git rev-parse HEAD)
 
           git add -A
