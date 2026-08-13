@@ -56,7 +56,7 @@
 
       }
       to {
-        stroke-dasharray: 152.67,2000;
+        stroke-dasharray: 152.89,2000;
       }
     }
 
@@ -151,7 +151,7 @@
                     </svg>
 
                     <text class="stat bold" x="25" y="12.5">Total Stars:</text>
-                    <text class="stat" x="160" y="12.5" data-testid="stars">50</text>
+                    <text class="stat" x="160" y="12.5" data-testid="stars">51</text>
                 </g>
             </g>
             <g transform="translate(0, 27)">
@@ -195,10 +195,10 @@
                     </svg>
 
                     <text class="stat bold" x="25" y="12.5">Contributed to:</text>
-                    <text class="stat" x="160" y="12.5" data-testid="contribs">35</text>
+                    <text class="stat" x="160" y="12.5" data-testid="contribs">36</text>
                 </g>
             </g>
         </svg>
 
     </g>
-</svg><!-- generated: 2026-08-13T08:32:40Z -->
+</svg><!-- generated: 2026-08-13T12:43:35Z -->
