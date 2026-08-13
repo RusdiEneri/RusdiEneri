@@ -2,7 +2,7 @@ name: Generate Awesome Stats (Local Build)
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '0 0 * * *'
   push:
     paths:
       - ".github/workflows/awesome-stats-local.yml"
