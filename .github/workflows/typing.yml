@@ -3,7 +3,7 @@ name: Generate Typing SVG from Source
 on:
   schedule:
     # Berjalan setiap 5 menit
-    - cron: '*/5 * * * *'
+    - cron: '0 0 * * *'
   workflow_dispatch: # Tombol untuk menjalankan manual dari tab Actions
   push:
     paths:
