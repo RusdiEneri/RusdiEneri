@@ -56,8 +56,8 @@ Backend & Network Engineering Student based in **Tuban, Indonesia**, focused on 
 <table>
   <tr>
     <td width="49%">
-      <!-- https://streak-stats.demolab.com/?user=RusdiEneri&theme=radical&hide_border=true-->
-      <img src="./dist/streak-stats.svg" width="100%" />
+      <!-- https://github-readme-streak-stats-alok-2c66.vercel.app/?user=RusdiEneri&theme=radical-->
+      <img src="https://github-readme-streak-stats-alok-2c66.vercel.app?user=RusdiEneri&theme=radical" width="100%" />
     </td>
     <!-- https://awesome-github-stats.azurewebsites.net/user-stats/RusdiEneri?cardType=level&theme=radical&fontFamily=Poppins&preferLogin=true-->
     <td width="44%">
