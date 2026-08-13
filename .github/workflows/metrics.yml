@@ -44,9 +44,6 @@ jobs:
         with:
           token: ${{ secrets.STATS_PAT }}
           filename: dist/metrics.svg
-          committer: RusdiEneri
-          committer_email: nuruddinrusydiilham@gmail.com
-          commit_message: "chore: update metrics - ${{ steps.ts.outputs.timestamp }}"
 
       - name: Ensure commit exists even if metrics unchanged
         env:
@@ -56,6 +53,8 @@ jobs:
           git fetch origin main
           git checkout main
           git reset --hard origin/main
+          git config --global user.name 'RusdiEneri'
+          git config --global user.email 'nuruddinrusydiilham@gmail.com'
 
           REMOTE_SHA=$(git rev-parse HEAD)
 
