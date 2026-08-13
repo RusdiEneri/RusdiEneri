@@ -6,7 +6,8 @@ on:
   workflow_dispatch:
   push:
     branches: ["main"]
-    paths: ".github/workflows/metrics.yml"
+    paths:
+      - ".github/workflows/metrics.yml"
 
 jobs:
   github-metrics:
@@ -15,8 +16,57 @@ jobs:
       name: production
     permissions:
       contents: write
+
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.STATS_PAT }}
+          fetch-depth: 0
+
+      - name: Set git identity
+        run: |
+          git config user.name "RusdiEneri"
+          git config user.email "email-kamu@contoh.com"
+
+      - name: Get timestamp
+        id: ts
+        run: |
+          echo "timestamp=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> "$GITHUB_OUTPUT"
+
+      - name: Save current HEAD
+        id: before
+        run: |
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Generate metrics
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.STATS_PAT }}
           filename: dist/metrics.svg
+          committer: RusdiEneri
+          committer_email: nuruddinrusydiilham@gmail.com
+          commit_message: "chore: update metrics - ${{ steps.ts.outputs.timestamp }}"
+
+      - name: Ensure commit exists even if metrics unchanged
+        env:
+          BEFORE_SHA: ${{ steps.before.outputs.sha }}
+          TIMESTAMP: ${{ steps.ts.outputs.timestamp }}
+        run: |
+          git fetch origin main
+          git checkout main
+          git reset --hard origin/main
+
+          REMOTE_SHA=$(git rev-parse HEAD)
+
+          git add -A
+
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(metrics): update metrics - $TIMESTAMP"
+            git push origin main
+          elif [ "$BEFORE_SHA" = "$REMOTE_SHA" ]; then
+            git commit --allow-empty -m "chore(metrics): run - $TIMESTAMP"
+            git push origin main
+          else
+            echo "Sudah ada commit dari metrics, empty commit dilewati."
+          fi
