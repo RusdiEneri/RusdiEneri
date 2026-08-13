@@ -26,8 +26,8 @@ jobs:
 
       - name: Set git identity
         run: |
-          git config user.name "RusdiEneri"
-          git config user.email "nuruddinrusydiilham@gmail.com"
+          git config --global user.name "RusdiEneri"
+          git config --global user.email "nuruddinrusydiilham@gmail.com"
 
       - name: Get timestamp
         id: ts
@@ -43,15 +43,18 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.STATS_PAT }}
+          committer_token: ${{ secrets.STATS_PAT }}
           filename: dist/metrics.svg
-          committer: RusdiEneri
-          committer_email: nuruddinrusydiilham@gmail.com
           commit_message: "chore: update metrics - ${{ steps.ts.outputs.timestamp }}"
 
       - name: Ensure commit exists even if metrics unchanged
         env:
           BEFORE_SHA: ${{ steps.before.outputs.sha }}
           TIMESTAMP: ${{ steps.ts.outputs.timestamp }}
+          GIT_AUTHOR_NAME: "RusdiEneri"
+          GIT_AUTHOR_EMAIL: "nuruddinrusydiilham@gmail.com"
+          GIT_COMMITTER_NAME: "RusdiEneri"
+          GIT_COMMITTER_EMAIL: "nuruddinrusydiilham@gmail.com"
         run: |
           git fetch origin main
           git checkout main
