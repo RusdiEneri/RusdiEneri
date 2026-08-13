@@ -57,7 +57,7 @@ Backend & Network Engineering Student based in **Tuban, Indonesia**, focused on 
   <!-- Baris 1: Streak Stats & Awesome Stats -->
   <tr>
     <td width="50%" align="center">
-      <img src="https://github-readme-streak-stats-alok-2c66.vercel.app?user=RusdiEneri&theme=radical" width="100%" alt="Streak Stats" />
+      <img src="https://github-readme-streak-stats-alok-2c66.vercel.app/?user=RusdiEneri&theme=radical&fire=F8D847" width="100%" alt="Streak Stats" />
     </td>
     <td width="50%" align="center">
       <img src="./dist/awesome-stats.svg" width="100%" alt="Awesome Stats" />
