@@ -60,7 +60,7 @@ Backend & Network Engineering Student based in **Tuban, Indonesia**, focused on 
       <img src="https://github-readme-streak-stats-alok-2c66.vercel.app/?user=RusdiEneri&theme=radical&fire=F8D847&hide_border=true" width="100%" alt="Streak Stats" />
     </td>
     <td width="50%" align="center">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=RusdiEneri&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true" width="100%" alt="Awesome Stats" />
+      <img src="https://github-readme-stats-seven-psi-71.vercel.app/api?username=RusdiEneri&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true" width="100%" alt="Awesome Stats" />
     </td>
   </tr>
 
