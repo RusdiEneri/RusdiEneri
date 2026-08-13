@@ -2,7 +2,7 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,2,2,3&height=180&section=header&text=Rusdi%20Eneri&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Web%20Dev%20%7C%20Network%20%7C%20Still%20Learning&descAlignY=55&descSize=16" width="100%"/>
 
   <a href="https://github.com/RusdiEneri">
-    <img src="./dist/typing.svg" alt="Typing SVG" />
+    <img src="https://readme-typing-svg-gules.vercel.app/?font=Fira+Code&weight=600&size=35&duration=3000&pause=1000&color=00FFAA&center=true&vCenter=true&width=800&lines=Hi%2C+I%27m+Nuruddin+Rusydi+Ilham+%F0%9F%91%8B;Backend+%26+Network+Engineering;Linux+Infrastructure+%26+Automation;DNS+Filtering+%26+Security+Builder." alt="Typing SVG" />
   </a>
 </div>
 
