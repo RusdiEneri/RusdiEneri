@@ -44,7 +44,7 @@ Backend & Network Engineering Student based in **Tuban, Indonesia**, focused on 
 
 | Project | Description | Tech Stack | Link |
 | :--- | :--- | :--- | :---: |
-| **Blacklist Hosts** | Curated multi-source domain block registry. Memblokir ~950k domain berbahaya (Gambling, NSFW, DoH/VPN bypass). | `Hosts`, `Shell`, `Automation` | [Repository](https://github.com/RusdiEneri/blacklist-hosts) |
+| **MahasigMind** | Aplikasi ini memfasilitasi pemantauan kesehatan emosional melalui pencatatan mood harian, penulisan jurnal reflektif, serta penyediaan akses konsultasi dengan psikolog profesional. | `Laravel 11 (PHP 8.2+)`, `React 19 + TypeScript`, `Inertia.js`, `Tailwind CSS v3` | [Repository](https://github.com/RusdiEneri/MahasigMind) |
 | **Cuanin** | Marketplace barang bekas (preloved) dengan fitur multi-role, wishlist, keranjang, dan nego harga via WhatsApp. | `Laravel 12`, `TailwindCSS`, `Vite`, `MySQL` | [Repository](https://github.com/RusdiEneri/Cuanin) |
 | **J&T Express Scheduling** | Sistem penjadwalan otomatis shift piket karyawan menggunakan **Algoritma Genetika** untuk mematuhi hard & soft constraints. | `Python`, `Streamlit`, `Pandas`, `OpenPyXL` | [Repository](https://github.com/RusdiEneri/jt-express-scheduling) |
 | **UD. Alam Makmur Jaya** | Sistem Informasi Penjualan Toko Bangunan berbasis Web untuk mengelola transaksi, produk, staf, dan laporan. | `Express`, `Vite`, `Vanilla JS` | [Repository](https://github.com/RusdiEneri/alam-makmur-jaya) |
