@@ -51,7 +51,7 @@ Backend & Network Engineering Student based in **Tuban, Indonesia**, focused on 
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" alt="High Voltage" width="25" height="25" /> GitHub Stats
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Objects/Bar%20Chart.png" alt="High Voltage" width="25" height="25" /> GitHub Stats
 
 <table border="0">
   <!-- Baris 1: Streak Stats & Awesome Stats -->
@@ -97,7 +97,7 @@ Backend & Network Engineering Student based in **Tuban, Indonesia**, focused on 
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Objects/Open%20Mailbox%20with%20Raised%20Flag.png" alt="Open Mailbox with Raised Flag" width="25" height="25" /> Connect with Me
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/People/Man%20Student.png" alt="Open Mailbox with Raised Flag" width="25" height="25" /> Connect with Me
 
 <p align="center">
   <a href="mailto:rusdieneri@gmail.com">
