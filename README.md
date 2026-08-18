@@ -42,58 +42,47 @@ Backend & Network Engineering Student based in **Tuban, Indonesia**, focused on 
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="25" height="25" /> Featured Projects
 
-| Project | Description | Tech Stack | Link |
-| :--- | :--- | :--- | :---: |
-| **MahasigMind** | Aplikasi ini memfasilitasi pemantauan kesehatan emosional melalui pencatatan mood harian, penulisan jurnal reflektif, serta penyediaan akses konsultasi dengan psikolog profesional. | `Laravel 11 (PHP 8.2+)`, `React 19 + TypeScript`, `Inertia.js`, `Tailwind CSS v3` | [Repository](https://github.com/RusdiEneri/MahasigMind) |
-| **Cuanin** | Marketplace barang bekas (preloved) dengan fitur multi-role, wishlist, keranjang, dan nego harga via WhatsApp. | `Laravel 12`, `TailwindCSS`, `Vite`, `MySQL` | [Repository](https://github.com/RusdiEneri/Cuanin) |
-| **J&T Express Scheduling** | Sistem penjadwalan otomatis shift piket karyawan menggunakan **Algoritma Genetika** untuk mematuhi hard & soft constraints. | `Python`, `Streamlit`, `Pandas`, `OpenPyXL` | [Repository](https://github.com/RusdiEneri/jt-express-scheduling) |
-| **UD. Alam Makmur Jaya** | Sistem Informasi Penjualan Toko Bangunan berbasis Web untuk mengelola transaksi, produk, staf, dan laporan. | `Express`, `Vite`, `Vanilla JS` | [Repository](https://github.com/RusdiEneri/alam-makmur-jaya) |
+| Project | Description | Tech Stack | 
+| :--- | :--- | :--- | 
+| [**MahasigMind**](https://github.com/RusdiEneri/MahasigMind) | Aplikasi ini memfasilitasi pemantauan kesehatan emosional melalui pencatatan mood harian, penulisan jurnal reflektif, serta penyediaan akses konsultasi dengan psikolog profesional. | `Laravel 11 (PHP 8.2+)`, `React 19 + TypeScript`, `Inertia.js`, `Tailwind CSS v3`  |
+| [**Cuanin**](https://github.com/RusdiEneri/Cuanin) | Marketplace barang bekas (preloved) dengan fitur multi-role, wishlist, keranjang, dan nego harga via WhatsApp. | `Laravel 12`, `TailwindCSS`, `Vite`, `MySQL` | 
+| [**J&T Express Scheduling**](https://github.com/RusdiEneri/jt-express-scheduling) | Sistem penjadwalan otomatis shift piket karyawan menggunakan **Algoritma Genetika** untuk mematuhi hard & soft constraints. | `Python`, `Streamlit`, `Pandas`, `OpenPyXL` | 
+| [**UD. Alam Makmur Jaya**](https://github.com/RusdiEneri/alam-makmur-jaya) | Sistem Informasi Penjualan Toko Bangunan berbasis Web untuk mengelola transaksi, produk, staf, dan laporan. | `Express`, `Vite`, `Vanilla JS` | 
 
 ---
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Objects/Bar%20Chart.png" alt="High Voltage" width="25" height="25" /> GitHub Stats
 
 <table border="0">
-  <!-- Baris 1: Streak Stats & Awesome Stats -->
   <tr>
-    <td width="50%" align="center">
+    <td width="49%" align="center">
       <img src="https://github-readme-streak-stats-alok-2c66.vercel.app/?user=RusdiEneri&theme=radical&fire=F8D847&hide_border=true" width="100%" alt="Streak Stats" />
     </td>
-    <td width="50%" align="center">
+    <td width="49%" align="center">
       <img src="https://github-readme-stats-seven-psi-71.vercel.app/api?username=RusdiEneri&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true" width="100%" alt="Awesome Stats" />
     </td>
   </tr>
-
-  <!-- Baris 2: Profile Details (Full Width Banner) -->
-  <tr>
+<!--  <tr>
     <td colspan="2" align="center">
       <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RusdiEneri&theme=radical" width="100%" alt="Profile Details" />
     </td>
+  </tr> -->
+  <tr>
+    <td width="49%" align="center">
+      <img src="https://github-readme-stats-alok-2c66.vercel.app/api/top-langs/?username=RusdiEneri&theme=radical&layout=compact&hide_border=true" width="100%" alt="Repos Per Language" />
+    </td>
+    <td width="49%" align="center">
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=RusdiEneri&theme=radical" width="100%" alt="Most Commit Language" />
+    </td>
   </tr>
 
-  <!-- Baris 3: Repos per Language & Most Commit Language -->
   <tr>
     <td colspan="2" align="left">
       <img src="./dist/snake.svg" width="100%" alt="Productive Time" />
     </td>
   </tr>
-
-  <!-- Baris 4: Productive Time (Rata Tengah) -->
-  <!-- https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=RusdiEneri&theme=github_dark&utcOffset=7 -->
-  <tr>
-    <td width="50%" align="center">
-      <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=RusdiEneri&theme=radical" width="100%" alt="Repos Per Language" />
-    </td>
-    <td width="50%" align="center">
-      <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=RusdiEneri&theme=radical" width="100%" alt="Most Commit Language" />
-    </td>
-  </tr>
+  
 </table>
-
-<!-- ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Animals/Snake.png" alt="Snake" width="25" height="25" /> Contribution Activity
-<p align="center">
-  <img src="./dist/snake.svg" alt="Snake Animation" width="100%" />
-</p> -->
 
 ---
 
