@@ -2,24 +2,33 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
+
   push:
     paths:
       - ".github/workflows/snake.yml"
+
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: generate-snake
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
+
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0 # Diperlukan untuk git pull --rebase
+          fetch-depth: 0
 
       - name: Generate snake.svg
         uses: Platane/snk/svg-only@v3
@@ -28,6 +37,18 @@ jobs:
           outputs: |
             dist/snake.svg?palette=github-dark
 
+      - name: Add generation timestamp
+        run: |
+          set -euo pipefail
+
+          TIMESTAMP="$(date -u '+%Y-%m-%dT%H:%M:%SZ')"
+          RUN_ID="${GITHUB_RUN_ID}"
+
+          # Insert metadata before closing SVG tag.
+          sed -i \
+            "s#</svg>#<!-- generated: ${TIMESTAMP} | run: ${RUN_ID} -->\\n</svg>#" \
+            dist/snake.svg
+
       - name: Commit & push
         run: |
           set -euo pipefail
@@ -35,19 +56,12 @@ jobs:
           git config user.name "RusdiEneri"
           git config user.email "nuruddinrusydiilham@gmail.com"
 
-          # Timestamp → menjamin file selalu berbeda
-          echo "<!-- generated: $(date -u +%Y-%m-%dT%H:%M:%SZ) -->" >> dist/snake.svg
+          # Make sure we're pushing on top of the latest main branch.
+          git pull --rebase origin main
 
           git add dist/snake.svg
-          
-          # ✅ Cek apakah benar-benar ada perubahan sebelum commit
-          if git diff --cached --quiet; then
-            echo "No changes to commit, skipping."
-            exit 0
-          fi
-          
+
+          # Always create a commit because the timestamp changes every run.
           git commit -m "chore: update github-snake [skip ci]"
-          
-          # ✅ WAJIB: Pull rebase untuk mencegah gagal push jika workflow lain (streak/quote) push di waktu yang sama
-          git pull --rebase origin main
+
           git push origin HEAD:main
