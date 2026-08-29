@@ -66,6 +66,14 @@ Currently, I'm exploring **Network Security, Linux System Administration, API De
 # GitHub Stats
 
 <table border="0">
+    <tr>
+    <td colspan="2" align="left">
+      <a href="https://github.com/RusdiEneri">
+        <img src="./dist/snake.svg" width="100%" alt="GitHub Contribution Snake" />
+      </a>
+    </td>
+  </tr>
+
   <tr>
     <td width="49%" align="center">
       <a href="https://github.com/RusdiEneri">
@@ -79,7 +87,7 @@ Currently, I'm exploring **Network Security, Linux System Administration, API De
     </td>
   </tr>
 
-  <tr>
+  <!-- <tr>
     <td width="49%" align="center">
       <a href="https://github.com/RusdiEneri">
         <img src="https://github-readme-stats-alok-2c66.vercel.app/api/top-langs/?username=RusdiEneri&theme=radical&layout=compact&hide_border=true" width="100%" alt="Top Languages" />
@@ -90,15 +98,8 @@ Currently, I'm exploring **Network Security, Linux System Administration, API De
         <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=RusdiEneri&theme=radical" width="100%" alt="Most Commit Language" />
       </a>
     </td>
-  </tr>
+  </tr> -->
 
-  <tr>
-    <td colspan="2" align="left">
-      <a href="https://github.com/RusdiEneri">
-        <img src="./dist/snake.svg" width="100%" alt="GitHub Contribution Snake" />
-      </a>
-    </td>
-  </tr>
 </table>
 
 <br>

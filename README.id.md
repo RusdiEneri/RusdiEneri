@@ -67,6 +67,14 @@ Saat ini saya sedang mendalami **Network Security, Linux System Administration, 
 
 <table border="0">
   <tr>
+    <td colspan="2" align="left">
+      <a href="https://github.com/RusdiEneri">
+        <img src="./dist/snake.svg" width="100%" alt="GitHub Contribution Snake" />
+      </a>
+    </td>
+  </tr>
+
+  <tr>
     <td width="49%" align="center">
       <a href="https://github.com/RusdiEneri">
         <img src="https://github-readme-streak-stats-alok-2c66.vercel.app/?user=RusdiEneri&theme=radical&fire=F8D847&hide_border=true" width="100%" alt="GitHub Streak Stats" />
@@ -79,7 +87,7 @@ Saat ini saya sedang mendalami **Network Security, Linux System Administration, 
     </td>
   </tr>
 
-  <tr>
+  <!-- <tr>
     <td width="49%" align="center">
       <a href="https://github.com/RusdiEneri">
         <img src="https://github-readme-stats-alok-2c66.vercel.app/api/top-langs/?username=RusdiEneri&theme=radical&layout=compact&hide_border=true" width="100%" alt="Bahasa Pemrograman Teratas" />
@@ -90,15 +98,8 @@ Saat ini saya sedang mendalami **Network Security, Linux System Administration, 
         <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=RusdiEneri&theme=radical" width="100%" alt="Bahasa dengan Commit Terbanyak" />
       </a>
     </td>
-  </tr>
+  </tr> -->
 
-  <tr>
-    <td colspan="2" align="left">
-      <a href="https://github.com/RusdiEneri">
-        <img src="./dist/snake.svg" width="100%" alt="GitHub Contribution Snake" />
-      </a>
-    </td>
-  </tr>
 </table>
 
 <br>
