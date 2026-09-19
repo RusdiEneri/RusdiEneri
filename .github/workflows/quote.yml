@@ -2,7 +2,7 @@ name: Update Quote Log
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "* * * * *"
   workflow_dispatch:
   push:
     paths:
