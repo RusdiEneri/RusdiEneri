@@ -1,0 +1,56 @@
+name: Update streak stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"        # setiap 5 menit
+  push:
+    paths:
+      - ".github/workflows/streak-stats.yml"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    # ✅ Anti-loop: skip kalau commit pemicu mengandung [skip ci]
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Generate streak stats
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: user=${{ github.repository_owner }}&theme=radical&hide_border=false&fire=ffff00
+          path: dist/streak-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit & push
+        run: |
+          set -euo pipefail
+
+          git config user.name "RusdiEneri"
+          git config user.email "nuruddinrusydiilham@gmail.com"
+
+          # ✅ Timestamp → file selalu berbeda tiap run
+          echo "<!-- generated: $(date -u +%Y-%m-%dT%H:%M:%SZ) -->" >> dist/streak-stats.svg
+
+          git add dist/streak-stats.svg
+
+          # ✅ Cek apakah benar-benar ada perubahan sebelum commit
+          if git diff --cached --quiet; then
+            echo "No changes to commit, skipping."
+            exit 0
+          fi
+
+          # ✅ [skip ci] → mencegah loop dari trigger push
+          git commit -m "chore: update streak stats [skip ci]"
+
+          # ✅ Pull rebase untuk menghindari race condition
+          git pull --rebase origin main
+          git push origin HEAD:main

@@ -1,0 +1,77 @@
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Sync with default branch
+        env:
+          BRANCH: ${{ github.ref_name }}
+          GIT_USER: ${{ github.actor }}
+          GIT_EMAIL: ${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com
+        run: |
+          set -euo pipefail
+          git config user.name "$GIT_USER"
+          git config user.email "$GIT_EMAIL"
+          git config pull.rebase true
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git checkout -B "$BRANCH" "origin/$BRANCH"
+
+      - name: Generate snake.svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg?palette=github-dark
+
+      - name: Add generation timestamp
+        env:
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          TIMESTAMP="$(date -u '+%Y-%m-%dT%H:%M:%SZ')"
+          sed -i \
+            "s#</svg>#<!-- generated: ${TIMESTAMP} | run: ${RUN_ID} -->\n</svg>#" \
+            dist/snake.svg
+
+      - name: Commit & push (anti-rejected)
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          git add dist/snake.svg
+          # Cek apakah ada perubahan
+          if git diff --cached --quiet; then
+            echo "Tidak ada perubahan snake.svg."
+            exit 0
+          fi
+          git commit -m "chore: update github-snake"
+          # Retry + rebase agar anti-rejected
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase origin "$BRANCH" || git rebase --abort
+            if git push origin "$BRANCH"; then
+              echo "Push berhasil (percobaan $attempt)"
+              exit 0
+            fi
+            echo "Push ditolak, rebase & coba lagi 10 detik..."
+            sleep 10
+          done
+          exit 1
