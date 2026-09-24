@@ -1,0 +1,53 @@
+name: Update GitHub Readme Stats
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+      timezone: "Asia/Jakarta"
+  workflow_dispatch:
+  push:
+      paths:
+        - ".github/workflows/github-stats.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Generate stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=RusdiEneri&show_icons=true
+          path: dist/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=RusdiEneri&layout=compact&langs_count=8
+          path: dist/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit generated cards
+        run: |
+          git config user.name "RusdiEneri"
+          git config user.email "nuruddinrusydiilham@gmail.com"
+
+          git add dist/*.svg
+
+          git diff --cached --quiet && exit 0
+
+          git commit -m "Update GitHub Readme Stats"
+          git push
