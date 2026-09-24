@@ -102,7 +102,7 @@ Currently, I am expanding my expertise in **Network Security, Infrastructure Aut
       </td>
       <td width="50%" align="center">
         <a href="https://github.com/RusdiEneri">
-          <img src="./dist/stats.svg" width="100%" alt="GitHub Stats" />
+          <img src="./dist/awesome-github-stats.svg" width="100%" alt="GitHub Stats" />
         </a>
       </td>
     </tr>

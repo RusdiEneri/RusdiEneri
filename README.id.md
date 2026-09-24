@@ -102,7 +102,7 @@ Saat ini, saya sedang memperdalam keahlian di bidang **Keamanan Jaringan, Otomat
       </td>
       <td width="50%" align="center">
         <a href="https://github.com/RusdiEneri">
-          <img src="./dist/stats.svg" width="100%" alt="GitHub Stats" />
+          <img src="./dist/awesome-github-stats.svg" width="100%" alt="GitHub Stats" />
         </a>
       </td>
     </tr>
