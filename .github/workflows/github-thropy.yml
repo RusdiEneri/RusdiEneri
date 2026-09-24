@@ -19,8 +19,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      # Checkout repo profile RusdiEneri/RusdiEneri
+      - name: Checkout profile repository
         uses: actions/checkout@v6
+
+      # Checkout source github-profile-trophy
+      - name: Checkout trophy source
+        uses: actions/checkout@v6
+        with:
+          repository: RusdiEneri/github-profile-trophy
+          ref: master
+          path: trophy-source
 
       - name: Setup Deno
         uses: denoland/setup-deno@v2
@@ -36,11 +45,10 @@ jobs:
             --allow-env \
             --allow-read \
             --allow-write \
-            ./render_svg.ts \
+            ./trophy-source/render_svg.ts \
             RusdiEneri \
-            dist/trophy.svg \
-            radical \
-            F8D847 \
+            ./dist/trophy.svg \
+            radical
 
       - name: Commit trophy
         run: |
@@ -49,7 +57,10 @@ jobs:
 
           git add dist/trophy.svg
 
-          git diff --cached --quiet && exit 0
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
 
-          git commit -m "Update GitHub trophy"
+          git commit -m "Update GitHub Trophy"
           git push
