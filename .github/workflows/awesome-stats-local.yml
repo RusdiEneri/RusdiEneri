@@ -101,4 +101,5 @@ jobs:
           fi
 
           git commit -m "chore: update awesome github stats [skip ci]"
+          git pull --rebase origin main
           git push
