@@ -103,6 +103,12 @@ Saat ini, saya sedang memperdalam keahlian di bidang **Keamanan Jaringan, Otomat
   </table>
 </div>
 
+<div align='center'>
+  <a href="https://github.com/RusdiEneri">
+    <img src="./dist/trophy.svg" width="100%" alt="GitHub Trophy Stats" />
+  </a>
+</div>
+
 <br>
 
 ## 🤝 Mari Terhubung!

@@ -103,6 +103,12 @@ Currently, I am expanding my expertise in **Network Security, Infrastructure Aut
   </table>
 </div>
 
+<div align='center'>
+  <a href="https://github.com/RusdiEneri">
+    <img src="./dist/trophy.svg" width="100%" alt="GitHub Trophy Stats" />
+  </a>
+</div>
+
 <br>
 
 ## 🤝 Let's Connect!
