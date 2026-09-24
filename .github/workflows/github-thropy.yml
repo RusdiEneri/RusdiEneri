@@ -1,0 +1,55 @@
+name: Update GitHub Trophy
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+      timezone: "Asia/Jakarta"
+
+  workflow_dispatch:
+
+  push:
+    paths:
+      - ".github/workflows/github-thropy.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Generate trophy
+        env:
+          GITHUB_TOKEN1: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          deno run \
+            --allow-net \
+            --allow-env \
+            --allow-read \
+            --allow-write \
+            ./render_svg.ts \
+            RusdiEneri \
+            dist/trophy.svg \
+            radical \
+            F8D847 \
+
+      - name: Commit trophy
+        run: |
+          git config user.name "RusdiEneri"
+          git config user.email "nuruddinrusydiilham@gmail.com"
+
+          git add dist/trophy.svg
+
+          git diff --cached --quiet && exit 0
+
+          git commit -m "Update GitHub trophy"
+          git push

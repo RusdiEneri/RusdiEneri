@@ -96,7 +96,7 @@ Saat ini, saya sedang memperdalam keahlian di bidang **Keamanan Jaringan, Otomat
       </td>
       <td width="50%" align="center">
         <a href="https://github.com/RusdiEneri">
-          <img src="https://github-readme-stats-seven-psi-71.vercel.app/api?username=RusdiEneri&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true" width="100%" alt="GitHub Stats" />
+          <img src="./dist/stats.svg" width="100%" alt="GitHub Stats" />
         </a>
       </td>
     </tr>
