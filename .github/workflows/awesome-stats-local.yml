@@ -90,8 +90,8 @@ jobs:
 
       - name: Commit generated SVG
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "RusdiEneri"
+          git config user.email "nuruddinrusydiilham@gmail.com"
 
           git add dist/awesome-github-stats.svg
 
