@@ -2,11 +2,16 @@ name: Update streak stats
 
 on:
   schedule:
-    - cron: "0 0 * * *"        # setiap 5 menit
+    - cron: "0 */12 * * *"
+      timezone: "Asia/Jakarta"
   push:
     paths:
       - ".github/workflows/streak-stats.yml"
   workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -26,7 +31,7 @@ jobs:
       - name: Generate streak stats
         uses: DenverCoder1/github-readme-streak-stats@main
         with:
-          options: user=${{ github.repository_owner }}&theme=radical&hide_border=false&fire=ffff00
+          options: user=${{ github.repository_owner }}&theme=radical&fire=F8D847&hide_border=true
           path: dist/streak-stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 

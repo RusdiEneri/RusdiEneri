@@ -91,7 +91,7 @@ Currently, I am expanding my expertise in **Network Security, Infrastructure Aut
     <tr>
       <td width="50%" align="center">
         <a href="https://github.com/RusdiEneri">
-          <img src="https://github-readme-streak-stats-alok-2c66.vercel.app/?user=RusdiEneri&theme=radical&fire=F8D847&hide_border=true" width="100%" alt="GitHub Streak Stats" />
+          <img src="./dist/streak-stats.svg" width="100%" alt="GitHub Streak Stats" />
         </a>
       </td>
       <td width="50%" align="center">
