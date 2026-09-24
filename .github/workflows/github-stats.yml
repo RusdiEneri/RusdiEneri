@@ -28,7 +28,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=RusdiEneri&show_icons=true
+          options: username=RusdiEneri&show_icons=true&theme=radical&hide_border=true
           path: dist/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -36,7 +36,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=RusdiEneri&layout=compact&langs_count=8
+          options: username=RusdiEneri&layout=compact&langs_count=8&theme=radical&hide_border=true
           path: dist/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
