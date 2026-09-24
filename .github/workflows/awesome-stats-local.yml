@@ -2,11 +2,16 @@ name: Generate Awesome Stats (Local Build)
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 */12 * * *'
+      timezone: 'Asia/Jakarta'
   push:
     paths:
       - ".github/workflows/awesome-stats-local.yml"
   workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build-local:
