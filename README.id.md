@@ -82,7 +82,7 @@ Saat ini, saya sedang memperdalam keahlian di bidang **Keamanan Jaringan, Otomat
 
 <div align="center">
   <a href="https://github.com/RusdiEneri">
-    <img src="./dist/snake.svg" width="100%" alt="GitHub Contribution Snake" />
+    <img src="./dist/galaga-contribution-graph-dark.svg" width="100%" alt="GitHub Contribution Snake" />
   </a>
 </div>
 
