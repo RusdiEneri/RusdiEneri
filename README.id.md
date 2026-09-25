@@ -82,7 +82,7 @@ Saat ini, saya sedang memperdalam keahlian di bidang **Keamanan Jaringan, Otomat
 
 <div align="center">
   <a href="https://github.com/RusdiEneri">
-    <img src="./dist/game.gif" width="100%" alt="GitHub Contribution" />
+    <img src="./dist/gh-space-shooter.webp" width="100%" alt="GitHub Contribution" />
   </a>
 </div>
 

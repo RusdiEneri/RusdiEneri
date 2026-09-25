@@ -3,6 +3,7 @@ name: "🚀 Update Space Shooter Game"
 on:
   schedule:
     - cron: "0 * * * *"
+
   workflow_dispatch:
   push:
     paths:
@@ -13,7 +14,7 @@ permissions:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: false  
+  cancel-in-progress: false
 
 jobs:
   update-game:
@@ -32,13 +33,12 @@ jobs:
         run: |
           mkdir -p dist
 
-      - name: "🎮 Generate Space Shooter GIF"
+      - name: "🎮 Generate Space Shooter"
         uses: czl9707/gh-space-shooter@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          output-path: "dist/game.gif"
+          output-path: "dist/gh-space-shooter.webp"
           strategy: "random"
-          no-commit: true
 
       - name: "👤 Configure Git"
         shell: bash
@@ -50,7 +50,7 @@ jobs:
         shell: bash
         run: |
           echo "📦 Generated file:"
-          ls -lh dist/game.gif
+          ls -lh dist/gh-space-shooter.webp
 
           echo
           echo "📂 Git status:"
@@ -60,16 +60,16 @@ jobs:
         id: commit
         shell: bash
         run: |
-          git add -f dist/game.gif
+          git add -f dist/gh-space-shooter.webp
 
           if git diff --cached --quiet; then
-            echo "ℹ️ Tidak ada perubahan pada game.gif"
-            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ Tidak ada perubahan pada gh-space-shooter.webp"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
           git commit -m "chore(game): update space shooter"
-          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: "🚀 Push changes"
         if: steps.commit.outputs.changed == 'true'
