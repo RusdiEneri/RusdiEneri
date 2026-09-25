@@ -1,3 +1,4 @@
+
 name: "🚀 Update Space Shooter Game"
 
 on:
@@ -35,15 +36,11 @@ jobs:
           mkdir -p dist
 
       - name: "🎮 Generate Space Shooter"
-        uses: czl9707/gh-space-shooter@v2.0.4
+        uses: czl9707/gh-space-shooter@main
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           output-path: "dist/gh-space-shooter.webp"
           strategy: "random"
-
-          # 🔥 WAJIB
-          # Action hanya generate file.
-          # Jangan biarkan action membuat commit sendiri.
           no-commit: true
 
       - name: "👤 Configure Git"
@@ -51,6 +48,16 @@ jobs:
         run: |
           git config --local user.name "RusdiEneri"
           git config --local user.email "nuruddinrusydiilham@gmail.com"
+
+      - name: "🔎 Verify Git identity"
+        shell: bash
+        run: |
+          echo "Git user:"
+          git config user.name
+
+          echo
+          echo "Git email:"
+          git config user.email
 
       - name: "🔎 Check generated file"
         shell: bash
@@ -61,11 +68,6 @@ jobs:
           echo
           echo "📂 Git status:"
           git status --short
-
-          echo
-          echo "👤 Git identity:"
-          git config user.name
-          git config user.email
 
       - name: "💾 Commit game update"
         id: commit
@@ -81,7 +83,6 @@ jobs:
 
           git commit -m "chore(game): update space shooter"
 
-          echo "✅ Commit berhasil dibuat."
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: "🚀 Push changes"
