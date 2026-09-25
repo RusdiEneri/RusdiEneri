@@ -94,19 +94,13 @@ Currently, I am expanding my expertise in **Network Security, Infrastructure Aut
           <img src="https://github-readme-streak-stats-alok-2c66.vercel.app/?user=RusdiEneri&theme=radical&hide_border=false&border_radius=0&fire=F8D847" width="100%" alt="GitHub Streak Stats" />
         </a>
       </td>
-      <td width="50%" align="center">
+      <td width="45%" align="center">
         <a href="https://github.com/RusdiEneri">
           <img src="https://awesome-github-stats.azurewebsites.net/user-stats/RusdiEneri?cardType=github&theme=radical&fontFamily=&preferLogin=true" width="100%" alt="GitHub Stats" />
         </a>
       </td>
     </tr>
   </table>
-</div>
-
-<div align='center'>
-  <a href="https://github.com/RusdiEneri">
-    <img src="https://github-profile-trophy-three-phi.vercel.app/?username=RusdiEneri&theme=radical" width="100%" alt="GitHub Trophy Stats" />
-  </a>
 </div>
 
 <br>
