@@ -32,8 +32,8 @@ jobs:
 
       - name: Setup Git Identity
         run: |
-          git config user.name "RusdiEneri"
-          git config user.email "nuruddinrusydiilham@gmail.com"
+          git config user.name "${{ github.repository_owner }}"
+          git config user.email "${{ github.repository_owner }}@users.noreply.github.com"
 
       - name: Generate contribution graph SVGs
         uses: abozanona/pacman-contribution-graph@main
@@ -41,7 +41,7 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           games: 'galaga'
 
-      - name: Commit generated SVGs to main
+      - name: Commit and push generated SVGs
         run: |
           git add dist/
 
@@ -51,5 +51,26 @@ jobs:
           fi
 
           git commit -m "chore(arcade): update contribution graphs"
-          git push origin HEAD:main
 
+          for attempt in 1 2 3 4 5; do
+            echo "Push attempt $attempt/5"
+
+            git fetch origin main
+
+            if ! git rebase origin/main; then
+              echo "Rebase conflict detected."
+              git rebase --abort
+              exit 1
+            fi
+
+            if git push origin HEAD:main; then
+              echo "Push successful."
+              exit 0
+            fi
+
+            echo "Remote changed again. Retrying..."
+            sleep 3
+          done
+
+          echo "Failed to push after 5 attempts."
+          exit 1
