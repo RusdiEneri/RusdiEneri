@@ -1,76 +1,78 @@
-
-name: generate arcade contribution graphs
+name: "🚀 Update Space Shooter Game"
 
 on:
   schedule:
-    - cron: '0 * * * *'
-
+    - cron: "0 * * * *"
   workflow_dispatch:
-
   push:
     paths:
       - ".github/workflows/arcade.yml"
 
+permissions:
+  contents: write
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: false  
 
 jobs:
-  generate:
-    permissions:
-      contents: write
-
+  update-game:
+    name: "🎮 Generate Space Shooter"
     runs-on: ubuntu-latest
-    timeout-minutes: 20
 
     steps:
-      - name: Checkout main branch
+      - name: "📥 Checkout repository"
         uses: actions/checkout@v4
         with:
-          ref: main
-          fetch-depth: 0
+          fetch-depth: 2
+          persist-credentials: true
 
-      - name: Setup Git Identity
+      - name: "📁 Prepare output directory"
+        shell: bash
         run: |
-          git config user.name "${{ github.repository_owner }}"
-          git config user.email "${{ github.repository_owner }}@users.noreply.github.com"
+          mkdir -p dist
 
-      - name: Generate contribution graph SVGs
-        uses: abozanona/pacman-contribution-graph@main
+      - name: "🎮 Generate Space Shooter GIF"
+        uses: czl9707/gh-space-shooter@v2
         with:
-          github_user_name: ${{ github.repository_owner }}
-          games: 'breakout'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          output-path: "dist/game.gif"
+          strategy: "random"
+          no-commit: true
 
-      - name: Commit and push generated SVGs
+      - name: "👤 Configure Git"
+        shell: bash
         run: |
-          git add dist/
+          git config --local user.name "RusdiEneri"
+          git config --local user.email "nuruddinrusydiilham@gmail.com"
+
+      - name: "🔎 Check generated file"
+        shell: bash
+        run: |
+          echo "📦 Generated file:"
+          ls -lh dist/game.gif
+
+          echo
+          echo "📂 Git status:"
+          git status --short
+
+      - name: "💾 Commit game update"
+        id: commit
+        shell: bash
+        run: |
+          git add -f dist/game.gif
 
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "ℹ️ Tidak ada perubahan pada game.gif"
+            echo "changed=false" >> $GITHUB_OUTPUT
             exit 0
           fi
 
-          git commit -m "chore(arcade): update contribution graphs"
+          git commit -m "chore(game): update space shooter"
+          echo "changed=true" >> $GITHUB_OUTPUT
 
-          for attempt in 1 2 3 4 5; do
-            echo "Push attempt $attempt/5"
-
-            git fetch origin main
-
-            if ! git rebase origin/main; then
-              echo "Rebase conflict detected."
-              git rebase --abort
-              exit 1
-            fi
-
-            if git push origin HEAD:main; then
-              echo "Push successful."
-              exit 0
-            fi
-
-            echo "Remote changed again. Retrying..."
-            sleep 3
-          done
-
-          echo "Failed to push after 5 attempts."
-          exit 1
+      - name: "🚀 Push changes"
+        if: steps.commit.outputs.changed == 'true'
+        shell: bash
+        run: |
+          git push origin HEAD:${{ github.ref_name }}
