@@ -39,7 +39,7 @@ jobs:
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
-          games: 'puzzle-bobble'
+          games: 'breakout'
 
       - name: Commit and push generated SVGs
         run: |
