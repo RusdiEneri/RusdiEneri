@@ -1,14 +1,14 @@
 name: "🚀 Angular Style Activity Logger"
 
 on:
+  # ⏰ Jalan setiap 5 menit
   schedule:
-    # ⏰ Jalan setiap jam
-    - cron: "0 * * * *"
+    - cron: "*/5 * * * *"
 
   # ▶️ Bisa dijalankan manual
   workflow_dispatch:
 
-  # 🔄 Jalankan ulang jika workflow diubah
+  # 🔄 Jalankan saat workflow ini diubah
   push:
     paths:
       - ".github/workflows/log.yml"
@@ -26,20 +26,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout repository
+      - name: "📥 Checkout repository"
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
+          persist-credentials: true
 
-      - name: ⚙️ Configure Git
+      - name: "⚙️ Configure Git"
         env:
           BRANCH: ${{ github.ref_name }}
-          GIT_USER: ${{ github.actor }}
-          GIT_EMAIL: ${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com
+        shell: bash
         run: |
-          git config user.name "$GIT_USER"
-          git config user.email "$GIT_EMAIL"
+          git config --local user.name "RusdiEneri"
+          git config --local user.email "nuruddinrusydiilham@gmail.com"
           git config pull.rebase true
 
           git remote set-url origin \
@@ -48,100 +48,24 @@ jobs:
           git fetch origin "$BRANCH"
           git checkout -B "$BRANCH" "origin/$BRANCH"
 
-      - name: ✨ Create 10 Attractive Conventional Commits
+      - name: "📝 Update activity log"
         env:
           BRANCH: ${{ github.ref_name }}
           RUN_NUMBER: ${{ github.run_number }}
           ACTOR: ${{ github.actor }}
+        shell: bash
         run: |
           set -euo pipefail
 
-          # ---------------------------------------------------------
-          # 🎨 Commit sequence
-          # Setiap commit memiliki tema yang berbeda agar history
-          # terlihat lebih natural dan tidak terasa hasil randomizer.
-          # ---------------------------------------------------------
-          COMMIT_TYPES=(
-            "ci"
-            "chore"
-            "style"
-            "ci"
-            "chore"
-            "style"
-            "ci"
-            "chore"
-            "ci"
-            "chore"
-          )
+          TIMESTAMP="$(TZ=Asia/Jakarta date '+%Y-%m-%d %H:%M:%S')"
+          ISO_TIMESTAMP="$(TZ=Asia/Jakarta date '+%Y-%m-%dT%H:%M:%S%z')"
 
-          COMMIT_SCOPES=(
-            "logger"
-            "log"
-            "format"
-            "workflow"
-            "activity"
-            "output"
-            "runner"
-            "history"
-            "automation"
-            "release"
-          )
-
-          COMMIT_SUBJECTS=(
-            "refresh hourly activity record"
-            "update automated execution snapshot"
-            "normalize logger output format"
-            "sync workflow activity record"
-            "refresh repository activity state"
-            "polish generated log structure"
-            "record latest runner execution"
-            "update automated history entry"
-            "capture current workflow activity"
-            "finalize hourly logger snapshot"
-          )
-
-          COMMIT_BODIES=(
-            "Refresh the repository activity record with the latest execution timestamp."
-            "Store a new automated snapshot for the current workflow cycle."
-            "Keep generated logger output consistent and readable."
-            "Synchronize the activity record with the latest workflow execution."
-            "Update the repository activity state for the current cycle."
-            "Keep the generated log structure clean and consistent."
-            "Record the latest GitHub Actions runner execution."
-            "Append the current automated activity to repository history."
-            "Capture the latest workflow activity for this cycle."
-            "Finalize the generated activity snapshot for this run."
-          )
-
-          echo "🚀 Starting 10 Conventional Commits..."
-          echo "📦 Repository: $GITHUB_REPOSITORY"
-          echo "🌿 Branch: $BRANCH"
-          echo "🔢 Run: #$RUN_NUMBER"
-          echo "👤 Actor: $ACTOR"
-          echo
-
-          for i in {1..10}; do
-
-            TIMESTAMP="$(TZ=Asia/Jakarta date '+%Y-%m-%d %H:%M:%S')"
-            ISO_TIMESTAMP="$(TZ=Asia/Jakarta date '+%Y-%m-%dT%H:%M:%S%z')"
-
-            TYPE="${COMMIT_TYPES[$((i - 1))]}"
-            SCOPE="${COMMIT_SCOPES[$((i - 1))]}"
-            SUBJECT="${COMMIT_SUBJECTS[$((i - 1))]}"
-            BODY="${COMMIT_BODIES[$((i - 1))]}"
-
-            COMMIT_HEADER="$TYPE($SCOPE): $SUBJECT"
-
-            # -------------------------------------------------------
-            # 📝 Update log.txt untuk setiap commit
-            # -------------------------------------------------------
-            cat > log.txt <<EOF
+          cat > log.txt <<EOF
           ============================================
           🚀 ANGULAR STYLE ACTIVITY LOGGER
           ============================================
           Timestamp : $TIMESTAMP
           ISO Time  : $ISO_TIMESTAMP
-          Sequence  : $i/10
           Run       : #$RUN_NUMBER
           Actor     : $ACTOR
           Branch    : $BRANCH
@@ -149,44 +73,43 @@ jobs:
           ============================================
           EOF
 
-            git add log.txt
+          echo "📦 Generated log:"
+          cat log.txt
 
-            git commit \
-              -m "$COMMIT_HEADER" \
-              -m "$BODY" \
-              -m "Automated-by: GitHub Actions" \
-              -m "Generated-at: $TIMESTAMP" \
-              -m "Run: #$RUN_NUMBER"
+          git add -f log.txt
 
-            echo "✅ [$i/10] $COMMIT_HEADER"
+          if git diff --cached --quiet; then
+            echo "ℹ️ Tidak ada perubahan pada log."
+            exit 0
+          fi
 
-            # Sedikit jeda agar setiap commit memiliki timestamp berbeda
-            sleep 2
-          done
+      - name: "💾 Create Conventional Commit"
+        shell: bash
+        run: |
+          TIMESTAMP="$(TZ=Asia/Jakarta date '+%Y-%m-%d %H:%M:%S')"
 
-          echo
-          echo "🎉 10 commits berhasil dibuat."
-          echo "📤 Preparing push..."
+          git commit \
+            -m "ci(log): refresh automated activity record" \
+            -m "Update the repository activity log with the latest workflow execution." \
+            -m "Automated-by: GitHub Actions" \
+            -m "Generated-at: $TIMESTAMP"
 
-          # ---------------------------------------------------------
-          # 🔄 Push dengan retry untuk mengurangi konflik ketika
-          # workflow lain ikut melakukan push.
-          # ---------------------------------------------------------
+      - name: "🚀 Push changes"
+        env:
+          BRANCH: ${{ github.ref_name }}
+        shell: bash
+        run: |
           for attempt in 1 2 3 4 5; do
             echo "🔄 Push attempt $attempt/5..."
 
-            if git pull --rebase origin "$BRANCH"; then
-              if git push origin "$BRANCH"; then
-                echo "🎉 Push berhasil pada percobaan ke-$attempt."
-                exit 0
-              fi
-            else
-              echo "⚠️ Rebase gagal, membatalkan rebase..."
-              git rebase --abort || true
+            if git pull --rebase origin "$BRANCH" && \
+               git push origin "$BRANCH"; then
+              echo "🎉 Push berhasil."
+              exit 0
             fi
 
-            echo "❌ Push gagal."
-            echo "⏳ Menunggu 10 detik sebelum retry..."
+            echo "⚠️ Push gagal, menunggu 10 detik..."
+            git rebase --abort 2>/dev/null || true
             sleep 10
           done
 
