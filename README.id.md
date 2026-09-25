@@ -1,11 +1,11 @@
 <div align="center">
   <a href="https://github.com/RusdiEneri">
     <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0&height=180&section=header&text=RusdiEneri&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Backend%20Engineer%20%7C%20Network%20Specialist&descAlignY=55&descSize=16" width="100%" alt="RusdiEneri Header" />
-    <!-- <img src="https://readme-typing-svg-gules.vercel.app/?font=Fira+Code&weight=600&size=35&duration=3000&pause=1000&color=FE428E&center=true&vCenter=true&width=800&lines=Halo%2C+Saya+Nuruddin+Rusydi+Ilham+%F0%9F%91%8B;Backend+%26+Network+Engineer;Linux+Infrastructure+%26+Automation;Building+APIs+%26+Secure+Networks." alt="Typing SVG" /> -->
+    <img src="https://readme-typing-svg-gules.vercel.app/?font=Fira+Code&weight=600&size=35&duration=3000&pause=1000&color=FE428E&center=true&vCenter=true&width=800&lines=Halo%2C+Saya+Nuruddin+Rusydi+Ilham+%F0%9F%91%8B;Backend+%26+Network+Engineer;Linux+Infrastructure+%26+Automation;Building+APIs+%26+Secure+Networks." alt="Typing SVG" />
   </a>
 </div>
 
-<!-- <br> -->
+<br>
 
 ## 👨‍💻 Tentang Saya
 
