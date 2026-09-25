@@ -5,6 +5,7 @@ on:
     - cron: "0 * * * *"
 
   workflow_dispatch:
+
   push:
     paths:
       - ".github/workflows/arcade.yml"
@@ -33,6 +34,12 @@ jobs:
         run: |
           mkdir -p dist
 
+      - name: "👤 Configure Git"
+        shell: bash
+        run: |
+          git config --local user.name "RusdiEneri"
+          git config --local user.email "nuruddinrusydiilham@gmail.com"
+
       - name: "🎮 Generate Space Shooter"
         uses: czl9707/gh-space-shooter@v2
         with:
@@ -40,11 +47,10 @@ jobs:
           output-path: "dist/gh-space-shooter.webp"
           strategy: "random"
 
-      - name: "👤 Configure Git"
-        shell: bash
-        run: |
-          git config --local user.name "RusdiEneri"
-          git config --local user.email "nuruddinrusydiilham@gmail.com"
+          # 🔥 Sangat penting:
+          # Action hanya generate file.
+          # Commit dan push dilakukan oleh workflow kita sendiri.
+          no-commit: true
 
       - name: "🔎 Check generated file"
         shell: bash
@@ -69,6 +75,7 @@ jobs:
           fi
 
           git commit -m "chore(game): update space shooter"
+
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: "🚀 Push changes"
