@@ -82,7 +82,7 @@ Currently, I am expanding my expertise in **Network Security, Infrastructure Aut
 
 <div align="center">
   <a href="https://github.com/RusdiEneri">
-    <img src="./dist/breakout-contribution-graph-dark.svg" width="100%" alt="GitHub Contribution" />
+    <img src="./dist/game.gif" width="100%" alt="GitHub Contribution" />
   </a>
 </div>
 
