@@ -1,4 +1,4 @@
-name: "🚀 Angular Style Activity Logger"
+name: "🚀 Galactic Space Mission Logger"
 
 on:
   # ⏰ Jalan setiap 5 menit
@@ -22,7 +22,7 @@ concurrency:
 
 jobs:
   build:
-    name: "📝 Generate Commit Activity"
+    name: "📝 10x Space Mission Commits"
     runs-on: ubuntu-latest
 
     steps:
@@ -33,12 +33,12 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: "⚙️ Configure Git"
+      - name: "⚙️ Configure Git & Set Coordinates"
         env:
           BRANCH: ${{ github.ref_name }}
         shell: bash
         run: |
-          git config --local user.name "RusdiEneri"
+          git config --local user.name "Captain RusdiEneri"
           git config --local user.email "nuruddinrusydiilham@gmail.com"
           git config pull.rebase true
 
@@ -48,7 +48,7 @@ jobs:
           git fetch origin "$BRANCH"
           git checkout -B "$BRANCH" "origin/$BRANCH"
 
-      - name: "📝 Update activity log"
+      - name: "🌌 Generate 10 Galactic Activity Logs & Commits"
         env:
           BRANCH: ${{ github.ref_name }}
           RUN_NUMBER: ${{ github.run_number }}
@@ -57,148 +57,146 @@ jobs:
         run: |
           set -euo pipefail
 
-          TIMESTAMP="$(TZ=Asia/Jakarta date '+%Y-%m-%d %H:%M:%S')"
-          ISO_TIMESTAMP="$(TZ=Asia/Jakarta date '+%Y-%m-%dT%H:%M:%S%z')"
-
-          # 🎲 Random index
-          INDEX="$(shuf -i 0-9 -n 1)"
-
-          # 🎲 Random operational data
           COMPONENTS=(
-            "API Gateway"
-            "Web Application"
-            "Background Worker"
-            "Database Layer"
-            "Authentication Service"
-            "Notification Service"
-            "CI Pipeline"
-            "Asset Pipeline"
-            "Repository Metadata"
-            "Monitoring Job"
+            "Quantum Core"
+            "Warp Drive"
+            "Hyper-sleep Chamber"
+            "Navigation AI"
+            "Life Support"
+            "Shield Generator"
+            "Ion Thrusters"
+            "Comms Array"
+            "Stellar Cartography"
+            "Astro-Botany Lab"
           )
 
           ACTIONS=(
-            "synchronized repository metadata"
-            "refreshed runtime configuration"
-            "updated service activity records"
-            "completed routine maintenance"
-            "validated automation state"
-            "refreshed generated artifacts"
-            "synchronized build metadata"
-            "updated internal tracking data"
-            "completed scheduled housekeeping"
-            "verified pipeline execution"
+            "aligned quantum frequencies"
+            "calibrated warp manifolds"
+            "recalibrated cryo-stasis pods"
+            "updated celestial coordinates"
+            "purified oxygen scrubbers"
+            "modulated deflector shields"
+            "optimized plasma flow"
+            "decrypted deep space signals"
+            "mapped pulsar anomalies"
+            "pollinated zero-G flora"
           )
 
           STATUSES=(
-            "Completed"
-            "Success"
-            "Healthy"
-            "Stable"
-            "Processed"
-            "Verified"
-            "Synchronized"
-            "Up to date"
-            "Operational"
-            "No issues detected"
+            "Nominal"
+            "Optimal"
+            "Harmonized"
+            "Resonating"
+            "Thriving"
+            "Stabilized"
+            "Connected"
+            "Charted"
+            "Blooming"
+            "Legendary"
           )
 
           NOTES=(
-            "No manual intervention required."
-            "All automated checks completed normally."
-            "Repository state is synchronized with the remote branch."
-            "No pending maintenance actions were detected."
-            "Routine automation completed within the expected window."
-            "Generated as part of the scheduled engineering workflow."
-            "No blocking conditions were reported."
-            "All expected workflow tasks completed successfully."
-            "Automation cycle completed without interruption."
-            "Repository metadata remains consistent."
+            "The void whispers back."
+            "Captain's log: All crew sleeping soundly."
+            "Sensors detect a faint alien melody."
+            "Coffee reserves at 42%. Panic level low."
+            "Asteroid field successfully navigated. Nailed it."
+            "Quantum tunneling stable. Reality intact."
+            "Space whales spotted off the port bow. Majestic."
+            "Telemetry confirms we are absolutely awesome."
+            "Stardust levels within acceptable limits. Shiny."
+            "The ship hums a happy tune. Good vibes only."
           )
 
-          COMPONENT="${COMPONENTS[$INDEX]}"
-          ACTION="${ACTIONS[$INDEX]}"
-          STATUS="${STATUSES[$INDEX]}"
-          NOTE="${NOTES[$INDEX]}"
-
-          # 🎲 Random operational values
-          DURATION_MS="$(shuf -i 180-4200 -n 1)"
-          JOB_ID="OPS-$(printf '%04d' "$RANDOM")"
-
-          cat > log.txt <<EOF
-          ============================================
-          🚀 ENGINEERING ACTIVITY RECORD
-          ============================================
-          Timestamp   : $TIMESTAMP
-          ISO Time    : $ISO_TIMESTAMP
-          Run         : #$RUN_NUMBER
-          Job ID      : $JOB_ID
-          Actor       : $ACTOR
-          Branch      : $BRANCH
-          Component   : $COMPONENT
-          Action      : $ACTION
-          Status      : $STATUS
-          Duration    : ${DURATION_MS}ms
-          Environment : CI
-          Note        : $NOTE
-          ============================================
-          EOF
-
-          echo "📦 Generated log:"
-          cat log.txt
-
-          git add -f log.txt
-
-          if git diff --cached --quiet; then
-            echo "ℹ️ Tidak ada perubahan pada log."
-            exit 0
-          fi
-
-      - name: "💾 Create Random Conventional Commit"
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          # 🎲 Random commit message
           COMMIT_SUBJECTS=(
-            "chore(ops): refresh routine activity record"
-            "ci(log): update automated execution metadata"
-            "build(meta): synchronize generated repository data"
-            "chore(ci): update scheduled workflow state"
-            "docs(meta): refresh internal activity snapshot"
-            "ci(maintenance): record scheduled pipeline activity"
-            "chore(automation): refresh repository status log"
-            "build(ci): update automation tracking record"
-            "chore(metadata): synchronize latest activity state"
-            "ci(ops): record routine engineering activity"
+            "feat(warp): engage hyperdrive sequence"
+            "chore(quantum): entangle subatomic particles"
+            "fix(shields): deflect incoming space debris"
+            "docs(astro): update star chart coordinates"
+            "test(life-support): verify oxygen purity"
+            "perf(thrusters): optimize plasma injection"
+            "ci(ai): train navigation neural net"
+            "feat(comms): decrypt Proxima Centauri signals"
+            "build(hull): reinforce titanium-alloy plating"
+            "chore(botany): water the space tomatoes"
           )
 
           COMMIT_BODIES=(
-            "Refresh the activity record generated by the scheduled engineering workflow."
-            "Update automated execution metadata and repository activity information."
-            "Synchronize generated metadata with the latest workflow execution."
-            "Record the latest scheduled automation cycle in the repository log."
-            "Refresh internal activity information generated by CI automation."
-            "Update the repository activity snapshot from the current workflow run."
-            "Record routine pipeline activity and maintain current repository metadata."
-            "Synchronize the latest automation state with the repository activity log."
-            "Update generated operational metadata from the latest scheduled execution."
-            "Record the completed automation cycle for repository tracking purposes."
+            "Engaging hyperdrive. Next stop: Alpha Centauri. Please fasten your seatbelts."
+            "Quantum entanglement successful. Spooky action at a distance achieved."
+            "Shield modulation adjusted by 0.004 micro-radians. Debris successfully vaporized."
+            "Star charts updated with new pulsar data. Do not fly into the black hole."
+            "O2 scrubbers are nominal. The air smells faintly of cinnamon today."
+            "Plasma injectors are purring. We are cruising at 0.4c."
+            "AI has learned to play chess. It beat the Captain 3 times."
+            "Deep space signal decoded. It just said 'Hello, we have cookies'."
+            "Hull integrity at 100%. Micrometeorites bounced right off."
+            "Space tomatoes are ripe. Taco night is officially a go."
           )
 
-          INDEX="$(shuf -i 0-9 -n 1)"
+          echo "🚀 Starting 10 Galactic Activity Cycles..."
 
-          SUBJECT="${COMMIT_SUBJECTS[$INDEX]}"
-          BODY="${COMMIT_BODIES[$INDEX]}"
-          TIMESTAMP="$(TZ=Asia/Jakarta date '+%Y-%m-%d %H:%M:%S')"
+          for i in {1..10}; do
+            TIMESTAMP="$(TZ=Asia/Jakarta date '+%Y-%m-%d %H:%M:%S')"
+            ISO_TIMESTAMP="$(TZ=Asia/Jakarta date '+%Y-%m-%dT%H:%M:%S%z')"
+            
+            # Pastikan index acak untuk setiap siklus
+            INDEX=$(( RANDOM % 10 ))
+            
+            COMPONENT="${COMPONENTS[$INDEX]}"
+            ACTION="${ACTIONS[$INDEX]}"
+            STATUS="${STATUSES[$INDEX]}"
+            NOTE="${NOTES[$INDEX]}"
+            SUBJECT="${COMMIT_SUBJECTS[$INDEX]}"
+            BODY="${COMMIT_BODIES[$INDEX]}"
+            
+            DURATION_MS="$(shuf -i 1337-9001 -n 1)"
+            JOB_ID="GAL-$(printf '%04d' "$RANDOM")"
 
-          git commit \
-            -m "$SUBJECT" \
-            -m "$BODY" \
-            -m "Automated-by: GitHub Actions" \
-            -m "Generated-at: $TIMESTAMP"
+            # Buat file log dengan tema luar angkasa yang keren
+            cat > log.txt <<EOF
+            ============================================
+            🌌 GALACTIC MISSION LOG - CYCLE $i/10 🌌
+            ============================================
+            📅 Timestamp   : $TIMESTAMP
+            ⏱️ ISO Time    : $ISO_TIMESTAMP
+            🚀 Run         : #$RUN_NUMBER
+            🛸 Job ID      : $JOB_ID
+            👨‍🚀 Actor       : $ACTOR
+            🔭 Component   : $COMPONENT
+            ⚡ Action      : $ACTION
+            ✅ Status      : $STATUS
+            ⏳ Duration    : ${DURATION_MS}ms
+            🪐 Environment : Deep Space / CI
+            📝 Captain's Log: $NOTE
+            ============================================
+            EOF
 
-      - name: "🚀 Push changes"
+            echo "📦 Cycle $i log generated:"
+            cat log.txt
+
+            # Paksa perubahan file dengan menambahkan timestamp unik di akhir file
+            # Ini memastikan git selalu mendeteksi perubahan untuk di-commit
+            echo "System Cycle Hash: $(date +%s%N)" >> log.txt
+
+            git add -f log.txt
+
+            # Commit dengan pesan luar angkasa
+            git commit \
+              -m "$SUBJECT" \
+              -m "$BODY" \
+              -m "Automated-by: GitHub Actions Space Command" \
+              -m "Generated-at: $TIMESTAMP" \
+              --allow-empty
+
+            echo "✅ Commit $i/10 created successfully! Warp cooling down..."
+            sleep 1 # Jeda 1 detik antar commit biar gak terlalu cepat
+          done
+
+          echo "🎉 All 10 commits generated! Preparing for hyperspace jump (push)..."
+
+      - name: "🚀 Push to Hyperspace"
         env:
           BRANCH: ${{ github.ref_name }}
         shell: bash
@@ -206,18 +204,18 @@ jobs:
           set -euo pipefail
 
           for attempt in 1 2 3 4 5; do
-            echo "🔄 Push attempt $attempt/5..."
+            echo "🔄 Hyperspace jump attempt $attempt/5..."
 
             if git pull --rebase origin "$BRANCH" && \
                git push origin "$BRANCH"; then
-              echo "🎉 Push berhasil."
+              echo "🎉 Hyperspace jump successful! We have arrived."
               exit 0
             fi
 
-            echo "⚠️ Push gagal, menunggu 10 detik..."
+            echo "⚠️ Hyperspace jump failed (turbulence detected), waiting 10 parsecs..."
             git rebase --abort 2>/dev/null || true
             sleep 10
           done
 
-          echo "🚨 Push gagal setelah 5 percobaan."
+          echo "🚨 Ship stranded in the asteroid belt after 5 attempts."
           exit 1
