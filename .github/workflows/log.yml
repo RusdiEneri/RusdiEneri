@@ -155,23 +155,24 @@ jobs:
             JOB_ID="GAL-$(printf '%04d' "$RANDOM")"
 
             # Buat file log dengan tema luar angkasa yang keren
+            # PENTING: Penanda EOF dan isinya HARUS RATA KIRI (tanpa spasi di depannya)
             cat > log.txt <<EOF
-            ============================================
-            🌌 GALACTIC MISSION LOG - CYCLE $i/10 🌌
-            ============================================
-            📅 Timestamp   : $TIMESTAMP
-            ⏱️ ISO Time    : $ISO_TIMESTAMP
-            🚀 Run         : #$RUN_NUMBER
-            🛸 Job ID      : $JOB_ID
-            👨‍🚀 Actor       : $ACTOR
-            🔭 Component   : $COMPONENT
-            ⚡ Action      : $ACTION
-            ✅ Status      : $STATUS
-            ⏳ Duration    : ${DURATION_MS}ms
-            🪐 Environment : Deep Space / CI
-            📝 Captain's Log: $NOTE
-            ============================================
-            EOF
+          ============================================
+          🌌 GALACTIC MISSION LOG - CYCLE $i/10 🌌
+          ============================================
+          📅 Timestamp   : $TIMESTAMP
+          ⏱️ ISO Time    : $ISO_TIMESTAMP
+          🚀 Run         : #$RUN_NUMBER
+          🛸 Job ID      : $JOB_ID
+          👨‍🚀 Actor       : $ACTOR
+          🔭 Component   : $COMPONENT
+          ⚡ Action      : $ACTION
+          ✅ Status      : $STATUS
+          ⏳ Duration    : ${DURATION_MS}ms
+          🪐 Environment : Deep Space / CI
+          📝 Captain's Log: $NOTE
+          ============================================
+          EOF
 
             echo "📦 Cycle $i log generated:"
             cat log.txt
