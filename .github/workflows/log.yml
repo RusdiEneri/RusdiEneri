@@ -71,7 +71,7 @@ jobs:
             "$RUN" \
             "${ACTIONS[$I]}" \
             "${COMPONENTS[$I]}" \
-            "${MESSAGES[$I]}" >> log.txt
+            "${MESSAGES[$I]}" > log.txt
 
           git config user.name "RusdiEneri"
           git config user.email "nuruddinrusydiilham@gmail.com"
