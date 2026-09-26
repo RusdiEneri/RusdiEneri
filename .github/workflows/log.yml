@@ -1,14 +1,9 @@
-name: "🚀 Galactic Space Mission Logger"
+name: "🚀 Galactic Mission Logger"
 
 on:
-  # ⏰ Jalan setiap 5 menit
   schedule:
     - cron: "*/5 * * * *"
-
-  # ▶️ Bisa dijalankan manual
   workflow_dispatch:
-
-  # 🔄 Jalankan saat workflow ini diubah
   push:
     paths:
       - ".github/workflows/log.yml"
@@ -21,202 +16,68 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
-    name: "📝 10x Space Mission Commits"
+  log:
     runs-on: ubuntu-latest
 
     steps:
-      - name: "📥 Checkout repository"
+      - name: Checkout
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
-          persist-credentials: true
 
-      - name: "⚙️ Configure Git & Set Coordinates"
+      - name: Generate log
         env:
-          BRANCH: ${{ github.ref_name }}
-        shell: bash
-        run: |
-          git config --local user.name "Captain RusdiEneri"
-          git config --local user.email "nuruddinrusydiilham@gmail.com"
-          git config pull.rebase true
-
-          git remote set-url origin \
-            "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
-
-          git fetch origin "$BRANCH"
-          git checkout -B "$BRANCH" "origin/$BRANCH"
-
-      - name: "🌌 Generate 10 Galactic Activity Logs & Commits"
-        env:
-          BRANCH: ${{ github.ref_name }}
-          RUN_NUMBER: ${{ github.run_number }}
+          RUN: ${{ github.run_number }}
           ACTOR: ${{ github.actor }}
-        shell: bash
         run: |
-          set -euo pipefail
+          set -e
 
           COMPONENTS=(
             "Quantum Core"
             "Warp Drive"
-            "Hyper-sleep Chamber"
             "Navigation AI"
             "Life Support"
             "Shield Generator"
             "Ion Thrusters"
             "Comms Array"
             "Stellar Cartography"
-            "Astro-Botany Lab"
           )
 
           ACTIONS=(
-            "aligned quantum frequencies"
-            "calibrated warp manifolds"
-            "recalibrated cryo-stasis pods"
-            "updated celestial coordinates"
-            "purified oxygen scrubbers"
-            "modulated deflector shields"
-            "optimized plasma flow"
-            "decrypted deep space signals"
-            "mapped pulsar anomalies"
-            "pollinated zero-G flora"
+            "calibrated"
+            "optimized"
+            "updated"
+            "stabilized"
+            "reconfigured"
+            "verified"
+            "synchronized"
+            "monitored"
           )
 
-          STATUSES=(
-            "Nominal"
-            "Optimal"
-            "Harmonized"
-            "Resonating"
-            "Thriving"
-            "Stabilized"
-            "Connected"
-            "Charted"
-            "Blooming"
-            "Legendary"
+          MESSAGES=(
+            "Systems operating normally."
+            "Routine maintenance completed."
+            "Telemetry remains stable."
+            "All checks passed."
+            "Mission systems synchronized."
+            "No anomalies detected."
           )
 
-          NOTES=(
-            "The void whispers back."
-            "Captain's log: All crew sleeping soundly."
-            "Sensors detect a faint alien melody."
-            "Coffee reserves at 42%. Panic level low."
-            "Asteroid field successfully navigated. Nailed it."
-            "Quantum tunneling stable. Reality intact."
-            "Space whales spotted off the port bow. Majestic."
-            "Telemetry confirms we are absolutely awesome."
-            "Stardust levels within acceptable limits. Shiny."
-            "The ship hums a happy tune. Good vibes only."
-          )
+          I=$((RANDOM % ${#COMPONENTS[@]}))
+          TIMESTAMP="$(TZ=Asia/Jakarta date '+%Y-%m-%d %H:%M:%S')"
 
-          COMMIT_SUBJECTS=(
-            "feat(warp): engage hyperdrive sequence"
-            "chore(quantum): entangle subatomic particles"
-            "fix(shields): deflect incoming space debris"
-            "docs(astro): update star chart coordinates"
-            "test(life-support): verify oxygen purity"
-            "perf(thrusters): optimize plasma injection"
-            "ci(ai): train navigation neural net"
-            "feat(comms): decrypt Proxima Centauri signals"
-            "build(hull): reinforce titanium-alloy plating"
-            "chore(botany): water the space tomatoes"
-          )
+          printf '%s | run #%s | %s %s | %s\n' \
+            "$TIMESTAMP" \
+            "$RUN" \
+            "${ACTIONS[$I]}" \
+            "${COMPONENTS[$I]}" \
+            "${MESSAGES[$I]}" >> log.txt
 
-          COMMIT_BODIES=(
-            "Engaging hyperdrive. Next stop: Alpha Centauri. Please fasten your seatbelts."
-            "Quantum entanglement successful. Spooky action at a distance achieved."
-            "Shield modulation adjusted by 0.004 micro-radians. Debris successfully vaporized."
-            "Star charts updated with new pulsar data. Do not fly into the black hole."
-            "O2 scrubbers are nominal. The air smells faintly of cinnamon today."
-            "Plasma injectors are purring. We are cruising at 0.4c."
-            "AI has learned to play chess. It beat the Captain 3 times."
-            "Deep space signal decoded. It just said 'Hello, we have cookies'."
-            "Hull integrity at 100%. Micrometeorites bounced right off."
-            "Space tomatoes are ripe. Taco night is officially a go."
-          )
+          git config user.name "RusdiEneri"
+          git config user.email "nuruddinrusydiilham@gmail.com"
 
-          echo "🚀 Starting 10 Galactic Activity Cycles..."
+          git add log.txt
+          git commit -m "chore: update mission log"
 
-          for i in {1..10}; do
-            TIMESTAMP="$(TZ=Asia/Jakarta date '+%Y-%m-%d %H:%M:%S')"
-            ISO_TIMESTAMP="$(TZ=Asia/Jakarta date '+%Y-%m-%dT%H:%M:%S%z')"
-            
-            # Pastikan index acak untuk setiap siklus
-            INDEX=$(( RANDOM % 10 ))
-            
-            COMPONENT="${COMPONENTS[$INDEX]}"
-            ACTION="${ACTIONS[$INDEX]}"
-            STATUS="${STATUSES[$INDEX]}"
-            NOTE="${NOTES[$INDEX]}"
-            SUBJECT="${COMMIT_SUBJECTS[$INDEX]}"
-            BODY="${COMMIT_BODIES[$INDEX]}"
-            
-            DURATION_MS="$(shuf -i 1337-9001 -n 1)"
-            JOB_ID="GAL-$(printf '%04d' "$RANDOM")"
-
-            # Buat file log dengan tema luar angkasa yang keren
-            # PENTING: Penanda EOF dan isinya HARUS RATA KIRI (tanpa spasi di depannya)
-            cat > log.txt <<EOF
-          ============================================
-          🌌 GALACTIC MISSION LOG - CYCLE $i/10 🌌
-          ============================================
-          📅 Timestamp   : $TIMESTAMP
-          ⏱️ ISO Time    : $ISO_TIMESTAMP
-          🚀 Run         : #$RUN_NUMBER
-          🛸 Job ID      : $JOB_ID
-          👨‍🚀 Actor       : $ACTOR
-          🔭 Component   : $COMPONENT
-          ⚡ Action      : $ACTION
-          ✅ Status      : $STATUS
-          ⏳ Duration    : ${DURATION_MS}ms
-          🪐 Environment : Deep Space / CI
-          📝 Captain's Log: $NOTE
-          ============================================
-          EOF
-
-            echo "📦 Cycle $i log generated:"
-            cat log.txt
-
-            # Paksa perubahan file dengan menambahkan timestamp unik di akhir file
-            # Ini memastikan git selalu mendeteksi perubahan untuk di-commit
-            echo "System Cycle Hash: $(date +%s%N)" >> log.txt
-
-            git add -f log.txt
-
-            # Commit dengan pesan luar angkasa
-            git commit \
-              -m "$SUBJECT" \
-              -m "$BODY" \
-              -m "Automated-by: GitHub Actions Space Command" \
-              -m "Generated-at: $TIMESTAMP" \
-              --allow-empty
-
-            echo "✅ Commit $i/10 created successfully! Warp cooling down..."
-            sleep 1 # Jeda 1 detik antar commit biar gak terlalu cepat
-          done
-
-          echo "🎉 All 10 commits generated! Preparing for hyperspace jump (push)..."
-
-      - name: "🚀 Push to Hyperspace"
-        env:
-          BRANCH: ${{ github.ref_name }}
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          for attempt in 1 2 3 4 5; do
-            echo "🔄 Hyperspace jump attempt $attempt/5..."
-
-            if git pull --rebase origin "$BRANCH" && \
-               git push origin "$BRANCH"; then
-              echo "🎉 Hyperspace jump successful! We have arrived."
-              exit 0
-            fi
-
-            echo "⚠️ Hyperspace jump failed (turbulence detected), waiting 10 parsecs..."
-            git rebase --abort 2>/dev/null || true
-            sleep 10
-          done
-
-          echo "🚨 Ship stranded in the asteroid belt after 5 attempts."
-          exit 1
+      - name: Push
+        run: git push origin HEAD:${{ github.ref_name }}
