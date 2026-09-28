@@ -96,7 +96,7 @@ Currently, I am expanding my expertise in **Network Security, Infrastructure Aut
       </td>
       <td width="45%" align="center">
         <a href="https://github.com/RusdiEneri">
-          <img src="https://awesome-github-stats.azurewebsites.net/user-stats/RusdiEneri?cardType=github&theme=radical&fontFamily=&preferLogin=true" width="100%" alt="GitHub Stats" />
+          <img src="https://awesome-github-stats.azurewebsites.net/user-stats/RusdiEneri?cardType=level&theme=radical&fontFamily=&preferLogin=true" width="100%" alt="GitHub Stats" />
         </a>
       </td>
     </tr>
