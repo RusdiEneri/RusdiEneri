@@ -51,32 +51,67 @@ jobs:
         run: |
           set -Eeuo pipefail
 
-          # Validasi signing key
+          # ==========================================
+          # 1. Validasi secret
+          # ==========================================
           if [[ -z "${SIGNING_KEY:-}" ]]; then
             echo "::error::Secret COMMIT_SIGNING_KEY tidak ditemukan atau kosong."
             exit 1
           fi
 
-          # Simpan private key sementara
-          KEY_FILE="$(mktemp)"
-          trap 'rm -f -- "$KEY_FILE" "${KEY_FILE}.pub"' EXIT
+          # ==========================================
+          # 2. Buat lokasi key yang tetap
+          # ==========================================
+          KEY_DIR="${RUNNER_TEMP}/git-signing"
+          PRIVATE_KEY="${KEY_DIR}/signing_key"
+          PUBLIC_KEY="${KEY_DIR}/signing_key.pub"
 
-          printf '%s\n' "$SIGNING_KEY" > "$KEY_FILE"
-          chmod 600 "$KEY_FILE"
+          mkdir -p "$KEY_DIR"
+          chmod 700 "$KEY_DIR"
 
-          # Identitas Git
+          # ==========================================
+          # 3. Tulis private key dari GitHub Secret
+          # ==========================================
+          printf '%s\n' "$SIGNING_KEY" > "$PRIVATE_KEY"
+          chmod 600 "$PRIVATE_KEY"
+
+          # ==========================================
+          # 4. Generate public key dari private key
+          # ==========================================
+          ssh-keygen -y -f "$PRIVATE_KEY" > "$PUBLIC_KEY"
+          chmod 644 "$PUBLIC_KEY"
+
+          # ==========================================
+          # 5. Validasi keypair
+          # ==========================================
+          if [[ ! -s "$PUBLIC_KEY" ]]; then
+            echo "::error::Public signing key gagal dibuat."
+            exit 1
+          fi
+
+          echo "✅ SSH keypair berhasil disiapkan."
+
+          # ==========================================
+          # 6. Configure Git identity
+          # ==========================================
           git config --local user.name "RusdiEneri"
           git config --local user.email "nuruddinrusydiilham@gmail.com"
 
-          # SSH commit signing
+          # ==========================================
+          # 7. Configure SSH commit signing
+          # ==========================================
           git config --local gpg.format ssh
           git config --local gpg.ssh.program ssh-keygen
-          git config --local user.signingkey "$KEY_FILE"
+
+          # PENTING:
+          # user.signingkey harus PUBLIC KEY (.pub)
+          git config --local user.signingkey "$PUBLIC_KEY"
+
           git config --local commit.gpgsign true
 
-          echo "✅ SSH commit signing aktif."
+          echo "✅ Git SSH signing aktif."
 
-      - name: "🔎 Verify Git identity"
+      - name: "🔎 Verify Git configuration"
         shell: bash
         run: |
           set -Eeuo pipefail
@@ -93,8 +128,16 @@ jobs:
           git config gpg.format
 
           echo
+          echo "Signing key:"
+          git config user.signingkey
+
+          echo
           echo "Commit signing:"
           git config commit.gpgsign
+
+          echo
+          echo "Public key:"
+          cat "$(git config user.signingkey)"
 
       - name: "🔎 Check generated file"
         shell: bash
@@ -127,14 +170,21 @@ jobs:
             exit 0
           fi
 
-          # -S memaksa commit ditandatangani
+          # Explicit SSH-signed commit
           git commit -S -m "chore(game): update space shooter"
 
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
           echo
           echo "✅ Signed commit berhasil dibuat."
-          git log -1 --show-signature --oneline
+
+          echo
+          echo "📋 Commit:"
+          git log -1 --format='%h %s'
+
+          echo
+          echo "🔏 Signature:"
+          git cat-file commit HEAD | sed -n '/^gpgsig /,/^$/p' || true
 
       - name: "🚀 Push changes"
         if: steps.commit.outputs.changed == 'true'
