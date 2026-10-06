@@ -21,7 +21,7 @@
 <br>
 <br>
 
-<!-- space shooter arcade simulator -->
+<!-- space shooter arcade simulator
 <h3><code>rusdi@github ~ $ ./arcade.sh</code></h3>
 
 <a href="https://github.com/RusdiEneri">
@@ -29,7 +29,7 @@
 </a>
 
 <br>
-<br>
+<br> -->
 
 <!-- featured projects -->
 <h3><code>rusdi@github ~ $ ./featured.sh</code></h3>
