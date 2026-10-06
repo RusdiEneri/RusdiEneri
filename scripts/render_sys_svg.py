@@ -1,178 +1,185 @@
 #!/usr/bin/env python3
 """
-Render a terminal system info & HR candidate sheet card (sys-info.svg).
-Canvas size: 840 x 880 (matches stats.svg exactly for flawless side-by-side alignment).
-Highlights core competencies, production discipline, and hire status for HR / tech leads.
+Render an animated monochrome ASCII-art portrait of Rusdi's GitHub avatar
+(the explosion cat!) that "types" itself in line-by-line like a CRT terminal scanner.
+Directly inspired by avivashishta29's avi-ascii.svg.
+
+Canvas size: 840 x 880 (matches stats.svg exactly for flawless side-by-side display).
+Each row reveals with a left-to-right clip wipe plus a glowing cursor riding the wipe edge,
+staggered top -> bottom, finishing with a steady blinking prompt cursor at the bottom.
 """
 import html
 import os
 import sys
+import urllib.request
+from PIL import Image, ImageEnhance, ImageFilter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "dist", "sys-info.svg")
+AVATAR_PATH = os.path.join(HERE, "..", "data", "avatar.png")
+OUT_PATH = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "dist", "sys-info.svg")
+USERNAME = os.environ.get("GH_PROFILE_USER", "RusdiEneri")
 
-BG = "#0d1117"
-BG2 = "#111722"
-TILE = "#161b22"
-FRAME = "#30363d"
-MUTED = "#7d8590"
-INK = "#e6edf3"
-GREEN = "#39d353"
-CYAN = "#58a6ff"
-YELLOW = "#f0883e"
-PURPLE = "#bc8cff"
-
-W, H = 840, 880
+# Target dimensions matching stats.svg (840 x 880)
+CANVAS_W = 840
+CANVAS_H = 880
 PAD = 20
 TITLEBAR_H = 34
 
-ASCII_CAT = [
-    r"     /\_____/\     ",
-    r"    /  o   o  \    ",
-    r"   ( ==  ^  == )   ",
-    r"    )         (    ",
-    r"   (           )   ",
-    r"  ( (  )   (  ) )  ",
-    r" (__(__)___(__)__) "
-]
+COLS = 160
+ART_W = 800.0
+CELL_W = ART_W / COLS                     # 5.0 px
+CELL_H = CELL_W * 15.0 / 8.0              # 9.375 px
+ROWS = 84
+ART_H = ROWS * CELL_H                     # 787.5 px
+art_top = TITLEBAR_H + 10                 # 44.0 px
 
-SPECS = [
-    ("Candidate", "Nuruddin Rusydi Ilham", INK),
-    ("Role Target", "Backend & Network Engineer", PURPLE),
-    ("Hiring Status", "🟢 Available for Full-Time / Remote", GREEN),
-    ("Engineering Cadence", "1,016+ Days Continuous Production", YELLOW),
-    ("Core Architecture", "Scalable REST APIs · Microservices", CYAN),
-    ("Primary Languages", "PHP (Laravel) · Go · Python · TS", GREEN),
-    ("Database & Storage", "MySQL · Redis · Schema Optimization", INK),
-    ("Infrastructure", "Docker · Linux SysAdmin · Nginx", YELLOW),
-    ("Network Security", "iptables · OpenWRT · Wireshark · WireGuard", CYAN),
-    ("Commit Integrity", "Cryptographic SSH Keypair Signing", GREEN),
-]
+# Color palette
+BG = "#0d1117"
+BG2 = "#111722"
+FRAME = "#30363d"
+TITLE_TEXT = "#7d8590"
+INK = "#c9d1d9"                           # Crisp terminal phosphor ASCII ink
+CURSOR = "#39d353"                        # Glowing matrix-green wiping cursor
+GREEN = "#39d353"
+CYAN = "#58a6ff"
+
+# ASCII ramp from sparse (dark) to dense (bright)
+RAMP = " .`:-=+*cs#%@"
+
+# Reveal timing: whole portrait streams in ~5.6s
+TOTAL_DUR = 5.6
+ROW_DUR = TOTAL_DUR / ROWS
+STAGGER = ROW_DUR
 
 
-def render():
+def ensure_avatar():
+    if not os.path.exists(AVATAR_PATH):
+        os.makedirs(os.path.dirname(AVATAR_PATH), exist_ok=True)
+        url = f"https://github.com/{USERNAME}.png"
+        print(f"Downloading avatar from {url}...")
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "profile-readme-bot/1.0"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                with open(AVATAR_PATH, "wb") as f:
+                    f.write(resp.read())
+        except Exception as e:
+            print(f"Warning: could not download avatar: {e}", file=sys.stderr)
+
+
+def prepare_ascii_lines():
+    ensure_avatar()
+    if not os.path.exists(AVATAR_PATH):
+        # Fallback placeholder if image completely missing
+        return [" " * COLS for _ in range(ROWS)]
+
+    im = Image.open(AVATAR_PATH).convert("L")
+    # Enhance contrast and edge definition so the cat face and explosion flames stand out
+    im = ImageEnhance.Contrast(im).enhance(1.35)
+    im = ImageEnhance.Brightness(im).enhance(1.08)
+    im = im.filter(ImageFilter.UnsharpMask(radius=1.8, percent=130, threshold=2))
+    im = im.resize((COLS, ROWS), Image.LANCZOS)
+    px = im.load()
+
+    lines = []
+    ramp_len = len(RAMP)
+    for y in range(ROWS):
+        chars = []
+        for x in range(COLS):
+            lum = px[x, y] / 255.0
+            # Force deep shadows to pure space for clean background
+            if lum < 0.10:
+                chars.append(" ")
+            else:
+                idx = int(lum * (ramp_len - 1) + 0.5)
+                chars.append(RAMP[max(0, min(ramp_len - 1, idx))])
+        lines.append("".join(chars))
+
+    return lines
+
+
+def render_svg():
+    rows_txt = prepare_ascii_lines()
+
     parts = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
-        f'font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">',
-        '<style>',
-        '@keyframes fadeIn{0%{opacity:0;transform:translateY(12px)}100%{opacity:1;transform:translateY(0)}}',
-        '@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}',
-        '.panel{opacity:0;animation:fadeIn 0.5s ease-out both}',
-        '.cursor{animation:blink 1.1s infinite}',
-        '@media (prefers-reduced-motion: reduce){.panel{opacity:1!important;transform:none!important;animation:none!important}}',
-        '</style>',
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{CANVAS_W}" height="{CANVAS_H}" '
+        f'viewBox="0 0 {CANVAS_W} {CANVAS_H}" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">',
         '<defs>',
-        f'<linearGradient id="sysbg" x1="0" y1="0" x2="0" y2="1">',
+        f'<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">',
         f'<stop offset="0" stop-color="{BG2}"/><stop offset="1" stop-color="{BG}"/>',
         '</linearGradient>',
         '</defs>',
-        f'<rect width="{W}" height="{H}" rx="14" fill="url(#sysbg)"/>',
-        f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="{FRAME}"/>',
-        f'<line x1="0" y1="{TITLEBAR_H}" x2="{W}" y2="{TITLEBAR_H}" stroke="{FRAME}"/>',
+        # Base window
+        f'<rect width="{CANVAS_W}" height="{CANVAS_H}" rx="14" fill="url(#bg)"/>',
+        f'<rect x="0.5" y="0.5" width="{CANVAS_W-1}" height="{CANVAS_H-1}" rx="14" fill="none" stroke="{FRAME}" stroke-width="1"/>',
+        f'<line x1="0" y1="{TITLEBAR_H}" x2="{CANVAS_W}" y2="{TITLEBAR_H}" stroke="{FRAME}"/>',
     ]
 
-    # Mac dots
+    # Title bar buttons (Mac dots)
     for i, dot in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
         parts.append(f'<circle cx="{PAD + i * 18}" cy="{TITLEBAR_H / 2}" r="5.5" fill="{dot}"/>')
 
     parts.append(
-        f'<text x="{W / 2}" y="{TITLEBAR_H / 2 + 4.5}" fill="{MUTED}" font-size="12.5" '
-        f'text-anchor="middle">rusdi@github: ~$ whoami --candidate-dossier</text>'
+        f'<text x="{CANVAS_W / 2}" y="{TITLEBAR_H / 2 + 4.5}" fill="{TITLE_TEXT}" font-size="12.5" '
+        f'text-anchor="middle">rusdi@github: ~$ ./portrait.sh --render-ascii</text>'
     )
 
-    # Top Hero Box (ASCII Avatar + Fastfetch Header)
-    hero_y = TITLEBAR_H + PAD + 4
-    hero_h = 246
-    hero_w = W - PAD * 2
-    parts.append(f'<g class="panel" style="animation-delay:0.1s">')
-    parts.append(
-        f'<rect x="{PAD}" y="{hero_y}" width="{hero_w}" height="{hero_h}" rx="10" '
-        f'fill="{TILE}" stroke="{FRAME}"/>'
-    )
+    # ASCII rows with left-to-right clip wipe & scanning cursor
+    font_size = CELL_H * 0.88
+    for ry, line in enumerate(rows_txt):
+        y = art_top + ry * CELL_H + CELL_H * 0.74
+        row_y = art_top + ry * CELL_H
+        delay = ry * STAGGER
+        safe = html.escape(line)
 
-    # ASCII Cat Avatar on left
-    ascii_x = PAD + 28
-    ascii_start_y = hero_y + 44
-    for i, line in enumerate(ASCII_CAT):
-        parts.append(
-            f'<text x="{ascii_x}" y="{ascii_start_y + i * 26}" fill="{CYAN}" font-size="18" '
-            f'font-weight="700">{html.escape(line)}</text>'
+        text = (
+            f'<text xml:space="preserve" x="{PAD}" y="{y:.1f}" fill="{INK}" '
+            f'font-size="{font_size:.1f}" textLength="{ART_W}" lengthAdjust="spacing">{safe}</text>'
         )
 
-    # Candidate Dossier Header on right
-    header_x = PAD + 270
-    parts.append(f'<text x="{header_x}" y="{hero_y + 42}" fill="{GREEN}" font-size="24" font-weight="700">rusdi@production-lab</text>')
-    parts.append(f'<text x="{header_x}" y="{hero_y + 68}" fill="{FRAME}" font-size="16">---------------------------------------------</text>')
-    parts.append(f'<text x="{header_x}" y="{hero_y + 98}" fill="{MUTED}" font-size="16.5">Specialization: <tspan fill="{INK}" font-weight="600">Backend &amp; Network Infrastructure</tspan></text>')
-    parts.append(f'<text x="{header_x}" y="{hero_y + 128}" fill="{MUTED}" font-size="16.5">Location: <tspan fill="{INK}">Tuban, Indonesia (UTC+7 · Remote-Ready)</tspan></text>')
-    parts.append(f'<text x="{header_x}" y="{hero_y + 158}" fill="{MUTED}" font-size="16.5">HR Status: <tspan fill="{GREEN}" font-weight="700">🟢 Open for Full-Time &amp; Contracts</tspan></text>')
-    parts.append(f'<text x="{header_x}" y="{hero_y + 188}" fill="{MUTED}" font-size="16.5">Consistency: <tspan fill="{YELLOW}">🔥 1,016+ Days Unbroken Work Ethic</tspan></text>')
-    parts.append(f'<text x="{header_x}" y="{hero_y + 218}" fill="{MUTED}" font-size="16.5">Core Focus: <tspan fill="{PURPLE}">Building High-Throughput &amp; Secure Systems</tspan></text>')
-    parts.append('</g>')
-
-    # Middle Spec Panel (HR Tech Checklist)
-    specs_y = hero_y + hero_h + 16
-    specs_h = 360
-    parts.append(f'<g class="panel" style="animation-delay:0.25s">')
-    parts.append(
-        f'<rect x="{PAD}" y="{specs_y}" width="{hero_w}" height="{specs_h}" rx="10" '
-        f'fill="{TILE}" stroke="{FRAME}"/>'
-    )
-    parts.append(f'<text x="{PAD + 24}" y="{specs_y + 36}" fill="{MUTED}" font-size="18">$ cat /etc/candidate/competencies.conf</text>')
-
-    spec_start_y = specs_y + 70
-    col_w = (hero_w - 48) / 2
-    for i, (k, v, color) in enumerate(SPECS):
-        col = i // 5
-        row = i % 5
-        x_pos = PAD + 24 + col * col_w
-        y_pos = spec_start_y + row * 56
-
         parts.append(
-            f'<text x="{x_pos}" y="{y_pos}" fill="{MUTED}" font-size="15.5">● {html.escape(k)}:</text>'
+            f'<clipPath id="r{ry}"><rect x="{PAD}" y="{row_y:.1f}" height="{CELL_H:.2f}" width="0">'
+            f'<animate attributeName="width" from="0" to="{ART_W}" begin="{delay:.3f}s" '
+            f'dur="{ROW_DUR:.2f}s" fill="freeze"/></rect></clipPath>'
         )
+        parts.append(f'<g clip-path="url(#r{ry})">{text}</g>')
         parts.append(
-            f'<text x="{x_pos}" y="{y_pos + 22}" fill="{color}" font-size="16.5" font-weight="600">{html.escape(v)}</text>'
+            f'<rect y="{row_y:.1f}" width="{CELL_W}" height="{CELL_H}" fill="{CURSOR}" opacity="0">'
+            f'<animate attributeName="x" from="{PAD}" to="{PAD + ART_W}" begin="{delay:.3f}s" '
+            f'dur="{ROW_DUR:.2f}s" fill="freeze"/>'
+            f'<set attributeName="opacity" to="0.9" begin="{delay:.3f}s"/>'
+            f'<set attributeName="opacity" to="0" begin="{delay + ROW_DUR:.3f}s"/>'
+            f'</rect>'
         )
-    parts.append('</g>')
 
-    # Bottom Terminal Prompt Box (HR Match & Action)
-    bot_y = specs_y + specs_h + 16
-    bot_h = H - PAD - bot_y
-    parts.append(f'<g class="panel" style="animation-delay:0.4s">')
+    # Status bar with steady blinking prompt cursor
+    status_line_y = art_top + ART_H + 8
+    status_y = status_line_y + 24
+    parts.append(f'<line x1="0" y1="{status_line_y:.1f}" x2="{CANVAS_W}" y2="{status_line_y:.1f}" stroke="{FRAME}"/>')
     parts.append(
-        f'<rect x="{PAD}" y="{bot_y}" width="{hero_w}" height="{bot_h}" rx="10" '
-        f'fill="{TILE}" stroke="{FRAME}"/>'
+        f'<text x="{PAD}" y="{status_y:.1f}" fill="{TITLE_TEXT}" font-size="13">'
+        f'rusdi@github:~$ whoami <tspan fill="{INK}" font-weight="600">Nuruddin Rusydi Ilham</tspan> '
+        f'<tspan fill="{GREEN}">· Backend &amp; Network Engineer</tspan></text>'
     )
-    parts.append(
-        f'<text x="{PAD + 24}" y="{bot_y + 36}" fill="{MUTED}" font-size="16.5">'
-        f'rusdi@production:~$ <tspan fill="{CYAN}">./evaluate-candidate.sh --verdict</tspan></text>'
-    )
-    parts.append(
-        f'<text x="{PAD + 24}" y="{bot_y + 66}" fill="{GREEN}" font-size="16">'
-        f'[HR MATCH 100%]: Backend Architecture + Network Ops + Relentless Discipline</text>'
-    )
-    parts.append(
-        f'<text x="{PAD + 24}" y="{bot_y + 98}" fill="{MUTED}" font-size="16.5">'
-        f'rusdi@production:~$ <tspan fill="{INK}">contact --mailto rusdieneri@gmail.com</tspan></text>'
-    )
-    # Blinking cursor after command
-    cursor_x = PAD + 24 + 460
-    parts.append(
-        f'<rect class="cursor" x="{cursor_x}" y="{bot_y + 83}" width="10" height="18" fill="{GREEN}"/>'
-    )
-    parts.append('</g>')
 
-    parts.append('</svg>')
+    # Blinking block cursor after command
+    status_chars = len("rusdi@github:~$ whoami Nuruddin Rusydi Ilham · Backend & Network Engineer ")
+    cursor_x = PAD + status_chars * 13 * 0.58
+    parts.append(
+        f'<rect x="{cursor_x:.1f}" y="{status_y - 12:.1f}" width="9" height="15" fill="{GREEN}">'
+        f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" dur="1s" repeatCount="indefinite"/>'
+        f'</rect>'
+    )
+
+    parts.append("</svg>")
     return "".join(parts)
 
 
 def main():
-    svg = render()
-    os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    with open(OUT, "w", encoding="utf-8") as f:
+    svg = render_svg()
+    os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
+    with open(OUT_PATH, "w", encoding="utf-8") as f:
         f.write(svg)
-    print(f"Wrote {OUT}: {W} x {H}")
+    print(f"Wrote {OUT_PATH}: {CANVAS_W} x {CANVAS_H}, {len(svg)//1024} KB")
 
 
 if __name__ == "__main__":

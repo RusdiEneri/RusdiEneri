@@ -8,12 +8,12 @@
 <br>
 <br>
 
-<!-- system profile (left) + streak/numbers card (right). both svgs are 840x880 -->
+<!-- ascii portrait (left) + streak/numbers card (right). both svgs are 840x880 -->
 <h3><code>rusdi@github ~ $ whoami</code></h3>
 
 <table>
   <tr>
-    <td valign="top" width="50%"><img src="./dist/sys-info.svg" width="420" alt="Rusdi — Terminal Candidate Profile &amp; System Specs" /></td>
+    <td valign="top" width="50%"><img src="./dist/sys-info.svg" width="420" alt="Rusdi — ASCII portrait auto-streamed" /></td>
     <td valign="top" width="50%"><img src="./dist/stats.svg" width="420" alt="Rusdi's GitHub streak and contribution stats — auto-refreshed daily" /></td>
   </tr>
 </table>

@@ -59,7 +59,7 @@ jobs:
             git config commit.gpgsign true
           fi
 
-          git add data/contributions.json dist/*.svg
+          git add data/* dist/*.svg
           git diff --staged --quiet && exit 0
 
           git commit -m "chore: refresh contribution graph & profile stats [skip ci]"
