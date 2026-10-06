@@ -21,20 +21,35 @@
 <br>
 <br>
 
-<!-- featured projects: animasi render terminal mengalir dengan tautan langsung -->
+<!-- featured projects: kartu terminal individual interaktif dengan animasi mengalir -->
 <h3><code>rusdi@github ~ $ ./featured.sh</code></h3>
 
-<img src="./dist/featured.svg" width="860" alt="Rusdi — Simulasi Terminal Proyek Unggulan" />
-
-<br>
-<br>
-
-<p>
-  🧠 <a href="https://github.com/RusdiEneri/MahasigMind"><b>MahasigMind</b></a> · Platform Kesehatan Mental SPA <i>(Laravel 11, React 19, Inertia.js)</i><br>
-  🛒 <a href="https://github.com/RusdiEneri/Cuanin"><b>Cuanin</b></a> · Marketplace Multi-Vendor Preloved <i>(Laravel 12, MySQL, Vite)</i><br>
-  🚚 <a href="https://github.com/RusdiEneri/jt-express-scheduling"><b>J&amp;T Scheduling</b></a> · Optimasi Shift Algoritma Genetika <i>(Python, Heuristics)</i><br>
-  🏢 <a href="https://github.com/RusdiEneri/alam-makmur-jaya"><b>Alam Makmur Jaya</b></a> · Sistem ERP &amp; Manajemen Retail <i>(Express.js, Vite, REST)</i>
-</p>
+<table>
+  <tr>
+    <td valign="top" width="50%">
+      <a href="https://github.com/RusdiEneri/MahasigMind">
+        <img src="./dist/featured-mahasigmind.svg" width="420" alt="MahasigMind — Platform Kesehatan Mental SPA" />
+      </a>
+    </td>
+    <td valign="top" width="50%">
+      <a href="https://github.com/RusdiEneri/Cuanin">
+        <img src="./dist/featured-cuanin.svg" width="420" alt="Cuanin — Marketplace Multi-Vendor Preloved" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" width="50%">
+      <a href="https://github.com/RusdiEneri/jt-express-scheduling">
+        <img src="./dist/featured-jt-scheduling.svg" width="420" alt="J&T Scheduling — Optimasi Shift Algoritma Genetika" />
+      </a>
+    </td>
+    <td valign="top" width="50%">
+      <a href="https://github.com/RusdiEneri/alam-makmur-jaya">
+        <img src="./dist/featured-alam-makmur.svg" width="420" alt="Alam Makmur Jaya — Sistem ERP & Retail" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 <br>
 
