@@ -1,0 +1,103 @@
+name: "📊 Update Profile Art & Stats"
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # 00:00 UTC daily (~07:00 WIB)
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/**"
+      - ".github/workflows/update-profile-art.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "profile-art-${{ github.ref }}"
+  cancel-in-progress: false
+
+jobs:
+  update-art:
+    name: "🎨 Render Profile Art"
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: "📥 Checkout repository"
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: "🐍 Setup Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: "scripts/requirements.txt"
+
+      - name: "📦 Install dependencies"
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: "📡 Fetch live contribution metrics"
+        run: python scripts/fetch_contributions.py
+
+      - name: "✨ Render contribution heatmap SVG"
+        run: python scripts/generate_heatmap_svg.py
+
+      - name: "📈 Render streak & numbers card SVG"
+        run: python scripts/render_stats_svg.py
+
+      - name: "💻 Render terminal system info card SVG"
+        run: python scripts/render_sys_svg.py
+
+      - name: "🚀 Commit & Push Updated Profile Art"
+        env:
+          SIGNING_KEY: ${{ secrets.COMMIT_SIGNING_KEY }}
+          BRANCH: ${{ github.ref_name }}
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+
+          git config --local user.name "RusdiEneri"
+          git config --local user.email "nuruddinrusydiilham@gmail.com"
+
+          # SSH Commit Signing jika secret tersedia
+          if [[ -n "${SIGNING_KEY:-}" ]]; then
+            KEY_FILE="$(mktemp)"
+            cleanup() { rm -f -- "$KEY_FILE"; }
+            trap cleanup EXIT
+            printf '%s\n' "$SIGNING_KEY" > "$KEY_FILE"
+            chmod 600 "$KEY_FILE"
+
+            git config --local gpg.format ssh
+            git config --local gpg.ssh.program ssh-keygen
+            git config --local user.signingkey "$KEY_FILE"
+            git config --local commit.gpgsign true
+            echo "✅ SSH signing enabled."
+          else
+            echo "ℹ️ SSH signing key not configured, using standard commit."
+          fi
+
+          git add data/contributions.json dist/contrib-heatmap.svg dist/stats.svg dist/sys-info.svg
+
+          if git diff --cached --quiet; then
+            echo "No changes detected. Skipping push."
+            exit 0
+          fi
+
+          git commit -m "chore: refresh contribution graph & profile stats [skip ci]"
+
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase origin "$BRANCH" || git rebase --abort
+            if git push origin "$BRANCH"; then
+              echo "✅ Push berhasil pada percobaan $attempt"
+              exit 0
+            fi
+            echo "Push conflict, retrying in 10s..."
+            sleep 10
+          done
+
+          exit 1
