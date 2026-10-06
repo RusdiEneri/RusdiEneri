@@ -13,7 +13,7 @@
 
 <table>
   <tr>
-    <td valign="top" width="50%"><img src="./dist/sys-info.svg" width="420" alt="Rusdi — Terminal System Profile" /></td>
+    <td valign="top" width="50%"><img src="./dist/sys-info.svg" width="420" alt="Rusdi — Terminal Candidate Profile &amp; System Specs" /></td>
     <td valign="top" width="50%"><img src="./dist/stats.svg" width="420" alt="Rusdi's GitHub streak and contribution stats — auto-refreshed daily" /></td>
   </tr>
 </table>
@@ -43,10 +43,13 @@
 
 <br>
 
-<!-- connect & links -->
+<!-- connect & links with HR recruiter fast-track -->
 <h3><code>rusdi@github ~ $ ./links.sh</code></h3>
 
-<p><b>Backend &amp; Network Engineer · Linux Infrastructure · Tuban, Indonesia 🇮🇩</b></p>
+<p>
+  <b>Backend &amp; Network Engineer · Linux Infrastructure · Tuban, Indonesia 🇮🇩</b><br>
+  <i>🟢 Open for Full-Time, Remote &amp; Engineering Contracts</i>
+</p>
 
 [![Email](https://img.shields.io/badge/Email-rusdieneri%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rusdieneri@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-rusdieneri-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/rusdieneri)

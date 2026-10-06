@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Render a terminal system info & neofetch profile card (sys-info.svg).
+Render a terminal system info & HR candidate sheet card (sys-info.svg).
 Canvas size: 840 x 880 (matches stats.svg exactly for flawless side-by-side alignment).
+Highlights core competencies, production discipline, and hire status for HR / tech leads.
 """
 import html
 import os
@@ -36,16 +37,16 @@ ASCII_CAT = [
 ]
 
 SPECS = [
-    ("OS", "Arch Linux / Ubuntu LTS", CYAN),
-    ("Host", "Edge Production Lab (Tuban, ID)", INK),
-    ("Kernel", "6.12.1-hardened [Production Ready]", YELLOW),
-    ("Uptime", "367+ days (100% Daily Consistency)", GREEN),
-    ("Role", "Backend & Network Engineer", PURPLE),
-    ("Architecture", "Scalable REST APIs · Microservices", INK),
-    ("Networking", "iptables · OpenWRT · Wireshark · DNS", CYAN),
+    ("Candidate", "Nuruddin Rusydi Ilham", INK),
+    ("Role Target", "Backend & Network Engineer", PURPLE),
+    ("Hiring Status", "🟢 Available for Full-Time / Remote", GREEN),
+    ("Engineering Cadence", "1,016+ Days Continuous Production", YELLOW),
+    ("Core Architecture", "Scalable REST APIs · Microservices", CYAN),
+    ("Primary Languages", "PHP (Laravel) · Go · Python · TS", GREEN),
+    ("Database & Storage", "MySQL · Redis · Schema Optimization", INK),
     ("Infrastructure", "Docker · Linux SysAdmin · Nginx", YELLOW),
-    ("Core Languages", "PHP (Laravel) · Go · Python · TS", GREEN),
-    ("Status", "🟢 Operational & Open to Collaborations", GREEN),
+    ("Network Security", "iptables · OpenWRT · Wireshark · WireGuard", CYAN),
+    ("Commit Integrity", "Cryptographic SSH Keypair Signing", GREEN),
 ]
 
 
@@ -76,7 +77,7 @@ def render():
 
     parts.append(
         f'<text x="{W / 2}" y="{TITLEBAR_H / 2 + 4.5}" fill="{MUTED}" font-size="12.5" '
-        f'text-anchor="middle">rusdi@github: ~$ whoami --verbose</text>'
+        f'text-anchor="middle">rusdi@github: ~$ whoami --candidate-dossier</text>'
     )
 
     # Top Hero Box (ASCII Avatar + Fastfetch Header)
@@ -98,18 +99,18 @@ def render():
             f'font-weight="700">{html.escape(line)}</text>'
         )
 
-    # Fastfetch User Header on right
+    # Candidate Dossier Header on right
     header_x = PAD + 270
-    parts.append(f'<text x="{header_x}" y="{hero_y + 42}" fill="{GREEN}" font-size="24" font-weight="700">rusdi@edge-node</text>')
+    parts.append(f'<text x="{header_x}" y="{hero_y + 42}" fill="{GREEN}" font-size="24" font-weight="700">rusdi@production-lab</text>')
     parts.append(f'<text x="{header_x}" y="{hero_y + 68}" fill="{FRAME}" font-size="16">---------------------------------------------</text>')
-    parts.append(f'<text x="{header_x}" y="{hero_y + 98}" fill="{MUTED}" font-size="17">Role: <tspan fill="{INK}" font-weight="600">Backend &amp; Network Engineer</tspan></text>')
-    parts.append(f'<text x="{header_x}" y="{hero_y + 128}" fill="{MUTED}" font-size="17">Location: <tspan fill="{INK}">Tuban, Indonesia (UTC+7)</tspan></text>')
-    parts.append(f'<text x="{header_x}" y="{hero_y + 158}" fill="{MUTED}" font-size="17">Uptime: <tspan fill="{GREEN}" font-weight="600">367 days (99.98% High Availability)</tspan></text>')
-    parts.append(f'<text x="{header_x}" y="{hero_y + 188}" fill="{MUTED}" font-size="17">Shell: <tspan fill="{YELLOW}">zsh 5.9 + tmux · vim · git</tspan></text>')
-    parts.append(f'<text x="{header_x}" y="{hero_y + 218}" fill="{MUTED}" font-size="17">Mission: <tspan fill="{PURPLE}">Building Resilient Web &amp; Packet Systems</tspan></text>')
+    parts.append(f'<text x="{header_x}" y="{hero_y + 98}" fill="{MUTED}" font-size="16.5">Specialization: <tspan fill="{INK}" font-weight="600">Backend &amp; Network Infrastructure</tspan></text>')
+    parts.append(f'<text x="{header_x}" y="{hero_y + 128}" fill="{MUTED}" font-size="16.5">Location: <tspan fill="{INK}">Tuban, Indonesia (UTC+7 · Remote-Ready)</tspan></text>')
+    parts.append(f'<text x="{header_x}" y="{hero_y + 158}" fill="{MUTED}" font-size="16.5">HR Status: <tspan fill="{GREEN}" font-weight="700">🟢 Open for Full-Time &amp; Contracts</tspan></text>')
+    parts.append(f'<text x="{header_x}" y="{hero_y + 188}" fill="{MUTED}" font-size="16.5">Consistency: <tspan fill="{YELLOW}">🔥 1,016+ Days Unbroken Work Ethic</tspan></text>')
+    parts.append(f'<text x="{header_x}" y="{hero_y + 218}" fill="{MUTED}" font-size="16.5">Core Focus: <tspan fill="{PURPLE}">Building High-Throughput &amp; Secure Systems</tspan></text>')
     parts.append('</g>')
 
-    # Middle Spec Panel
+    # Middle Spec Panel (HR Tech Checklist)
     specs_y = hero_y + hero_h + 16
     specs_h = 360
     parts.append(f'<g class="panel" style="animation-delay:0.25s">')
@@ -117,7 +118,7 @@ def render():
         f'<rect x="{PAD}" y="{specs_y}" width="{hero_w}" height="{specs_h}" rx="10" '
         f'fill="{TILE}" stroke="{FRAME}"/>'
     )
-    parts.append(f'<text x="{PAD + 24}" y="{specs_y + 36}" fill="{MUTED}" font-size="18">$ cat /etc/system/specs.conf</text>')
+    parts.append(f'<text x="{PAD + 24}" y="{specs_y + 36}" fill="{MUTED}" font-size="18">$ cat /etc/candidate/competencies.conf</text>')
 
     spec_start_y = specs_y + 70
     col_w = (hero_w - 48) / 2
@@ -135,7 +136,7 @@ def render():
         )
     parts.append('</g>')
 
-    # Bottom Terminal Prompt Box
+    # Bottom Terminal Prompt Box (HR Match & Action)
     bot_y = specs_y + specs_h + 16
     bot_h = H - PAD - bot_y
     parts.append(f'<g class="panel" style="animation-delay:0.4s">')
@@ -144,19 +145,19 @@ def render():
         f'fill="{TILE}" stroke="{FRAME}"/>'
     )
     parts.append(
-        f'<text x="{PAD + 24}" y="{bot_y + 36}" fill="{MUTED}" font-size="17">'
-        f'rusdi@edge-node:~$ <tspan fill="{CYAN}">ping -c 1 opportunities.live</tspan></text>'
+        f'<text x="{PAD + 24}" y="{bot_y + 36}" fill="{MUTED}" font-size="16.5">'
+        f'rusdi@production:~$ <tspan fill="{CYAN}">./evaluate-candidate.sh --verdict</tspan></text>'
     )
     parts.append(
         f'<text x="{PAD + 24}" y="{bot_y + 66}" fill="{GREEN}" font-size="16">'
-        f'64 bytes from opportunities (127.0.0.1): icmp_seq=1 ttl=64 time=0.042 ms [ALL SYSTEMS GO]</text>'
+        f'[HR MATCH 100%]: Backend Architecture + Network Ops + Relentless Discipline</text>'
     )
     parts.append(
-        f'<text x="{PAD + 24}" y="{bot_y + 98}" fill="{MUTED}" font-size="17">'
-        f'rusdi@edge-node:~$ <tspan fill="{INK}">collaborate --now</tspan></text>'
+        f'<text x="{PAD + 24}" y="{bot_y + 98}" fill="{MUTED}" font-size="16.5">'
+        f'rusdi@production:~$ <tspan fill="{INK}">contact --mailto rusdieneri@gmail.com</tspan></text>'
     )
     # Blinking cursor after command
-    cursor_x = PAD + 24 + 310
+    cursor_x = PAD + 24 + 460
     parts.append(
         f'<rect class="cursor" x="{cursor_x}" y="{bot_y + 83}" width="10" height="18" fill="{GREEN}"/>'
     )

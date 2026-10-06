@@ -13,8 +13,8 @@
 
 <table>
   <tr>
-    <td valign="top" width="50%"><img src="./dist/sys-info.svg" width="420" alt="Rusdi — Profil Arsitektur Sistem Terminal" /></td>
-    <td valign="top" width="50%"><img src="./dist/stats.svg" width="420" alt="Statistik kontribusi & streak GitHub Rusdi — diperbarui otomatis setiap hari" /></td>
+    <td valign="top" width="50%"><img src="./dist/sys-info.svg" width="420" alt="Rusdi — Profil Kandidat &amp; Spesifikasi Sistem Terminal" /></td>
+    <td valign="top" width="50%"><img src="./dist/stats.svg" width="420" alt="Statistik kontribusi &amp; streak GitHub Rusdi — diperbarui otomatis setiap hari" /></td>
   </tr>
 </table>
 
@@ -43,10 +43,13 @@
 
 <br>
 
-<!-- connect & links -->
+<!-- connect & links dengan fast-track HR recruiter -->
 <h3><code>rusdi@github ~ $ ./links.sh</code></h3>
 
-<p><b>Spesialis Backend &amp; Jaringan · Infrastruktur Linux · Tuban, Indonesia 🇮🇩</b></p>
+<p>
+  <b>Spesialis Backend &amp; Jaringan · Infrastruktur Linux · Tuban, Indonesia 🇮🇩</b><br>
+  <i>🟢 Terbuka untuk Peluang Kerja Penuh Waktu (Full-Time), Remote &amp; Kontrak Proyek</i>
+</p>
 
 [![Email](https://img.shields.io/badge/Email-rusdieneri%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rusdieneri@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-rusdieneri-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/rusdieneri)
