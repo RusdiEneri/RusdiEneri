@@ -12,7 +12,12 @@ import html
 import os
 import sys
 import urllib.request
-from PIL import Image, ImageEnhance, ImageFilter
+
+try:
+    from PIL import Image, ImageEnhance, ImageFilter
+    HAS_PIL = True
+except ImportError:
+    HAS_PIL = False
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 AVATAR_PATH = os.path.join(HERE, "..", "data", "avatar.png")
@@ -68,8 +73,8 @@ def ensure_avatar():
 
 def prepare_ascii_lines():
     ensure_avatar()
-    if not os.path.exists(AVATAR_PATH):
-        # Fallback placeholder if image completely missing
+    if not HAS_PIL or not os.path.exists(AVATAR_PATH):
+        # Fallback placeholder if PIL not available or image missing
         return [" " * COLS for _ in range(ROWS)]
 
     im = Image.open(AVATAR_PATH).convert("L")
