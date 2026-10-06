@@ -39,6 +39,7 @@ jobs:
           python scripts/generate_heatmap_svg.py
           python scripts/render_stats_svg.py
           python scripts/render_sys_svg.py
+          python scripts/render_featured_svg.py
 
       - name: Commit updated art
         env:

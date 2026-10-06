@@ -21,18 +21,13 @@
 <br>
 <br>
 
-<!-- space shooter arcade simulator
-<h3><code>rusdi@github ~ $ ./arcade.sh</code></h3>
+<!-- featured projects: animated flowing terminal render with direct repo links -->
+<h3><code>rusdi@github ~ $ ./featured.sh</code></h3>
 
-<a href="https://github.com/RusdiEneri">
-  <img src="./dist/gh-space-shooter.webp" width="860" alt="Galactic Space Shooter Arcade Simulation" />
-</a>
+<img src="./dist/featured.svg" width="860" alt="Rusdi — Featured Projects Terminal Simulation" />
 
 <br>
-<br> -->
-
-<!-- featured projects -->
-<h3><code>rusdi@github ~ $ ./featured.sh</code></h3>
+<br>
 
 <p>
   🧠 <a href="https://github.com/RusdiEneri/MahasigMind"><b>MahasigMind</b></a> · Mental Health SPA Platform <i>(Laravel 11, React 19, Inertia.js)</i><br>
