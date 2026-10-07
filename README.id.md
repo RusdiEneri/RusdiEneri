@@ -11,7 +11,7 @@
 
 [![Email](https://img.shields.io/badge/Email-rusdieneri%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rusdieneri@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-rusdieneri-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/rusdieneri)
-[![Portfolio](https://img.shields.io/badge/Portfolio-rusdieneri.github.io-F0B90B?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mangrusdi.my.id)
+[![Portfolio](https://img.shields.io/badge/Portfolio-mangrusdi.my.id-F0B90B?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mangrusdi.my.id)
 [![GitHub](https://img.shields.io/badge/GitHub-RusdiEneri-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RusdiEneri)
 
 <br>
