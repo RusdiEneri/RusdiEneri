@@ -3,7 +3,7 @@
 <!-- animated contribution graph: real data, boxes reveal cell by cell -->
 <h3><code>rusdi@github ~ $ ./contributions.sh</code></h3>
 
-<img src="./dist/contrib-heatmap.svg?v=1791332029" width="860" alt="Rusdi's GitHub contribution graph — auto-refreshed daily" />
+<img src="./dist/contrib-heatmap.svg?v=1791332707" width="860" alt="Rusdi's GitHub contribution graph — auto-refreshed daily" />
 
 <br>
 <br>
@@ -13,8 +13,8 @@
 
 <table>
   <tr>
-    <td valign="top" width="50%"><img src="./dist/sys-info.svg?v=1791332029" width="420" alt="Rusdi — ASCII portrait auto-streamed" /></td>
-    <td valign="top" width="50%"><img src="./dist/stats.svg?v=1791332029" width="420" alt="Rusdi's GitHub streak and contribution stats — auto-refreshed daily" /></td>
+    <td valign="top" width="50%"><img src="./dist/sys-info.svg?v=1791332707" width="420" alt="Rusdi — ASCII portrait auto-streamed" /></td>
+    <td valign="top" width="50%"><img src="./dist/stats.svg?v=1791332707" width="420" alt="Rusdi's GitHub streak and contribution stats — auto-refreshed daily" /></td>
   </tr>
 </table>
 
@@ -28,24 +28,24 @@
   <tr>
     <td valign="top" width="50%">
       <a href="https://github.com/RusdiEneri/MahasigMind">
-        <img src="./dist/featured-mahasigmind.svg?v=1791332029" width="420" alt="MahasigMind — Mental Health SPA Platform" />
+        <img src="./dist/featured-mahasigmind.svg?v=1791332707" width="420" alt="MahasigMind — Mental Health SPA Platform" />
       </a>
     </td>
     <td valign="top" width="50%">
       <a href="https://github.com/RusdiEneri/Cuanin">
-        <img src="./dist/featured-cuanin.svg?v=1791332029" width="420" alt="Cuanin — Preloved Multi-Vendor Marketplace" />
+        <img src="./dist/featured-cuanin.svg?v=1791332707" width="420" alt="Cuanin — Preloved Multi-Vendor Marketplace" />
       </a>
     </td>
   </tr>
   <tr>
     <td valign="top" width="50%">
       <a href="https://github.com/RusdiEneri/jt-express-scheduling">
-        <img src="./dist/featured-jt-scheduling.svg?v=1791332029" width="420" alt="J&T Scheduling — Algorithmic Shift Optimizer" />
+        <img src="./dist/featured-jt-scheduling.svg?v=1791332707" width="420" alt="J&T Scheduling — Algorithmic Shift Optimizer" />
       </a>
     </td>
     <td valign="top" width="50%">
       <a href="https://github.com/RusdiEneri/alam-makmur-jaya">
-        <img src="./dist/featured-alam-makmur.svg?v=1791332029" width="420" alt="Alam Makmur Jaya — Centralized ERP & Retail System" />
+        <img src="./dist/featured-alam-makmur.svg?v=1791332707" width="420" alt="Alam Makmur Jaya — Centralized ERP & Retail System" />
       </a>
     </td>
   </tr>
