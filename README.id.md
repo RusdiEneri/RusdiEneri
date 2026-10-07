@@ -3,7 +3,7 @@
 <!-- animated contribution graph: real data, boxes reveal cell by cell -->
 <h3><code>rusdi@github ~ $ ./contributions.sh</code></h3>
 
-<img src="./dist/contrib-heatmap.svg?v=1791332010" width="860" alt="Grafik kontribusi GitHub Rusdi — diperbarui otomatis setiap hari" />
+<img src="./dist/contrib-heatmap.svg?v=1791332029" width="860" alt="Grafik kontribusi GitHub Rusdi — diperbarui otomatis setiap hari" />
 
 <br>
 <br>
@@ -13,8 +13,8 @@
 
 <table>
   <tr>
-    <td valign="top" width="50%"><img src="./dist/sys-info.svg?v=1791332010" width="420" alt="Rusdi — Potret ASCII dengan animasi streaming otomatis" /></td>
-    <td valign="top" width="50%"><img src="./dist/stats.svg?v=1791332010" width="420" alt="Statistik kontribusi &amp; streak GitHub Rusdi — diperbarui otomatis setiap hari" /></td>
+    <td valign="top" width="50%"><img src="./dist/sys-info.svg?v=1791332029" width="420" alt="Rusdi — Potret ASCII dengan animasi streaming otomatis" /></td>
+    <td valign="top" width="50%"><img src="./dist/stats.svg?v=1791332029" width="420" alt="Statistik kontribusi &amp; streak GitHub Rusdi — diperbarui otomatis setiap hari" /></td>
   </tr>
 </table>
 
@@ -28,24 +28,24 @@
   <tr>
     <td valign="top" width="50%">
       <a href="https://github.com/RusdiEneri/MahasigMind">
-        <img src="./dist/featured-mahasigmind.svg?v=1791332010" width="420" alt="MahasigMind — Platform Kesehatan Mental SPA" />
+        <img src="./dist/featured-mahasigmind.svg?v=1791332029" width="420" alt="MahasigMind — Platform Kesehatan Mental SPA" />
       </a>
     </td>
     <td valign="top" width="50%">
       <a href="https://github.com/RusdiEneri/Cuanin">
-        <img src="./dist/featured-cuanin.svg?v=1791332010" width="420" alt="Cuanin — Marketplace Multi-Vendor Preloved" />
+        <img src="./dist/featured-cuanin.svg?v=1791332029" width="420" alt="Cuanin — Marketplace Multi-Vendor Preloved" />
       </a>
     </td>
   </tr>
   <tr>
     <td valign="top" width="50%">
       <a href="https://github.com/RusdiEneri/jt-express-scheduling">
-        <img src="./dist/featured-jt-scheduling.svg?v=1791332010" width="420" alt="J&T Scheduling — Optimasi Shift Algoritma Genetika" />
+        <img src="./dist/featured-jt-scheduling.svg?v=1791332029" width="420" alt="J&T Scheduling — Optimasi Shift Algoritma Genetika" />
       </a>
     </td>
     <td valign="top" width="50%">
       <a href="https://github.com/RusdiEneri/alam-makmur-jaya">
-        <img src="./dist/featured-alam-makmur.svg?v=1791332010" width="420" alt="Alam Makmur Jaya — Sistem ERP & Retail" />
+        <img src="./dist/featured-alam-makmur.svg?v=1791332029" width="420" alt="Alam Makmur Jaya — Sistem ERP & Retail" />
       </a>
     </td>
   </tr>
