@@ -40,6 +40,7 @@ jobs:
           python scripts/render_stats_svg.py
           python scripts/render_sys_svg.py
           python scripts/render_featured_svg.py
+          python scripts/update_cache_buster.py
 
       - name: Commit updated art
         env:
@@ -60,7 +61,7 @@ jobs:
             git config commit.gpgsign true
           fi
 
-          git add data/* dist/*.svg
+          git add README.md README.id.md data/* dist/*.svg
           git diff --staged --quiet && exit 0
 
           git commit -m "chore: refresh contribution graph & profile stats [skip ci]"
