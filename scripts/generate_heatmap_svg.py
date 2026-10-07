@@ -133,7 +133,13 @@ def render_svg(data, days, total):
   @keyframes flash {{ 0%{{filter:brightness(2.2)}} 45%{{filter:brightness(2.2)}} 100%{{filter:brightness(1)}} }}
   @media (prefers-reduced-motion: reduce) {{ .c {{ opacity:1 !important; animation:none !important; }} }}
 </style>
-<rect width="{W}" height="{H}" fill="none"/>
+<defs>
+  <linearGradient id="heat_bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#111722"/>
+    <stop offset="1" stop-color="#0d1117"/>
+  </linearGradient>
+</defs>
+<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="12" fill="url(#heat_bg)" stroke="#30363d" stroke-width="1"/>
 
 <!-- Month & Day Labels -->
 {''.join(labels)}

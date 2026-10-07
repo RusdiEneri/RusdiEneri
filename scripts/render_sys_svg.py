@@ -58,17 +58,19 @@ STAGGER = ROW_DUR
 
 
 def ensure_avatar():
-    if not os.path.exists(AVATAR_PATH):
-        os.makedirs(os.path.dirname(AVATAR_PATH), exist_ok=True)
-        url = f"https://github.com/{USERNAME}.png"
-        print(f"Downloading avatar from {url}...")
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": "profile-readme-bot/1.0"})
-            with urllib.request.urlopen(req, timeout=20) as resp:
+    os.makedirs(os.path.dirname(AVATAR_PATH), exist_ok=True)
+    url = f"https://github.com/{USERNAME}.png"
+    print(f"Checking & downloading latest avatar from {url}...")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "profile-readme-bot/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = resp.read()
+            if data and len(data) > 100:
                 with open(AVATAR_PATH, "wb") as f:
-                    f.write(resp.read())
-        except Exception as e:
-            print(f"Warning: could not download avatar: {e}", file=sys.stderr)
+                    f.write(data)
+                print(f"Successfully refreshed avatar from {url} ({len(data)} bytes)")
+    except Exception as e:
+        print(f"Warning: could not refresh avatar (using existing if available): {e}", file=sys.stderr)
 
 
 def prepare_ascii_lines():

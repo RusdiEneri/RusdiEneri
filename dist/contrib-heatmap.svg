@@ -9,7 +9,13 @@
   @keyframes flash { 0%{filter:brightness(2.2)} 45%{filter:brightness(2.2)} 100%{filter:brightness(1)} }
   @media (prefers-reduced-motion: reduce) { .c { opacity:1 !important; animation:none !important; } }
 </style>
-<rect width="906" height="210" fill="none"/>
+<defs>
+  <linearGradient id="heat_bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#111722"/>
+    <stop offset="1" stop-color="#0d1117"/>
+  </linearGradient>
+</defs>
+<rect x="0.5" y="0.5" width="905" height="209" rx="12" fill="url(#heat_bg)" stroke="#30363d" stroke-width="1"/>
 
 <!-- Month & Day Labels -->
 <text class="lbl" x="34.0" y="18">Oct</text><text class="lbl" x="98.8" y="18">Nov</text><text class="lbl" x="163.6" y="18">Dec</text><text class="lbl" x="244.6" y="18">Jan</text><text class="lbl" x="309.4" y="18">Feb</text><text class="lbl" x="374.2" y="18">Mar</text><text class="lbl" x="439.0" y="18">Apr</text><text class="lbl" x="520.0" y="18">May</text><text class="lbl" x="584.8" y="18">Jun</text><text class="lbl" x="649.6" y="18">Jul</text><text class="lbl" x="730.6" y="18">Aug</text><text class="lbl" x="795.4" y="18">Sep</text><text class="lbl" x="876.4" y="18">Oct</text><text class="lbl" x="2" y="55.2">Mon</text><text class="lbl" x="2" y="87.6">Wed</text><text class="lbl" x="2" y="120.0">Fri</text>
