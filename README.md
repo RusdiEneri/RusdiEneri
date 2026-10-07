@@ -28,24 +28,24 @@
   <tr>
     <td valign="top" width="50%">
       <a href="https://github.com/RusdiEneri/MahasigMind">
-        <img src="./dist/featured-mahasigmind.svg" width="420" alt="MahasigMind — Mental Health SPA Platform" />
+        <img src="./dist/featured-mahasigmind.svg?v=minimal" width="420" alt="MahasigMind — Mental Health SPA Platform" />
       </a>
     </td>
     <td valign="top" width="50%">
       <a href="https://github.com/RusdiEneri/Cuanin">
-        <img src="./dist/featured-cuanin.svg" width="420" alt="Cuanin — Preloved Multi-Vendor Marketplace" />
+        <img src="./dist/featured-cuanin.svg?v=minimal" width="420" alt="Cuanin — Preloved Multi-Vendor Marketplace" />
       </a>
     </td>
   </tr>
   <tr>
     <td valign="top" width="50%">
       <a href="https://github.com/RusdiEneri/jt-express-scheduling">
-        <img src="./dist/featured-jt-scheduling.svg" width="420" alt="J&T Scheduling — Algorithmic Shift Optimizer" />
+        <img src="./dist/featured-jt-scheduling.svg?v=minimal" width="420" alt="J&T Scheduling — Algorithmic Shift Optimizer" />
       </a>
     </td>
     <td valign="top" width="50%">
       <a href="https://github.com/RusdiEneri/alam-makmur-jaya">
-        <img src="./dist/featured-alam-makmur.svg" width="420" alt="Alam Makmur Jaya — Centralized ERP & Retail System" />
+        <img src="./dist/featured-alam-makmur.svg?v=minimal" width="420" alt="Alam Makmur Jaya — Centralized ERP & Retail System" />
       </a>
     </td>
   </tr>
