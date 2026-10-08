@@ -40,7 +40,7 @@
 <!-- ================= 01. GRAFIK KONTRIBUSI ================= -->
 <h3><code>⚡ Aktivitas Kontribusi Harian</code></h3>
 
-<img src="./dist/contrib-heatmap.svg?v=1791477203" width="860" style="max-width: 100%;" alt="Grafik kontribusi GitHub Rusdi: diperbarui otomatis setiap hari" />
+<img src="./dist/contrib-heatmap.svg?v=1791477255" width="860" style="max-width: 100%;" alt="Grafik kontribusi GitHub Rusdi: diperbarui otomatis setiap hari" />
 
 <br>
 <br>
@@ -48,7 +48,7 @@
 <!-- ================= 02. STATISTIK TELEMETRI ================= -->
 <h3><code>📊 Telemetri Konsistensi & Performa</code></h3>
 
-<img src="./dist/stats.svg?v=1791477203" width="840" style="max-width: 100%;" alt="Statistik kontribusi & streak GitHub Rusdi: diperbarui otomatis setiap hari" />
+<img src="./dist/stats.svg?v=1791477255" width="840" style="max-width: 100%;" alt="Statistik kontribusi & streak GitHub Rusdi: diperbarui otomatis setiap hari" />
 
 <br>
 <br>
@@ -58,17 +58,17 @@
 
 <p align="center">
   <a href="https://github.com/RusdiEneri/MahasigMind">
-    <img src="./dist/featured-mahasigmind.svg?v=1791477203" width="415" style="max-width: 100%;" alt="MahasigMind: Platform Kesehatan Mental SPA" />
+    <img src="./dist/featured-mahasigmind.svg?v=1791477255" width="415" style="max-width: 100%;" alt="MahasigMind: Platform Kesehatan Mental SPA" />
   </a>
   <a href="https://github.com/RusdiEneri/Cuanin">
-    <img src="./dist/featured-cuanin.svg?v=1791477203" width="415" style="max-width: 100%;" alt="Cuanin: Marketplace Multi-Vendor Preloved" />
+    <img src="./dist/featured-cuanin.svg?v=1791477255" width="415" style="max-width: 100%;" alt="Cuanin: Marketplace Multi-Vendor Preloved" />
   </a>
   <br>
   <a href="https://github.com/RusdiEneri/jt-express-scheduling">
-    <img src="./dist/featured-jt-scheduling.svg?v=1791477203" width="415" style="max-width: 100%;" alt="J&T Scheduling: Optimasi Shift Algoritma Genetika" />
+    <img src="./dist/featured-jt-scheduling.svg?v=1791477255" width="415" style="max-width: 100%;" alt="J&T Scheduling: Optimasi Shift Algoritma Genetika" />
   </a>
   <a href="https://github.com/RusdiEneri/alam-makmur-jaya">
-    <img src="./dist/featured-alam-makmur.svg?v=1791477203" width="415" style="max-width: 100%;" alt="Alam Makmur Jaya: Sistem ERP & Retail" />
+    <img src="./dist/featured-alam-makmur.svg?v=1791477255" width="415" style="max-width: 100%;" alt="Alam Makmur Jaya: Sistem ERP & Retail" />
   </a>
 </p>
 
@@ -78,7 +78,7 @@
 <details>
   <summary><b>👾 Terminal Whoami & Potret Seni ASCII (Klik untuk membuka)</b></summary>
   <br>
-  <img src="./dist/sys-info.svg?v=1791477203" width="840" style="max-width: 100%;" alt="Rusdi: Potret ASCII dengan animasi streaming otomatis" />
+  <img src="./dist/sys-info.svg?v=1791477255" width="840" style="max-width: 100%;" alt="Rusdi: Potret ASCII dengan animasi streaming otomatis" />
 </details>
 
 <br>
