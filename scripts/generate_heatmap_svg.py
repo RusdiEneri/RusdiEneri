@@ -17,7 +17,7 @@ OUT_PATH = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "dist"
 
 def format_date(d_str):
     if not d_str:
-        return "—"
+        return "-"
     try:
         return datetime.date.fromisoformat(d_str).strftime("%b %d, %Y")
     except Exception:

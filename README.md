@@ -4,8 +4,8 @@
 
 # Nuruddin Rusydi Ilham
 
-**Backend & Network Engineer · Linux Infrastructure**  
-*Tuban, East Java, Indonesia 🇮🇩*
+**Backend & System Architecture Engineer**  
+*Tuban, East Java, Indonesia (Open to Remote & Relocation)*
 
 <p>
   <a href="mailto:rusdieneri@gmail.com"><img src="https://img.shields.io/badge/Email-rusdieneri%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
@@ -15,23 +15,30 @@
 </p>
 
 <p>
-  <i>Status: Open for Full-Time Roles, Remote Engineering, and Project Contracts</i>
+  <i>Current Status: Open for Full-Time Backend Roles, Remote Engineering, and Technical Contracts</i>
 </p>
 
-<sub>🌐 Language: <b>English</b> | <a href="./README.id.md">Bahasa Indonesia</a></sub>
+<sub>Language: <b>English</b> | <a href="./README.id.md">Bahasa Indonesia</a></sub>
 
 </div>
 
 ---
 
-### Core Engineering Focus
+### Executive Profile
 
-| Domain | Technologies & Tooling |
+Software Engineer specializing in **Backend Systems**, **Database Architecture**, and **Heuristic Optimization**. Focused on building scalable RESTful services with PHP (Laravel) and Python, optimizing complex relational databases (PostgreSQL, MySQL), and deploying resilient infrastructure on Linux environments. Experienced in developing algorithmic solutions for complex operational constraints, including automated shift scheduling using Genetic Algorithms.
+
+---
+
+### Technical Competency Matrix
+
+| Domain | Technologies, Runtimes & Methodologies |
 | :--- | :--- |
-| **Backend & APIs** | PHP (Laravel), Python, Express.js, RESTful Architecture, Genetic Algorithms |
-| **Infrastructure & Ops** | Linux (Debian, Ubuntu), Docker, Nginx, Shell Scripting, Git, CI/CD Workflows |
-| **Data & Storage** | MySQL, PostgreSQL, SQLite, Redis |
-| **Frontend Integration** | React, Inertia.js, Vite, Tailwind CSS |
+| **Backend Frameworks & APIs** | PHP (Laravel 11 & 12), Python, Node.js (Express), RESTful API Design, MVC Architecture |
+| **Databases & Data Modeling** | PostgreSQL, MySQL, SQLite, Redis, Relational Schema Normalization, Query Indexing & Optimization |
+| **Algorithms & Computation** | Genetic Algorithms, Heuristic Optimization, Constraint Satisfaction Problems (CSP) |
+| **Infrastructure & DevOps** | Linux (Debian, Ubuntu), Docker Containerization, Nginx Reverse Proxy, Shell Scripting, Git, GitHub Actions CI/CD |
+| **Frontend & UI Bridge** | React 19, Inertia.js, Vite, Tailwind CSS, TypeScript basics |
 
 ---
 
@@ -40,45 +47,64 @@
 <!-- ================= 01. CONTRIBUTION HEATMAP ================= -->
 <h3><code>⚡ Daily Contribution Activity</code></h3>
 
-<img src="./dist/contrib-heatmap.svg?v=1791521778" width="860" style="max-width: 100%;" alt="Rusdi's GitHub contribution graph: auto-refreshed daily" />
+<img src="./dist/contrib-heatmap.svg?v=1791597621" width="860" style="max-width: 100%;" alt="Rusdi's GitHub contribution graph: auto-refreshed daily" />
 
 <br>
 <br>
 
 <!-- ================= 02. STATS & TELEMETRY ================= -->
-<h3><code>📊 Performance & Consistency Telemetry</code></h3>
+<h3><code>📊 Engineering Consistency Telemetry</code></h3>
 
-<img src="./dist/stats.svg?v=1791521778" width="840" style="max-width: 100%;" alt="Rusdi's GitHub streak and contribution stats: auto-refreshed daily" />
+<img src="./dist/stats.svg?v=1791597621" width="840" style="max-width: 100%;" alt="Rusdi's GitHub streak and contribution stats: auto-refreshed daily" />
 
 <br>
 <br>
 
 <!-- ================= 03. FEATURED SYSTEMS ================= -->
-<h3><code>🚀 Featured Engineering Systems</code></h3>
+<h3><code>🚀 Featured Production & Research Systems</code></h3>
 
 <p align="center">
-  <a href="https://github.com/RusdiEneri/MahasigMind">
-    <img src="./dist/featured-mahasigmind.svg?v=1791521778" width="415" style="max-width: 100%;" alt="MahasigMind: Mental Health SPA Platform" />
+  <a href="https://github.com/RusdiEneri/jt-express-scheduling">
+    <img src="./dist/featured-jt-scheduling.svg?v=1791597621" width="415" style="max-width: 100%;" alt="J&T Scheduling: Algorithmic Shift Optimizer" />
   </a>
-  <a href="https://github.com/RusdiEneri/Cuanin">
-    <img src="./dist/featured-cuanin.svg?v=1791521778" width="415" style="max-width: 100%;" alt="Cuanin: Preloved Multi-Vendor Marketplace" />
+  <a href="https://github.com/RusdiEneri/MahasigMind">
+    <img src="./dist/featured-mahasigmind.svg?v=1791597621" width="415" style="max-width: 100%;" alt="MahasigMind: Mental Health SPA Platform" />
   </a>
   <br>
-  <a href="https://github.com/RusdiEneri/jt-express-scheduling">
-    <img src="./dist/featured-jt-scheduling.svg?v=1791521778" width="415" style="max-width: 100%;" alt="J&T Scheduling: Algorithmic Shift Optimizer" />
+  <a href="https://github.com/RusdiEneri/Cuanin">
+    <img src="./dist/featured-cuanin.svg?v=1791597621" width="415" style="max-width: 100%;" alt="Cuanin: Preloved Multi-Vendor Marketplace" />
   </a>
   <a href="https://github.com/RusdiEneri/alam-makmur-jaya">
-    <img src="./dist/featured-alam-makmur.svg?v=1791521778" width="415" style="max-width: 100%;" alt="Alam Makmur Jaya: Centralized ERP & Retail System" />
+    <img src="./dist/featured-alam-makmur.svg?v=1791597621" width="415" style="max-width: 100%;" alt="Alam Makmur Jaya: Centralized ERP & Retail System" />
   </a>
 </p>
 
-<br>
+</div>
+
+#### Key Architectural Highlights
+
+* **[J&T Express Shift Optimizer](https://github.com/RusdiEneri/jt-express-scheduling)** (Python, Genetic Algorithm)
+  * Implements customized crossover and mutation heuristics to automate multi-shift courier scheduling under strict operational constraints.
+  * Solves combinatorial allocation bottlenecks and eliminates manual scheduling conflicts.
+* **[MahasigMind](https://github.com/RusdiEneri/MahasigMind)** (Laravel 11, React 19, Inertia.js, MySQL)
+  * Modern full-stack SPA providing mental health tracking with server-driven routing via Inertia.js.
+  * Employs clean architectural layering, role-based authorization, and persistent data encryption.
+* **[Cuanin Marketplace](https://github.com/RusdiEneri/Cuanin)** (Laravel 12, MySQL, Vite)
+  * Multi-vendor preloved goods commerce platform featuring complex relational inventory models.
+  * Structured database transaction handling to prevent race conditions during concurrent checkout events.
+* **[Alam Makmur Jaya](https://github.com/RusdiEneri/alam-makmur-jaya)** (Express.js, REST API, Node.js)
+  * Centralized retail and ERP backend supporting multi-branch inventory tracking, sales logging, and supplier management.
+  * Structured modular API controllers with strict validation schemas.
+
+---
+
+<div align="center">
 
 <!-- ================= 04. INTERACTIVE TERMINAL WHOAMI ================= -->
 <details>
-  <summary><b>👾 Terminal Whoami & ASCII Art Portrait (Click to expand)</b></summary>
+  <summary><b>👾 Terminal Whoami & ASCII System Art (Click to expand)</b></summary>
   <br>
-  <img src="./dist/sys-info.svg?v=1791521778" width="840" style="max-width: 100%;" alt="Rusdi: ASCII portrait auto-streamed" />
+  <img src="./dist/sys-info.svg?v=1791597621" width="840" style="max-width: 100%;" alt="Rusdi: ASCII portrait auto-streamed" />
 </details>
 
 <br>

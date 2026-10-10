@@ -47,7 +47,7 @@ BAR_DUR = 0.6
 
 def short_date(d_str):
     if not d_str:
-        return "—"
+        return "-"
     try:
         return datetime.date.fromisoformat(d_str).strftime("%b %d, %Y")
     except Exception:
