@@ -47,7 +47,7 @@ Software Engineer specializing in **Backend Systems**, **Database Architecture**
 <!-- ================= 01. CONTRIBUTION HEATMAP ================= -->
 <h3><code>⚡ Daily Contribution Activity</code></h3>
 
-<img src="./dist/contrib-heatmap.svg?v=1791597621" width="860" style="max-width: 100%;" alt="Rusdi's GitHub contribution graph: auto-refreshed daily" />
+<img src="./dist/contrib-heatmap.svg?v=1791597770" width="860" style="max-width: 100%;" alt="Rusdi's GitHub contribution graph: auto-refreshed daily" />
 
 <br>
 <br>
@@ -55,7 +55,7 @@ Software Engineer specializing in **Backend Systems**, **Database Architecture**
 <!-- ================= 02. STATS & TELEMETRY ================= -->
 <h3><code>📊 Engineering Consistency Telemetry</code></h3>
 
-<img src="./dist/stats.svg?v=1791597621" width="840" style="max-width: 100%;" alt="Rusdi's GitHub streak and contribution stats: auto-refreshed daily" />
+<img src="./dist/stats.svg?v=1791597770" width="840" style="max-width: 100%;" alt="Rusdi's GitHub streak and contribution stats: auto-refreshed daily" />
 
 <br>
 <br>
@@ -65,17 +65,17 @@ Software Engineer specializing in **Backend Systems**, **Database Architecture**
 
 <p align="center">
   <a href="https://github.com/RusdiEneri/jt-express-scheduling">
-    <img src="./dist/featured-jt-scheduling.svg?v=1791597621" width="415" style="max-width: 100%;" alt="J&T Scheduling: Algorithmic Shift Optimizer" />
+    <img src="./dist/featured-jt-scheduling.svg?v=1791597770" width="415" style="max-width: 100%;" alt="J&T Scheduling: Algorithmic Shift Optimizer" />
   </a>
   <a href="https://github.com/RusdiEneri/MahasigMind">
-    <img src="./dist/featured-mahasigmind.svg?v=1791597621" width="415" style="max-width: 100%;" alt="MahasigMind: Mental Health SPA Platform" />
+    <img src="./dist/featured-mahasigmind.svg?v=1791597770" width="415" style="max-width: 100%;" alt="MahasigMind: Mental Health SPA Platform" />
   </a>
   <br>
   <a href="https://github.com/RusdiEneri/Cuanin">
-    <img src="./dist/featured-cuanin.svg?v=1791597621" width="415" style="max-width: 100%;" alt="Cuanin: Preloved Multi-Vendor Marketplace" />
+    <img src="./dist/featured-cuanin.svg?v=1791597770" width="415" style="max-width: 100%;" alt="Cuanin: Preloved Multi-Vendor Marketplace" />
   </a>
   <a href="https://github.com/RusdiEneri/alam-makmur-jaya">
-    <img src="./dist/featured-alam-makmur.svg?v=1791597621" width="415" style="max-width: 100%;" alt="Alam Makmur Jaya: Centralized ERP & Retail System" />
+    <img src="./dist/featured-alam-makmur.svg?v=1791597770" width="415" style="max-width: 100%;" alt="Alam Makmur Jaya: Centralized ERP & Retail System" />
   </a>
 </p>
 
@@ -104,7 +104,7 @@ Software Engineer specializing in **Backend Systems**, **Database Architecture**
 <details>
   <summary><b>👾 Terminal Whoami & ASCII System Art (Click to expand)</b></summary>
   <br>
-  <img src="./dist/sys-info.svg?v=1791597621" width="840" style="max-width: 100%;" alt="Rusdi: ASCII portrait auto-streamed" />
+  <img src="./dist/sys-info.svg?v=1791597770" width="840" style="max-width: 100%;" alt="Rusdi: ASCII portrait auto-streamed" />
 </details>
 
 <br>
