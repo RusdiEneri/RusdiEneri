@@ -5,7 +5,7 @@
 | Field | Value |
 |---|---|
 | **Timestamp** | `2026-10-11 21:18:40 WIB` |
-| **Iteration** | `Batch #3 of 5` |
+| **Iteration** | `Batch #4 of 5` |
 | **Run** | `#118` |
 | **Run ID** | `38146642974` |
 | **Branch** | `main` |
@@ -16,7 +16,7 @@
 
 ## 🛰️ Operational Event
 
-**Ion Thrusters** was **calibrated**.
+**Shield Generator** was **calibrated**.
 
 > Mission services remain synchronized.
 
