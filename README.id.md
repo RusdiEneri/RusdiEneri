@@ -1,115 +1,80 @@
-<div align="center">
-
-<img src="https://github.com/RusdiEneri.png?size=240" width="112" height="112" alt="Nuruddin Rusydi Ilham" style="border-radius: 50%; box-shadow: 0 4px 14px rgba(0,0,0,0.25);" />
-
 # Nuruddin Rusydi Ilham
 
-**Spesialis Backend & Arsitektur Sistem**  
-*Tuban, Jawa Timur, Indonesia (Terbuka untuk Kerja Remote & Relokasi)*
+`REKAYASA BACKEND / INFRASTRUKTUR JARINGAN`
 
-<p>
-  <a href="mailto:rusdieneri@gmail.com"><img src="https://img.shields.io/badge/Email-rusdieneri%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://linkedin.com/in/rusdieneri"><img src="https://img.shields.io/badge/LinkedIn-rusdieneri-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://mangrusdi.my.id"><img src="https://img.shields.io/badge/Portfolio-mangrusdi.my.id-F0B90B?style=flat-square&logo=googlechrome&logoColor=black" alt="Portfolio" /></a>
-  <a href="https://github.com/RusdiEneri"><img src="https://img.shields.io/badge/GitHub-RusdiEneri-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
-</p>
+Backend developer dan network engineer yang berbasis di Tuban, Jawa Timur, Indonesia. Berfokus pada pembangunan layanan backend berkecepatan tinggi, optimasi basis data relasional, utilitas tingkat protokol, dan pemeliharaan infrastruktur Linux yang tangguh.
 
-<p>
-  <i>Status Saat Ini: Terbuka untuk Posisi Penuh Waktu (Full-Time) Backend, Remote, dan Kontrak Rekayasa Sistem</i>
-</p>
-
-<sub>Bahasa: <b>Bahasa Indonesia</b> | <a href="./README.md">English</a></sub>
-
-</div>
+[Portofolio](https://www.mangrusdi.my.id/) &bull; [GitHub](https://github.com/RusdiEneri) &bull; [LinkedIn](https://www.linkedin.com/in/rusdieneri) &bull; [Email](mailto:nuruddinrusydiilham@gmail.com) &bull; [English Version](./README.md)
 
 ---
 
-### Profil Eksekutif
+### Gambaran Umum
 
-Software Engineer yang berfokus pada **Sistem Backend**, **Arsitektur Basis Data**, dan **Optimasi Heuristik**. Berpengalaman membangun layanan RESTful yang andal menggunakan PHP (Laravel) dan Python, merancang dan mengoptimalkan basis data relasional (PostgreSQL, MySQL), serta mengelola infrastruktur Linux yang tangguh. Terbiasa memecahkan masalah operasional yang kompleks melalui pendekatan algoritmik, seperti otomatisasi penjadwalan shift kerja dengan Algoritma Genetika.
+Saya merancang dan membangun layanan backend dengan memprioritaskan latensi rendah, penanganan protokol biner secara eksplisit, dan keandalan sistem yang dapat diuji. Fokus rekayasa saya berakar pada efisiensi perangkat lunak praktis: menyusun RESTful API modular dengan PHP (Laravel) dan Node.js, merekayasa perkakas level protokol menggunakan Go, serta menyusun algoritma optimasi komputasi dengan Python. Pendekatan ini menghindari ketergantungan berlebih pada abstraksi rumit demi menjaga performa runtime yang stabil dan integritas model data.
+
+Pengembangan perangkat lunak dan rekayasa infrastruktur yang saya jalani saling melengkapi. Pengalaman mengelola server Linux, mengonfigurasi reverse proxy Nginx, dan memelihara perimeter jaringan lokal memberikan panduan konkret dalam merancang arsitektur aplikasi siap produksi. Mulai dari isolasi servis dalam kontainer Docker, pengerasan resolusi DNS lokal dari telemetri yang tidak diinginkan, hingga otomasi pipeline tugas terjadwal melalui GitHub Actions, setiap sistem dibangun untuk beroperasi secara konsisten di bawah beban operasional nyata.
 
 ---
 
-### Matriks Kompetensi Teknis
+### Proyek Pilihan
 
-| Domain | Teknologi, Runtime & Metodologi |
+#### wa-full-pfp &bull; Rekayasa Protokol & Utilitas Privasi
+Aplikasi web berkinerja tinggi untuk memperbarui foto profil WhatsApp pada resolusi penuh tanpa pemotongan rasio paksa (no-crop), mempertahankan aspek rasio dan ketajaman gambar asli secara instan.
+
+* **Implementasi teknis:** Berkomunikasi langsung dengan protokol biner WhatsApp Web memanfaatkan pustaka `whatsmeow` di Go. Sinkronisasi status tautan QR-code dilakukan secara real-time melalui jalur aman WebSockets.
+* **Arsitektur privasi:** Menerapkan prinsip zero persistent data retention. Sesi otentikasi hanya tersimpan sementara di memori dengan mekanisme pembersihan sesi otomatis setelah tugas selesai.
+* **Teknologi:** Go (Golang), whatsmeow, WebSockets, HTML/CSS
+* **Tautan:** [Repositori](https://github.com/RusdiEneri/wa-full-pfp) &bull; [Demo Langsung](https://ppfull.mangrusdi.my.id)
+
+#### J&T Express Shift Optimizer &bull; Pencarian Heuristik & Optimasi Operasional
+Platform otomasi penjadwalan shift kerja kurir untuk mengeliminasi bentrok jadwal dan mengoptimalkan alokasi staf operasional logistik di bawah batasan regulasi shift kerja yang ketat.
+
+* **Implementasi teknis:** Memodelkan masalah penjadwalan shift sebagai constraint satisfaction problem yang diselesaikan melalui Algoritma Genetika kustom. Menerapkan seleksi turnamen dan operator mutasi adaptif untuk mencapai konvergensi solusi dalam waktu di bawah 3 detik.
+* **Dampak operasional:** Menggantikan perumusan jadwal manual yang memakan waktu berjam-jam menjadi penjadwalan otomatis yang instan disertai visualisasi matriks rotasi shift.
+* **Teknologi:** Python, Streamlit, NumPy, Pandas
+* **Tautan:** [Repositori](https://github.com/RusdiEneri/jt-express-scheduling)
+
+#### Cuanin &bull; Pemodelan Data Relasional & Marketplace Multi-Vendor
+Platform marketplace web untuk jual-beli barang preloved berkualitas dengan fitur katalog terstruktur, alur negosiasi harga interaktif, dan integrasi pemesanan langsung ke penjual via WhatsApp.
+
+* **Implementasi teknis:** Mengandalkan manajemen transaksi ACID dan mekanisme row-level locking pada MySQL untuk menjaga konsistensi inventaris dari resiko race condition saat proses checkout bersamaan. Kueri katalog terindeks menghasilkan waktu respon di bawah 100 milidetik.
+* **Arsitektur:** Pola MVC modular pada Laravel dengan penanganan checkout WhatsApp dan tampilan antarmuka terstruktur.
+* **Teknologi:** Laravel 12, PHP 8.2, MySQL, Tailwind CSS, Vite
+* **Tautan:** [Repositori](https://github.com/RusdiEneri/Cuanin)
+
+#### MahasigMind &bull; Platform Konsultasi & Pemantauan Kesehatan Mental Mahasiswa
+Aplikasi web Single Page Application (SPA) untuk pencatatan kesehatan emosional harian, jurnal reflektif, dan akses konsultasi psikologis bagi mahasiswa.
+
+* **Implementasi teknis:** Dibangun di atas Inertia.js untuk menghadirkan interaktivitas SPA berbasis React 19 tanpa overhead serialisasi REST API terpisah. Dilengkapi sistem otorisasi multi-level (RBAC) yang memisahkan hak akses konselor, mahasiswa, dan administrator.
+* **Perlindungan data:** Menerapkan enkripsi pada rekam data psikologis dan catatan konsultasi pada level basis data.
+* **Teknologi:** Laravel 11, React 19, Inertia.js, MySQL, Tailwind CSS
+* **Tautan:** [Repositori](https://github.com/RusdiEneri/MahasigMind)
+
+---
+
+### Fokus Teknis
+
+| Bidang | Teknologi & Disiplin Rekayasa |
 | :--- | :--- |
-| **Backend & API** | PHP (Laravel 11 & 12), Python, Node.js (Express), Desain RESTful API, Arsitektur MVC |
-| **Basis Data & Pemodelan Data** | PostgreSQL, MySQL, SQLite, Redis, Normalisasi Skema Relasional, Indexing & Optimasi Query |
-| **Algoritma & Komputasi** | Algoritma Genetika, Optimasi Heuristik, Constraint Satisfaction Problems (CSP) |
-| **Infrastruktur & DevOps** | Linux (Debian, Ubuntu), Kontainerisasi Docker, Nginx Reverse Proxy, Shell Scripting, Git, GitHub Actions CI/CD |
-| **Integrasi Frontend** | React 19, Inertia.js, Vite, Tailwind CSS, Dasar TypeScript |
+| **Rekayasa Backend** | PHP (Laravel 11, Laravel 12), Go (Golang), Python, Node.js (Express), perancangan RESTful API, protokol WebSocket |
+| **Basis Data & Penyimpanan** | PostgreSQL, MySQL, SQLite, Redis, normalisasi skema, indexing query, penanganan transaksi ACID |
+| **Jaringan & Sistem Operasi** | Linux (Debian, Ubuntu), Docker, reverse proxy Nginx, MikroTik RouterOS, DNS sinkhole (AdGuard Home) |
+| **Otomasi & Perkakas Pengembang** | GitHub Actions CI/CD pipelines, Bash shell scripting, otomasi lingkungan kerja PowerShell |
 
 ---
 
-<div align="center">
+### Eksplorasi Saat Ini
 
-<!-- ================= 01. GRAFIK KONTRIBUSI ================= -->
-<h3><code>⚡ Aktivitas Kontribusi Harian</code></h3>
-
-<img src="./dist/contrib-heatmap.svg?v=1791692805" width="860" style="max-width: 100%;" alt="Grafik kontribusi GitHub Rusdi: diperbarui otomatis setiap hari" />
-
-<br>
-<br>
-
-<!-- ================= 02. STATISTIK TELEMETRI ================= -->
-<h3><code>📊 Telemetri Konsistensi Rekayasa</code></h3>
-
-<img src="./dist/stats.svg?v=1791692805" width="840" style="max-width: 100%;" alt="Statistik kontribusi dan streak GitHub Rusdi: diperbarui otomatis setiap hari" />
-
-<br>
-<br>
-
-<!-- ================= 03. PROYEK UNGGULAN ================= -->
-<h3><code>🚀 Proyek Rekayasa & Riset Unggulan</code></h3>
-
-<p align="center">
-  <a href="https://github.com/RusdiEneri/jt-express-scheduling">
-    <img src="./dist/featured-jt-scheduling.svg?v=1791692805" width="415" style="max-width: 100%;" alt="J&T Scheduling: Optimasi Shift Algoritma Genetika" />
-  </a>
-  <a href="https://github.com/RusdiEneri/MahasigMind">
-    <img src="./dist/featured-mahasigmind.svg?v=1791692805" width="415" style="max-width: 100%;" alt="MahasigMind: Platform Kesehatan Mental SPA" />
-  </a>
-  <br>
-  <a href="https://github.com/RusdiEneri/Cuanin">
-    <img src="./dist/featured-cuanin.svg?v=1791692805" width="415" style="max-width: 100%;" alt="Cuanin: Marketplace Multi-Vendor Preloved" />
-  </a>
-  <a href="https://github.com/RusdiEneri/alam-makmur-jaya">
-    <img src="./dist/featured-alam-makmur.svg?v=1791692805" width="415" style="max-width: 100%;" alt="Alam Makmur Jaya: Sistem ERP & Retail" />
-  </a>
-</p>
-
-</div>
-
-#### Sorotan Arsitektur Proyek
-
-* **[J&T Express Shift Optimizer](https://github.com/RusdiEneri/jt-express-scheduling)** (Python, Algoritma Genetika)
-  * Menerapkan heuristik crossover dan mutasi kustom untuk mengotomatisasi penyusunan jadwal kerja kurir di bawah batasan regulasi shift yang ketat.
-  * Mengeliminasi bentrok jadwal dan memangkas waktu perencanaan manual secara terukur.
-* **[MahasigMind](https://github.com/RusdiEneri/MahasigMind)** (Laravel 11, React 19, Inertia.js, MySQL)
-  * Platform SPA modern untuk pemantauan kesehatan mental dengan routing server-driven via Inertia.js.
-  * Struktur clean architecture, otorisasi berbasis peran (RBAC), dan penanganan data yang aman.
-* **[Cuanin Marketplace](https://github.com/RusdiEneri/Cuanin)** (Laravel 12, MySQL, Vite)
-  * Platform jual-beli barang preloved multi-vendor dengan model relasional inventaris yang terstruktur.
-  * Manajemen transaksi basis data yang konsisten untuk mencegah race conditions saat proses checkout berlangsung bersamaan.
-* **[Alam Makmur Jaya](https://github.com/RusdiEneri/alam-makmur-jaya)** (Express.js, REST API, Node.js)
-  * Backend ritel dan ERP terpusat untuk sinkronisasi stok multi-cabang, pencatatan transaksi kasir, dan integrasi supplier.
-  * Controller API modular dengan skema validasi request yang ketat.
+* Mengembangkan perkakas jaringan tingkat protokol dan background services menggunakan bahasa Go.
+* Memperkuat pertahanan DNS lokal dan mengurasi blocklist domain pelacak privasi melalui [blacklist-hosts](https://github.com/RusdiEneri/blacklist-hosts).
+* Mengotomatisasi pipeline operasional terjadwal dan pemantau telemetri API publik dengan GitHub Actions.
 
 ---
 
-<div align="center">
+### Kontak
 
-<!-- ================= 04. TERMINAL WHOAMI INTERAKTIF ================= -->
-<details>
-  <summary><b>👾 Terminal Whoami & Potret Seni ASCII (Klik untuk membuka)</b></summary>
-  <br>
-  <img src="./dist/sys-info.svg?v=1791692805" width="840" style="max-width: 100%;" alt="Rusdi: Potret ASCII dengan animasi streaming otomatis" />
-</details>
-
-<br>
-<br>
-
-<sub>🇬🇧 <a href="./README.md">English Version</a></sub>
-
-</div>
+* **Situs Web:** [mangrusdi.my.id](https://www.mangrusdi.my.id/)
+* **GitHub:** [github.com/RusdiEneri](https://github.com/RusdiEneri)
+* **LinkedIn:** [linkedin.com/in/rusdieneri](https://www.linkedin.com/in/rusdieneri)
+* **Email:** [nuruddinrusydiilham@gmail.com](mailto:nuruddinrusydiilham@gmail.com)
+* **Domisili:** Tuban, Jawa Timur, Indonesia (UTC+7)
