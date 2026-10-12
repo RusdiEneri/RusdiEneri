@@ -26,19 +26,19 @@ utilitas tingkat protokol, dan pemeliharaan infrastruktur Linux yang tangguh.
 <div align="center">
 
 <!-- Statistik & Konsistensi Rekayasa -->
-<img src="./dist/stats.svg?v=1791787879" width="840" style="max-width: 100%;" alt="Statistik dan Telemetri GitHub Rusdi" />
+<img src="./dist/stats.svg?v=1791787930" width="840" style="max-width: 100%;" alt="Statistik dan Telemetri GitHub Rusdi" />
 
 <br>
 <br>
 
 <!-- Matriks Kontribusi Tahunan Tema Warm Taupe -->
-<img src="./dist/contrib-heatmap.svg?v=1791787879" width="840" style="max-width: 100%;" alt="Heatmap Kontribusi GitHub Rusdi" />
+<img src="./dist/contrib-heatmap.svg?v=1791787930" width="840" style="max-width: 100%;" alt="Heatmap Kontribusi GitHub Rusdi" />
 
 <br>
 <br>
 
 <!-- Identitas Pengembang & Spesifikasi Arsitektur Sistem -->
-<img src="./dist/sys-info.svg?v=1791787879" width="840" style="max-width: 100%;" alt="Spesifikasi Arsitektur Sistem dan Host" />
+<img src="./dist/sys-info.svg?v=1791787930" width="840" style="max-width: 100%;" alt="Spesifikasi Arsitektur Sistem dan Host" />
 
 </div>
 
@@ -48,17 +48,17 @@ utilitas tingkat protokol, dan pemeliharaan infrastruktur Linux yang tangguh.
 
 <div align="center">
   <a href="https://github.com/RusdiEneri/wa-full-pfp">
-    <img src="./dist/featured-wa-full-pfp.svg?v=1791787879" width="415" style="max-width: 100%;" alt="wa-full-pfp" />
+    <img src="./dist/featured-wa-full-pfp.svg?v=1791787930" width="415" style="max-width: 100%;" alt="wa-full-pfp" />
   </a>
   <a href="https://github.com/RusdiEneri/jt-express-scheduling">
-    <img src="./dist/featured-jt-scheduling.svg?v=1791787879" width="415" style="max-width: 100%;" alt="J&T Express Shift Optimizer" />
+    <img src="./dist/featured-jt-scheduling.svg?v=1791787930" width="415" style="max-width: 100%;" alt="J&T Express Shift Optimizer" />
   </a>
   <br>
   <a href="https://github.com/RusdiEneri/Cuanin">
-    <img src="./dist/featured-cuanin.svg?v=1791787879" width="415" style="max-width: 100%;" alt="Cuanin Marketplace" />
+    <img src="./dist/featured-cuanin.svg?v=1791787930" width="415" style="max-width: 100%;" alt="Cuanin Marketplace" />
   </a>
   <a href="https://github.com/RusdiEneri/MahasigMind">
-    <img src="./dist/featured-mahasigmind.svg?v=1791787879" width="415" style="max-width: 100%;" alt="MahasigMind" />
+    <img src="./dist/featured-mahasigmind.svg?v=1791787930" width="415" style="max-width: 100%;" alt="MahasigMind" />
   </a>
 </div>
 
