@@ -1,19 +1,11 @@
 #!/usr/bin/env python3
 """
-Generate minimalist, sleek SVG cards for each featured repository:
-- dist/featured-mahasigmind.svg
-- dist/featured-cuanin.svg
-- dist/featured-jt-scheduling.svg
-- dist/featured-alam-makmur.svg
-- dist/featured.svg (master fallback)
-
-Minimalist design principles:
-- Spacious layout with zero unnecessary clutter (no fake terminals or verbose shells)
-- Clean typography matching GitHub native system font stack
-- Subtle flowing accent beam animation ("animasi mengalir") along the top edge
-- Soft ambient light sheen across the card surface
-- Language dot with breathing pulse
-- Clickable directly to the repository
+Generate minimalist, high-fidelity SVG cards for featured repositories.
+Styled in Rusdi's signature portfolio aesthetic (mangrusdi.my.id):
+- Neo-card surface (#141414) on dark canvas (#0a0a0a) with crisp borders (#262626)
+- Warm taupe accents (#b38b6d) and clean tech tags
+- Subtle GPU-accelerated breathing pulse (0 CPU lag, no heavy beam translation)
+- Directly clickable to repositories
 """
 import html
 import os
@@ -23,58 +15,68 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DIST_DIR = os.path.join(HERE, "..", "dist")
 
 CARD_W = 420
-CARD_H = 125
+CARD_H = 126
 
-BG = "#0d1117"
-BG_CARD = "#161b22"
-BORDER = "#30363d"
-TEXT_TITLE = "#f0f6fc"
-TEXT_MUTED = "#8b949e"
-TEXT_DIM = "#6e7681"
+BG = "#0a0a0a"
+SURFACE = "#141414"
+SURFACE_RAISED = "#1a1a1a"
+BORDER = "#262626"
+BORDER_STRONG = "#333333"
+TEXT_PRIMARY = "#f5f5f5"
+TEXT_MUTED = "#9e9e9e"
+TEXT_SUBTLE = "#6e6e6e"
+TAUPE = "#b38b6d"
+TAUPE_LIGHT = "#d4a373"
 
 PROJECTS = [
     {
-        "key": "mahasigmind",
-        "filename": "featured-mahasigmind.svg",
-        "icon": "🧠",
-        "name": "MahasigMind",
-        "desc": "Mental Health SPA Platform",
-        "primary_tech": "Laravel 11",
-        "stack": "React 19 · Inertia.js",
-        "accent": "#58a6ff",  # Cyan
-        "url": "https://github.com/RusdiEneri/MahasigMind",
-    },
-    {
-        "key": "cuanin",
-        "filename": "featured-cuanin.svg",
-        "icon": "🛒",
-        "name": "Cuanin",
-        "desc": "Preloved Multi-Vendor Marketplace",
-        "primary_tech": "Laravel 12",
-        "stack": "MySQL · Vite",
-        "accent": "#3fb950",  # Emerald Green
-        "url": "https://github.com/RusdiEneri/Cuanin",
+        "key": "wa-full-pfp",
+        "filename": "featured-wa-full-pfp.svg",
+        "name": "wa-full-pfp",
+        "badge": "PROTOCOL UTILITY",
+        "desc": "Full-resolution WhatsApp profile picture without crop via binary protobuf.",
+        "tags": ["Go", "whatsmeow", "WebSockets"],
+        "accent": TAUPE,
+        "url": "https://github.com/RusdiEneri/wa-full-pfp",
     },
     {
         "key": "jt-scheduling",
         "filename": "featured-jt-scheduling.svg",
-        "icon": "🚚",
-        "name": "J&T Scheduling",
-        "desc": "Algorithmic Shift Optimizer",
-        "primary_tech": "Python",
-        "stack": "Genetic Algorithm",
-        "accent": "#d29922",  # Amber / Gold
+        "name": "J&T Express Shift Optimizer",
+        "badge": "HEURISTIC SEARCH",
+        "desc": "Automated courier schedule optimization via custom Genetic Algorithm.",
+        "tags": ["Python", "Streamlit", "NumPy"],
+        "accent": TAUPE_LIGHT,
         "url": "https://github.com/RusdiEneri/jt-express-scheduling",
+    },
+    {
+        "key": "cuanin",
+        "filename": "featured-cuanin.svg",
+        "name": "Cuanin",
+        "badge": "RELATIONAL COMMERCE",
+        "desc": "Preloved marketplace with ACID transaction locking & price bargaining.",
+        "tags": ["Laravel 12", "MySQL", "Tailwind CSS"],
+        "accent": TAUPE,
+        "url": "https://github.com/RusdiEneri/Cuanin",
+    },
+    {
+        "key": "mahasigmind",
+        "filename": "featured-mahasigmind.svg",
+        "name": "MahasigMind",
+        "badge": "MENTAL HEALTH SPA",
+        "desc": "Single Page Application for student consultations & reflective tracking.",
+        "tags": ["Laravel 11", "React 19", "Inertia.js"],
+        "accent": TAUPE_LIGHT,
+        "url": "https://github.com/RusdiEneri/MahasigMind",
     },
     {
         "key": "alam-makmur",
         "filename": "featured-alam-makmur.svg",
-        "icon": "🏢",
         "name": "Alam Makmur Jaya",
-        "desc": "Centralized ERP & Retail System",
-        "primary_tech": "Express.js",
-        "stack": "Vite · REST API",
-        "accent": "#a371f7",  # Purple
+        "badge": "CENTRALIZED ERP",
+        "desc": "Enterprise retail backend for multi-branch inventory & sales accounting.",
+        "tags": ["Express.js", "Node.js", "REST API"],
+        "accent": TAUPE,
         "url": "https://github.com/RusdiEneri/alam-makmur-jaya",
     },
 ]
@@ -84,107 +86,85 @@ def render_card(p):
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" '
         f'width="{CARD_W}" height="{CARD_H}" viewBox="0 0 {CARD_W} {CARD_H}" '
-        f'font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', \'Noto Sans\', Helvetica, Arial, sans-serif">',
+        f'font-family="\'Space Grotesk\', ui-monospace, SFMono-Regular, -apple-system, BlinkMacSystemFont, \'Segoe UI\', sans-serif">',
         "<style>",
-        f"""
-        @keyframes flowBeam {{
-            0% {{ transform: translateX(-400px); }}
-            40%, 100% {{ transform: translateX(450px); }}
-        }}
-        @keyframes pulseDot {{
-            0%, 100% {{ opacity: 1; }}
-            50% {{ opacity: 0.45; }}
-        }}
-        @keyframes cardGlow {{
-            0%, 100% {{ opacity: 0.8; }}
-            50% {{ opacity: 0.5; }}
-        }}
-        .flowing-beam {{
-            animation: flowBeam 4.5s ease-in-out infinite;
-        }}
-        .pulse-dot {{
+        """
+        .card-bg {
+            transition: stroke 0.2s ease, fill 0.2s ease;
+        }
+        .card-bg:hover {
+            stroke: #404040;
+            fill: #171717;
+        }
+        .pulse-dot {
             animation: pulseDot 2.4s ease-in-out infinite;
-        }}
-        .top-accent {{
-            animation: cardGlow 3s ease-in-out infinite;
-        }}
-        @media (prefers-reduced-motion: reduce) {{
-            .flowing-beam {{ display: none !important; }}
-            .pulse-dot {{ animation: none !important; }}
-            .top-accent {{ animation: none !important; }}
-        }}
+        }
+        @keyframes pulseDot {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .pulse-dot { animation: none !important; opacity: 1 !important; }
+        }
         """,
         "</style>",
-        "<defs>",
-        # Top flowing beam gradient
-        f'<linearGradient id="beamGrad-{p["key"]}" x1="0" y1="0" x2="1" y2="0">',
-        f'  <stop offset="0%" stop-color="{p["accent"]}" stop-opacity="0"/>',
-        f'  <stop offset="50%" stop-color="{p["accent"]}" stop-opacity="0.95"/>',
-        f'  <stop offset="100%" stop-color="{p["accent"]}" stop-opacity="0"/>',
-        f"</linearGradient>",
-        # Ambient soft surface sheen
-        f'<linearGradient id="sheenGrad-{p["key"]}" x1="0" y1="0" x2="1" y2="0">',
-        f'  <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>',
-        f'  <stop offset="50%" stop-color="{p["accent"]}" stop-opacity="0.06"/>',
-        f'  <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>',
-        f"</linearGradient>",
-        # Card clip path
-        f'<clipPath id="cardClip-{p["key"]}">',
-        f'  <rect width="{CARD_W}" height="{CARD_H}" rx="8"/>',
-        f"</clipPath>",
-        "</defs>",
-        # Clickable root link
-        f'<a xlink:href="{p["url"]}" target="_blank" style="text-decoration: none; cursor: pointer;">',
+        # Clickable Link
+        f'<a xlink:href="{p["url"]}" target="_blank" style="text-decoration:none; cursor:pointer;">',
         # Background card
-        f'<rect width="{CARD_W}" height="{CARD_H}" rx="8" fill="{BG_CARD}"/>',
-        f'<rect x="0.5" y="0.5" width="{CARD_W-1}" height="{CARD_H-1}" rx="8" fill="none" stroke="{BORDER}" stroke-width="1"/>',
-        # Ambient flowing surface sheen (clipped)
-        f'<g clip-path="url(#cardClip-{p["key"]})">',
-        f'<rect class="flowing-beam" x="0" y="0" width="260" height="{CARD_H}" fill="url(#sheenGrad-{p["key"]})"/>',
-        f'</g>',
-        # Top static accent border
-        f'<line x1="0" y1="1" x2="{CARD_W}" y2="1" stroke="{BORDER}" stroke-width="1"/>',
-        # Top animated glowing flowing beam line
-        f'<g clip-path="url(#cardClip-{p["key"]})">',
-        f'<rect class="flowing-beam top-accent" x="0" y="0" width="180" height="2" fill="url(#beamGrad-{p["key"]})"/>',
-        f'</g>',
-        # Row 1: Emoji + Title + Arrow (y = 38)
-        f'<text x="20" y="38" fill="{TEXT_TITLE}" font-size="15" font-weight="600">',
-        f'{p["icon"]}  {html.escape(p["name"])}',
-        f'</text>',
-        f'<text x="{CARD_W - 20}" y="38" fill="{TEXT_DIM}" font-size="13" font-weight="600" text-anchor="end">↗</text>',
-        # Row 2: Description (y = 66)
-        f'<text x="20" y="68" fill="{TEXT_MUTED}" font-size="12.5" font-weight="400">',
-        f'{html.escape(p["desc"])}',
-        f'</text>',
-        # Row 3: Language dot + Primary Tech + Stack (y = 98)
-        f'<circle class="pulse-dot" cx="24" cy="98" r="3.5" fill="{p["accent"]}"/>',
-        f'<text x="34" y="102" font-size="11.5">',
-        f'<tspan fill="{p["accent"]}" font-weight="500">{html.escape(p["primary_tech"])}</tspan> ',
-        f'<tspan fill="{TEXT_DIM}">·  {html.escape(p["stack"])}</tspan>',
-        f'</text>',
-        f'</a>',
-        f'</svg>',
+        f'<rect class="card-bg" width="{CARD_W}" height="{CARD_H}" rx="4" fill="{SURFACE}" stroke="{BORDER}" stroke-width="1"/>',
+        # Subtle top accent border line
+        f'<line x1="0" y1="0" x2="{CARD_W}" y2="0" stroke="{p["accent"]}" stroke-width="2"/>',
+        # Category Badge
+        f'<text x="18" y="24" fill="{p["accent"]}" font-size="9" font-weight="700" letter-spacing="0.8">'
+        f'{html.escape(p["badge"])}</text>',
+        # Live status dot
+        f'<circle cx="{CARD_W - 24}" cy="20" r="3.5" fill="{p["accent"]}" class="pulse-dot"/>',
+        # Project Title + Arrow
+        f'<text x="18" y="47" fill="{TEXT_PRIMARY}" font-size="14.5" font-weight="700">'
+        f'{html.escape(p["name"])} '
+        f'<tspan fill="{TEXT_SUBTLE}" font-size="12">↗</tspan></text>',
+        # Description
+        f'<text x="18" y="68" fill="{TEXT_MUTED}" font-size="10.5" font-weight="400">'
+        f'{html.escape(p["desc"])}</text>',
     ]
-    return "".join(parts)
+
+    # Tags along bottom
+    tag_x = 18
+    tag_y = 90
+    tag_h = 20
+
+    for tag in p["tags"]:
+        # Estimate width roughly based on characters
+        tag_w = max(38, len(tag) * 6.5 + 14)
+        parts.append(
+            f'<g transform="translate({tag_x}, {tag_y})">'
+            f'<rect width="{tag_w:.1f}" height="{tag_h}" rx="2" fill="{SURFACE_RAISED}" stroke="{BORDER}" stroke-width="1"/>'
+            f'<text x="{tag_w/2:.1f}" y="13.5" fill="{TEXT_PRIMARY}" font-size="9.5" font-weight="500" text-anchor="middle">'
+            f'{html.escape(tag)}</text>'
+            f'</g>'
+        )
+        tag_x += tag_w + 6
+
+    parts.append("</a>")
+    parts.append("</svg>")
+    return "\n".join(parts)
 
 
 def main():
     os.makedirs(DIST_DIR, exist_ok=True)
     for p in PROJECTS:
-        out_file = os.path.join(DIST_DIR, p["filename"])
-        svg_content = render_card(p)
-        with open(out_file, "w", encoding="utf-8") as f:
-            f.write(svg_content)
-        print(f"Wrote {out_file}: {CARD_W} x {CARD_H}")
+        svg = render_card(p)
+        out_path = os.path.join(DIST_DIR, p["filename"])
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write(svg)
+        print(f"Rendered {out_path} ({len(svg)} bytes)")
 
-    # Update master fallback featured.svg
+    # Also write dist/featured.svg as default flagship card
+    flagship = render_card(PROJECTS[0])
     master_path = os.path.join(DIST_DIR, "featured.svg")
-    with open(os.path.join(DIST_DIR, PROJECTS[0]["filename"]), "r", encoding="utf-8") as f:
-        master_content = f.read()
     with open(master_path, "w", encoding="utf-8") as f:
-        f.write(master_content)
-    print(f"Synced {master_path}")
+        f.write(flagship)
+    print(f"Rendered master {master_path}")
 
 
 if __name__ == "__main__":

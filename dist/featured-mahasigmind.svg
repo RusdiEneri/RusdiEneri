@@ -1,28 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420" height="125" viewBox="0 0 420 125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif"><style>
-        @keyframes flowBeam {
-            0% { transform: translateX(-400px); }
-            40%, 100% { transform: translateX(450px); }
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420" height="126" viewBox="0 0 420 126" font-family="'Space Grotesk', ui-monospace, SFMono-Regular, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<style>
+
+        .card-bg {
+            transition: stroke 0.2s ease, fill 0.2s ease;
         }
-        @keyframes pulseDot {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.45; }
-        }
-        @keyframes cardGlow {
-            0%, 100% { opacity: 0.8; }
-            50% { opacity: 0.5; }
-        }
-        .flowing-beam {
-            animation: flowBeam 4.5s ease-in-out infinite;
+        .card-bg:hover {
+            stroke: #404040;
+            fill: #171717;
         }
         .pulse-dot {
             animation: pulseDot 2.4s ease-in-out infinite;
         }
-        .top-accent {
-            animation: cardGlow 3s ease-in-out infinite;
+        @keyframes pulseDot {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
         }
         @media (prefers-reduced-motion: reduce) {
-            .flowing-beam { display: none !important; }
-            .pulse-dot { animation: none !important; }
-            .top-accent { animation: none !important; }
+            .pulse-dot { animation: none !important; opacity: 1 !important; }
         }
-        </style><defs><linearGradient id="beamGrad-mahasigmind" x1="0" y1="0" x2="1" y2="0">  <stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/>  <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.95"/>  <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/></linearGradient><linearGradient id="sheenGrad-mahasigmind" x1="0" y1="0" x2="1" y2="0">  <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>  <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.06"/>  <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/></linearGradient><clipPath id="cardClip-mahasigmind">  <rect width="420" height="125" rx="8"/></clipPath></defs><a xlink:href="https://github.com/RusdiEneri/MahasigMind" target="_blank" style="text-decoration: none; cursor: pointer;"><rect width="420" height="125" rx="8" fill="#161b22"/><rect x="0.5" y="0.5" width="419" height="124" rx="8" fill="none" stroke="#30363d" stroke-width="1"/><g clip-path="url(#cardClip-mahasigmind)"><rect class="flowing-beam" x="0" y="0" width="260" height="125" fill="url(#sheenGrad-mahasigmind)"/></g><line x1="0" y1="1" x2="420" y2="1" stroke="#30363d" stroke-width="1"/><g clip-path="url(#cardClip-mahasigmind)"><rect class="flowing-beam top-accent" x="0" y="0" width="180" height="2" fill="url(#beamGrad-mahasigmind)"/></g><text x="20" y="38" fill="#f0f6fc" font-size="15" font-weight="600">🧠  MahasigMind</text><text x="400" y="38" fill="#6e7681" font-size="13" font-weight="600" text-anchor="end">↗</text><text x="20" y="68" fill="#8b949e" font-size="12.5" font-weight="400">Mental Health SPA Platform</text><circle class="pulse-dot" cx="24" cy="98" r="3.5" fill="#58a6ff"/><text x="34" y="102" font-size="11.5"><tspan fill="#58a6ff" font-weight="500">Laravel 11</tspan> <tspan fill="#6e7681">·  React 19 · Inertia.js</tspan></text></a></svg>
+        
+</style>
+<a xlink:href="https://github.com/RusdiEneri/MahasigMind" target="_blank" style="text-decoration:none; cursor:pointer;">
+<rect class="card-bg" width="420" height="126" rx="4" fill="#141414" stroke="#262626" stroke-width="1"/>
+<line x1="0" y1="0" x2="420" y2="0" stroke="#d4a373" stroke-width="2"/>
+<text x="18" y="24" fill="#d4a373" font-size="9" font-weight="700" letter-spacing="0.8">MENTAL HEALTH SPA</text>
+<circle cx="396" cy="20" r="3.5" fill="#d4a373" class="pulse-dot"/>
+<text x="18" y="47" fill="#f5f5f5" font-size="14.5" font-weight="700">MahasigMind <tspan fill="#6e6e6e" font-size="12">↗</tspan></text>
+<text x="18" y="68" fill="#9e9e9e" font-size="10.5" font-weight="400">Single Page Application for student consultations &amp; reflective tracking.</text>
+<g transform="translate(18, 90)"><rect width="79.0" height="20" rx="2" fill="#1a1a1a" stroke="#262626" stroke-width="1"/><text x="39.5" y="13.5" fill="#f5f5f5" font-size="9.5" font-weight="500" text-anchor="middle">Laravel 11</text></g>
+<g transform="translate(103.0, 90)"><rect width="66.0" height="20" rx="2" fill="#1a1a1a" stroke="#262626" stroke-width="1"/><text x="33.0" y="13.5" fill="#f5f5f5" font-size="9.5" font-weight="500" text-anchor="middle">React 19</text></g>
+<g transform="translate(175.0, 90)"><rect width="79.0" height="20" rx="2" fill="#1a1a1a" stroke="#262626" stroke-width="1"/><text x="39.5" y="13.5" fill="#f5f5f5" font-size="9.5" font-weight="500" text-anchor="middle">Inertia.js</text></g>
+</a>
+</svg>
