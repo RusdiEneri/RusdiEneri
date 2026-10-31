@@ -5,7 +5,7 @@
 | Field | Value |
 |---|---|
 | **Timestamp** | `2026-11-01 01:45:45 WIB` |
-| **Iteration** | `Batch #3 of 5` |
+| **Iteration** | `Batch #4 of 5` |
 | **Run** | `#232` |
 | **Run ID** | `41230961563` |
 | **Branch** | `main` |
@@ -16,9 +16,9 @@
 
 ## 🛰️ Operational Event
 
-**Ion Thrusters** was **calibrated**.
+**Comms Array** was **calibrated**.
 
-> Telemetry remains stable across monitored systems.
+> Systems operating within nominal parameters.
 
 ## ✅ Mission Status
 
