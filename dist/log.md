@@ -5,7 +5,7 @@
 | Field | Value |
 |---|---|
 | **Timestamp** | `2026-11-16 00:51:47 WIB` |
-| **Iteration** | `Batch #2 of 5` |
+| **Iteration** | `Batch #3 of 5` |
 | **Run** | `#292` |
 | **Run ID** | `43743454627` |
 | **Branch** | `main` |
@@ -16,7 +16,7 @@
 
 ## 🛰️ Operational Event
 
-**Comms Array** was **reconfigured**.
+**Quantum Core** was **reconfigured**.
 
 > Telemetry remains stable across monitored systems.
 
